@@ -1,0 +1,109 @@
+@font-face {
+  font-family: montserrat;
+  src: url("/assets/fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: cardo;
+  src: url("/assets/fonts/cardo/Cardo-Regular.ttf");
+}
+
+@font-face {
+  font-family: cardo;
+  src: url("/assets/fonts/cardo/Cardo-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: cardo;
+  src: url("/assets/fonts/cardo/Cardo-Italic.ttf");
+  font-style: italic;
+}
+
+$gray: #cccccc;
+$blue: #284184;
+$light-blue: #3F72AF;
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: montserrat;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+p, a, span, li, input{
+  font-family: cardo;
+}
+
+a{
+  font-weight: bold;
+  color: $light-blue;
+}
+
+#wrapper{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body{
+  background-color: #F2F2F2;
+}
+
+input{
+  display: inline-block;
+  border: none;
+  border: 1px solid $gray;
+  background: white;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  padding: 10px;
+  &:focus{
+    outline: none;
+  }
+}
+
+.select{
+  display: inline-block;
+  select{
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: cardo;
+    background: white;
+    border: 1px solid $gray;
+    height: 40px;
+    width: 200px;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.btn{
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: $blue;
+  border: 1px solid $blue;
+}
+
+center{
+  margin: 0 auto;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+strong{
+  font-weight: bold;
+}

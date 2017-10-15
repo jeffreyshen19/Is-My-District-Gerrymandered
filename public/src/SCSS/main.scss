@@ -1,0 +1,14 @@
+@import "reset";
+@import "theme";
+
+center{
+  width: 80%;
+  text-align: left;
+  
+  #address{
+    width: 400px;
+  }
+  #zip{
+    width: 200px;
+  }
+}

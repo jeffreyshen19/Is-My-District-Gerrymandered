@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="53.543701"
+   height="45.2994"
+   id="svg2"
+   sodipodi:docname="AZ_5.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata40">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs38" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview36"
+     showgrid="false"
+     inkscape:zoom="0.12542268"
+     inkscape:cx="755.85076"
+     inkscape:cy="283.96317"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="m 17.07024,0 0.56713,6.5052 -1.64707,0.6703 -1.1952,2.7989 0.82187,1.3858 -2.77571,2.2929 -1.55412,-0.3954 0.50111,12.6069 -1.76721,0.8515 c 0.44694,1.0553 1.21045,2.3386 1.57618,3.4003 L 8.17341,33.6732 8.07171,37.7413 5.95373,41.8955 0,44.2645 10.40648,45.2994 v -3.3319 l 2.21534,-0.6912 0.33674,-5.884 3.26099,-1.5596 h 8.38287 l 1.4001,1.1697 27.54118,3.3497 -4.05848,-12.9022 -1.02792,0.5494 c -0.56418,0.3019 -1.44561,1.1887 -1.96726,1.9849 L 45.53301,29.4375 39.79083,22.118 39.2946,20.0267 38.14264,18.981 38.28443,17.262 c 0.0785,-0.9502 0.36733,-2.0559 0.65571,-2.4458 l 0.53168,-0.7089 H 38.21354 L 37.91222,8.436 h -1.9495 L 36.67163,4.7497 37.85908,3.9699 36.09327,2.7758 22.45796,1.6305 Z"
+     style="fill:#b3b3b3"
+     id="AZ_5"
+     inkscape:connector-curvature="0" />
+</svg>

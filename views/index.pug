@@ -1,0 +1,32 @@
+doctype html
+html(lang = "en")
+  head
+    meta(charset = "utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name = "description" content = "Is my district gerrymandered?")
+    meta(name = "author" content = "Jeffrey Shen")
+
+    title Is my district gerrymandered?
+    
+    script(src = "/bower_components/jquery/dist/jquery.min.js")
+    script(src = "/dist/JS/main-min.js")
+    link(href = "/dist/CSS/main.css" rel = "stylesheet" type = "text/css")
+  
+  body(lang = "en")
+    #wrapper
+      center
+        h1 Is my district gerrymandered?
+        br
+        form(action = "/lookup" method = "post")
+          input#address(type = "text" name = "address" placeholder = "Enter your address")
+          input#zip(type = "text" name = "zip" placeholder = "Enter your zip code")
+          input.btn(type = "submit" value = "CHECK!")
+        br
+        p Or, browse districts:
+        br
+        .select
+          select#districts(name = "districts" onchange = "selectHandler()")
+            option(value = "null") Pick a district:
+            each district in district_codes
+              option(value = district) #{district}
