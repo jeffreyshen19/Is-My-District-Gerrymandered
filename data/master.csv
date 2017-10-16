@@ -1,0 +1,436 @@
+district_code,absolute_efficiency_gap,state_efficiency_gap,district_efficiency_gap,absolute_compactness,state_compactness,district_compactness,affiliation,gerrymander_score,rep
+AK-0,0,0,0,0,0,0,Republican,0,Don Young
+AL-1,0,0,0,0,0,0,Republican,0,Bradley Byrne
+AL-2,0,0,0,0,0,0,Republican,0,Martha Roby
+AL-3,0,0,0,0,0,0,Republican,0,Mike Rogers
+AL-4,0,0,0,0,0,0,Republican,0,Robert B. Aderholt
+AL-5,0,0,0,0,0,0,Republican,0,Mo Brooks
+AL-6,0,0,0,0,0,0,Republican,0,Gary J. Palmer
+AL-7,0,0,0,0,0,0,Democrat,0,Terri A. Sewell
+AR-1,0,0,0,0,0,0,Republican,0,Eric A. "Rick" Crawford
+AR-2,0,0,0,0,0,0,Republican,0,J. French Hill
+AR-3,0,0,0,0,0,0,Republican,0,Steve Womack
+AR-4,0,0,0,0,0,0,Republican,0,Bruce Westerman
+AZ-1,0,0,0,0,0,0,Democrat,0,Tom O’Halleran
+AZ-2,0,0,0,0,0,0,Republican,0,Martha McSally
+AZ-3,0,0,0,0,0,0,Democrat,0,Raúl M. Grijalva
+AZ-4,0,0,0,0,0,0,Republican,0,Paul A. Gosar
+AZ-5,0,0,0,0,0,0,Republican,0,Andy Biggs
+AZ-6,0,0,0,0,0,0,Republican,0,David Schweikert
+AZ-7,0,0,0,0,0,0,Democrat,0,Ruben Gallego
+AZ-8,0,0,0,0,0,0,Republican,0,Trent Franks
+AZ-9,0,0,0,0,0,0,Democrat,0,Kyrsten Sinema
+CA-1,0,0,0,0,0,0,Republican,0,Doug LaMalfa
+CA-10,0,0,0,0,0,0,Republican,0,Jeff Denham
+CA-11,0,0,0,0,0,0,Democrat,0,Mark DeSaulnier
+CA-12,0,0,0,0,0,0,Democrat,0,Nancy Pelosi
+CA-13,0,0,0,0,0,0,Democrat,0,Barbara Lee
+CA-14,0,0,0,0,0,0,Democrat,0,Jackie Speier
+CA-15,0,0,0,0,0,0,Democrat,0,Eric Swalwell
+CA-16,0,0,0,0,0,0,Democrat,0,Jim Costa
+CA-17,0,0,0,0,0,0,Democrat,0,Ro Khanna
+CA-18,0,0,0,0,0,0,Democrat,0,Anna G. Eshoo
+CA-19,0,0,0,0,0,0,Democrat,0,Zoe Lofgren
+CA-2,0,0,0,0,0,0,Democrat,0,Jared Huffman
+CA-20,0,0,0,0,0,0,Democrat,0,Jimmy Panetta
+CA-21,0,0,0,0,0,0,Republican,0,David G. Valadao
+CA-22,0,0,0,0,0,0,Republican,0,Devin Nunes
+CA-23,0,0,0,0,0,0,Republican,0,Kevin McCarthy
+CA-24,0,0,0,0,0,0,Democrat,0,Salud O. Carbajal
+CA-25,0,0,0,0,0,0,Republican,0,Stephen Knight
+CA-26,0,0,0,0,0,0,Democrat,0,Julia Brownley
+CA-27,0,0,0,0,0,0,Democrat,0,Judy Chu
+CA-28,0,0,0,0,0,0,Democrat,0,Adam B. Schiff
+CA-29,0,0,0,0,0,0,Democrat,0,Tony Cárdenas
+CA-3,0,0,0,0,0,0,Democrat,0,John Garamendi
+CA-30,0,0,0,0,0,0,Democrat,0,Brad Sherman
+CA-31,0,0,0,0,0,0,Democrat,0,Pete Aguilar
+CA-32,0,0,0,0,0,0,Democrat,0,Grace F. Napolitano
+CA-33,0,0,0,0,0,0,Democrat,0,Ted Lieu
+CA-34,0,0,0,0,0,0,Democrat,0,Jimmy Gomez
+CA-35,0,0,0,0,0,0,Democrat,0,Norma J. Torres
+CA-36,0,0,0,0,0,0,Democrat,0,Raul Ruiz
+CA-37,0,0,0,0,0,0,Democrat,0,Karen Bass
+CA-38,0,0,0,0,0,0,Democrat,0,Linda T. Sánchez
+CA-39,0,0,0,0,0,0,Republican,0,Edward R. Royce
+CA-4,0,0,0,0,0,0,Republican,0,Tom McClintock
+CA-40,0,0,0,0,0,0,Democrat,0,Lucille Roybal-Allard
+CA-41,0,0,0,0,0,0,Democrat,0,Mark Takano
+CA-42,0,0,0,0,0,0,Republican,0,Ken Calvert
+CA-43,0,0,0,0,0,0,Democrat,0,Maxine Waters
+CA-44,0,0,0,0,0,0,Democrat,0,Nanette Diaz Barragán
+CA-45,0,0,0,0,0,0,Republican,0,Mimi Walters
+CA-46,0,0,0,0,0,0,Democrat,0,J. Luis Correa
+CA-47,0,0,0,0,0,0,Democrat,0,Alan S. Lowenthal
+CA-48,0,0,0,0,0,0,Republican,0,Dana Rohrabacher
+CA-49,0,0,0,0,0,0,Republican,0,Darrell E. Issa
+CA-5,0,0,0,0,0,0,Democrat,0,Mike Thompson
+CA-50,0,0,0,0,0,0,Republican,0,Duncan Hunter
+CA-51,0,0,0,0,0,0,Democrat,0,Juan Vargas
+CA-52,0,0,0,0,0,0,Democrat,0,Scott H. Peters
+CA-53,0,0,0,0,0,0,Democrat,0,Susan A. Davis
+CA-6,0,0,0,0,0,0,Democrat,0,Doris O. Matsui
+CA-7,0,0,0,0,0,0,Democrat,0,Ami Bera
+CA-8,0,0,0,0,0,0,Republican,0,Paul Cook
+CA-9,0,0,0,0,0,0,Democrat,0,Jerry McNerney
+CO-1,0,0,0,0,0,0,Democrat,0,Diana DeGette
+CO-2,0,0,0,0,0,0,Democrat,0,Jared Polis
+CO-3,0,0,0,0,0,0,Republican,0,Scott R. Tipton
+CO-4,0,0,0,0,0,0,Republican,0,Ken Buck
+CO-5,0,0,0,0,0,0,Republican,0,Doug Lamborn
+CO-6,0,0,0,0,0,0,Republican,0,Mike Coffman
+CO-7,0,0,0,0,0,0,Democrat,0,Ed Perlmutter
+CT-1,0,0,0,0,0,0,Democrat,0,John B. Larson
+CT-2,0,0,0,0,0,0,Democrat,0,Joe Courtney
+CT-3,0,0,0,0,0,0,Democrat,0,Rosa L. DeLauro
+CT-4,0,0,0,0,0,0,Democrat,0,James A. Himes
+CT-5,0,0,0,0,0,0,Democrat,0,Elizabeth H. Esty
+DE-0,0,0,0,0,0,0,Democrat,0,Lisa Blunt Rochester
+FL-1,0,0,0,0,0,0,Republican,0,Matt Gaetz
+FL-10,0,0,0,0,0,0,Democrat,0,Val Butler Demings
+FL-11,0,0,0,0,0,0,Republican,0,Daniel Webster
+FL-12,0,0,0,0,0,0,Republican,0,Gus M. Bilirakis
+FL-13,0,0,0,0,0,0,Democrat,0,Charlie Crist
+FL-14,0,0,0,0,0,0,Democrat,0,Kathy Castor
+FL-15,0,0,0,0,0,0,Republican,0,Dennis A. Ross
+FL-16,0,0,0,0,0,0,Republican,0,Vern Buchanan
+FL-17,0,0,0,0,0,0,Republican,0,Thomas J. Rooney
+FL-18,0,0,0,0,0,0,Republican,0,Brian J. Mast
+FL-19,0,0,0,0,0,0,Republican,0,Francis Rooney
+FL-2,0,0,0,0,0,0,Republican,0,Neal P. Dunn
+FL-20,0,0,0,0,0,0,Democrat,0,Alcee L. Hastings
+FL-21,0,0,0,0,0,0,Democrat,0,Lois Frankel
+FL-22,0,0,0,0,0,0,Democrat,0,Theodore E. Deutch
+FL-23,0,0,0,0,0,0,Democrat,0,Debbie Wasserman Schultz
+FL-24,0,0,0,0,0,0,Democrat,0,Frederica S. Wilson
+FL-25,0,0,0,0,0,0,Republican,0,Mario Diaz-Balart
+FL-26,0,0,0,0,0,0,Republican,0,Carlos Curbelo
+FL-27,0,0,0,0,0,0,Republican,0,Ileana Ros-Lehtinen
+FL-3,0,0,0,0,0,0,Republican,0,Ted S. Yoho
+FL-4,0,0,0,0,0,0,Republican,0,John H. Rutherford
+FL-5,0,0,0,0,0,0,Democrat,0,Al Lawson, Jr.
+FL-6,0,0,0,0,0,0,Republican,0,Ron DeSantis
+FL-7,0,0,0,0,0,0,Democrat,0,Stephanie N. Murphy
+FL-8,0,0,0,0,0,0,Republican,0,Bill Posey
+FL-9,0,0,0,0,0,0,Democrat,0,Darren Soto
+GA-1,0,0,0,0,0,0,Republican,0,Earl L. "Buddy" Carter
+GA-10,0,0,0,0,0,0,Republican,0,Jody B. Hice
+GA-11,0,0,0,0,0,0,Republican,0,Barry Loudermilk
+GA-12,0,0,0,0,0,0,Republican,0,Rick W. Allen
+GA-13,0,0,0,0,0,0,Democrat,0,David Scott
+GA-14,0,0,0,0,0,0,Republican,0,Tom Graves
+GA-2,0,0,0,0,0,0,Democrat,0,Sanford D. Bishop, Jr.
+GA-3,0,0,0,0,0,0,Republican,0,A. Drew Ferguson IV
+GA-4,0,0,0,0,0,0,Democrat,0,Henry C. "Hank" Johnson, Jr.
+GA-5,0,0,0,0,0,0,Democrat,0,John Lewis
+GA-6,0,0,0,0,0,0,Republican,0,Karen C. Handel
+GA-7,0,0,0,0,0,0,Republican,0,Rob Woodall
+GA-8,0,0,0,0,0,0,Republican,0,Austin Scott
+GA-9,0,0,0,0,0,0,Republican,0,Doug Collins
+HI-1,0,0,0,0,0,0,Democrat,0,Colleen Hanabusa
+HI-2,0,0,0,0,0,0,Democrat,0,Tulsi Gabbard
+IA-1,0,0,0,0,0,0,Republican,0,Rod Blum
+IA-2,0,0,0,0,0,0,Democrat,0,David Loebsack
+IA-3,0,0,0,0,0,0,Republican,0,David Young
+IA-4,0,0,0,0,0,0,Republican,0,Steve King
+ID-1,0,0,0,0,0,0,Republican,0,Raúl R. Labrador
+ID-2,0,0,0,0,0,0,Republican,0,Michael K. Simpson
+IL-1,0,0,0,0,0,0,Democrat,0,Bobby L. Rush
+IL-10,0,0,0,0,0,0,Democrat,0,Bradley Scott Schneider
+IL-11,0,0,0,0,0,0,Democrat,0,Bill Foster
+IL-12,0,0,0,0,0,0,Republican,0,Mike Bost
+IL-13,0,0,0,0,0,0,Republican,0,Rodney Davis
+IL-14,0,0,0,0,0,0,Republican,0,Randy Hultgren
+IL-15,0,0,0,0,0,0,Republican,0,John Shimkus
+IL-16,0,0,0,0,0,0,Republican,0,Adam Kinzinger
+IL-17,0,0,0,0,0,0,Democrat,0,Cheri Bustos
+IL-18,0,0,0,0,0,0,Republican,0,Darin LaHood
+IL-2,0,0,0,0,0,0,Democrat,0,Robin L. Kelly
+IL-3,0,0,0,0,0,0,Democrat,0,Daniel Lipinski
+IL-4,0,0,0,0,0,0,Democrat,0,Luis V. Gutiérrez
+IL-5,0,0,0,0,0,0,Democrat,0,Mike Quigley
+IL-6,0,0,0,0,0,0,Republican,0,Peter J. Roskam
+IL-7,0,0,0,0,0,0,Democrat,0,Danny K. Davis
+IL-8,0,0,0,0,0,0,Democrat,0,Raja Krishnamoorthi
+IL-9,0,0,0,0,0,0,Democrat,0,Janice D. Schakowsky
+IN-1,0,0,0,0,0,0,Democrat,0,Peter J. Visclosky
+IN-2,0,0,0,0,0,0,Republican,0,Jackie Walorski
+IN-3,0,0,0,0,0,0,Republican,0,Jim Banks
+IN-4,0,0,0,0,0,0,Republican,0,Todd Rokita
+IN-5,0,0,0,0,0,0,Republican,0,Susan W. Brooks
+IN-6,0,0,0,0,0,0,Republican,0,Luke Messer
+IN-7,0,0,0,0,0,0,Democrat,0,André Carson
+IN-8,0,0,0,0,0,0,Republican,0,Larry Bucshon
+IN-9,0,0,0,0,0,0,Republican,0,Trey Hollingsworth
+KS-1,0,0,0,0,0,0,Republican,0,Roger W. Marshall
+KS-2,0,0,0,0,0,0,Republican,0,Lynn Jenkins
+KS-3,0,0,0,0,0,0,Republican,0,Kevin Yoder
+KS-4,0,0,0,0,0,0,Republican,0,Ron Estes
+KY-1,0,0,0,0,0,0,Republican,0,James Comer
+KY-2,0,0,0,0,0,0,Republican,0,Brett Guthrie
+KY-3,0,0,0,0,0,0,Democrat,0,John A. Yarmuth
+KY-4,0,0,0,0,0,0,Republican,0,Thomas Massie
+KY-5,0,0,0,0,0,0,Republican,0,Harold Rogers
+KY-6,0,0,0,0,0,0,Republican,0,Andy Barr
+LA-1,0,0,0,0,0,0,Republican,0,Steve Scalise
+LA-2,0,0,0,0,0,0,Democrat,0,Cedric L. Richmond
+LA-3,0,0,0,0,0,0,Republican,0,Clay Higgins
+LA-4,0,0,0,0,0,0,Republican,0,Mike Johnson
+LA-5,0,0,0,0,0,0,Republican,0,Ralph Lee Abraham
+LA-6,0,0,0,0,0,0,Republican,0,Garret Graves
+MA-1,0,0,0,0,0,0,Democrat,0,Richard E. Neal
+MA-2,0,0,0,0,0,0,Democrat,0,James P. McGovern
+MA-3,0,0,0,0,0,0,Democrat,0,Niki Tsongas
+MA-4,0,0,0,0,0,0,Democrat,0,Joseph P. Kennedy III
+MA-5,0,0,0,0,0,0,Democrat,0,Katherine M. Clark
+MA-6,0,0,0,0,0,0,Democrat,0,Seth Moulton
+MA-7,0,0,0,0,0,0,Democrat,0,Michael E. Capuano
+MA-8,0,0,0,0,0,0,Democrat,0,Stephen F. Lynch
+MA-9,0,0,0,0,0,0,Democrat,0,William R. Keating
+MD-1,0,0,0,0,0,0,Republican,0,Andy Harris
+MD-2,0,0,0,0,0,0,Democrat,0,C. A. Dutch Ruppersberger
+MD-3,0,0,0,0,0,0,Democrat,0,John P. Sarbanes
+MD-4,0,0,0,0,0,0,Democrat,0,Anthony G. Brown
+MD-5,0,0,0,0,0,0,Democrat,0,Steny H. Hoyer
+MD-6,0,0,0,0,0,0,Democrat,0,John K. Delaney
+MD-7,0,0,0,0,0,0,Democrat,0,Elijah E. Cummings
+MD-8,0,0,0,0,0,0,Democrat,0,Jamie Raskin
+ME-1,0,0,0,0,0,0,Democrat,0,Chellie Pingree
+ME-2,0,0,0,0,0,0,Republican,0,Bruce Poliquin
+MI-1,0,0,0,0,0,0,Republican,0,Jack Bergman
+MI-10,0,0,0,0,0,0,Republican,0,Paul Mitchell
+MI-11,0,0,0,0,0,0,Republican,0,David A. Trott
+MI-12,0,0,0,0,0,0,Democrat,0,Debbie Dingell
+MI-13,0,0,0,0,0,0,Democrat,0,John Conyers, Jr.
+MI-14,0,0,0,0,0,0,Democrat,0,Brenda L. Lawrence
+MI-2,0,0,0,0,0,0,Republican,0,Bill Huizenga
+MI-3,0,0,0,0,0,0,Republican,0,Justin Amash
+MI-4,0,0,0,0,0,0,Republican,0,John R. Moolenaar
+MI-5,0,0,0,0,0,0,Democrat,0,Daniel T. Kildee
+MI-6,0,0,0,0,0,0,Republican,0,Fred Upton
+MI-7,0,0,0,0,0,0,Republican,0,Tim Walberg
+MI-8,0,0,0,0,0,0,Republican,0,Mike Bishop
+MI-9,0,0,0,0,0,0,Democrat,0,Sander M. Levin
+MN-1,0,0,0,0,0,0,Democrat,0,Timothy J. Walz
+MN-2,0,0,0,0,0,0,Republican,0,Jason Lewis
+MN-3,0,0,0,0,0,0,Republican,0,Erik Paulsen
+MN-4,0,0,0,0,0,0,Democrat,0,Betty McCollum
+MN-5,0,0,0,0,0,0,Democrat,0,Keith Ellison
+MN-6,0,0,0,0,0,0,Republican,0,Tom Emmer
+MN-7,0,0,0,0,0,0,Democrat,0,Collin C. Peterson
+MN-8,0,0,0,0,0,0,Democrat,0,Richard M. Nolan
+MO-1,0,0,0,0,0,0,Democrat,0,Wm. Lacy Clay
+MO-2,0,0,0,0,0,0,Republican,0,Ann Wagner
+MO-3,0,0,0,0,0,0,Republican,0,Blaine Luetkemeyer
+MO-4,0,0,0,0,0,0,Republican,0,Vicky Hartzler
+MO-5,0,0,0,0,0,0,Democrat,0,Emanuel Cleaver
+MO-6,0,0,0,0,0,0,Republican,0,Sam Graves
+MO-7,0,0,0,0,0,0,Republican,0,Billy Long
+MO-8,0,0,0,0,0,0,Republican,0,Jason Smith
+MS-1,0,0,0,0,0,0,Republican,0,Trent Kelly
+MS-2,0,0,0,0,0,0,Democrat,0,Bennie G. Thompson
+MS-3,0,0,0,0,0,0,Republican,0,Gregg Harper
+MS-4,0,0,0,0,0,0,Republican,0,Steven M. Palazzo
+MT-0,0,0,0,0,0,0,Republican,0,Greg Gianforte
+NC-1,0,0,0,0,0,0,Democrat,0,G. K. Butterfield
+NC-10,0,0,0,0,0,0,Republican,0,Patrick T. McHenry
+NC-11,0,0,0,0,0,0,Republican,0,Mark Meadows
+NC-12,0,0,0,0,0,0,Democrat,0,Alma S. Adams
+NC-13,0,0,0,0,0,0,Republican,0,Ted Budd
+NC-2,0,0,0,0,0,0,Republican,0,George Holding
+NC-3,0,0,0,0,0,0,Republican,0,Walter B. Jones
+NC-4,0,0,0,0,0,0,Democrat,0,David E. Price
+NC-5,0,0,0,0,0,0,Republican,0,Virginia Foxx
+NC-6,0,0,0,0,0,0,Republican,0,Mark Walker
+NC-7,0,0,0,0,0,0,Republican,0,David Rouzer
+NC-8,0,0,0,0,0,0,Republican,0,Richard Hudson
+NC-9,0,0,0,0,0,0,Republican,0,Robert Pittenger
+ND-0,0,0,0,0,0,0,Republican,0,Kevin Cramer
+NE-1,0,0,0,0,0,0,Republican,0,Jeff Fortenberry
+NE-2,0,0,0,0,0,0,Republican,0,Don Bacon
+NE-3,0,0,0,0,0,0,Republican,0,Adrian Smith
+NH-1,0,0,0,0,0,0,Democrat,0,Carol Shea-Porter
+NH-2,0,0,0,0,0,0,Democrat,0,Ann M. Kuster
+NJ-1,0,0,0,0,0,0,Democrat,0,Donald Norcross
+NJ-10,0,0,0,0,0,0,Democrat,0,Donald M. Payne, Jr.
+NJ-11,0,0,0,0,0,0,Republican,0,Rodney P. Frelinghuysen
+NJ-12,0,0,0,0,0,0,Democrat,0,Bonnie Watson Coleman
+NJ-2,0,0,0,0,0,0,Republican,0,Frank A. LoBiondo
+NJ-3,0,0,0,0,0,0,Republican,0,Thomas MacArthur
+NJ-4,0,0,0,0,0,0,Republican,0,Christopher H. Smith
+NJ-5,0,0,0,0,0,0,Democrat,0,Josh Gottheimer
+NJ-6,0,0,0,0,0,0,Democrat,0,Frank Pallone, Jr.
+NJ-7,0,0,0,0,0,0,Republican,0,Leonard Lance
+NJ-8,0,0,0,0,0,0,Democrat,0,Albio Sires
+NJ-9,0,0,0,0,0,0,Democrat,0,Bill Pascrell, Jr.
+NM-1,0,0,0,0,0,0,Democrat,0,Michelle Lujan Grisham
+NM-2,0,0,0,0,0,0,Republican,0,Stevan Pearce
+NM-3,0,0,0,0,0,0,Democrat,0,Ben Ray Luján
+NV-1,0,0,0,0,0,0,Democrat,0,Dina Titus
+NV-2,0,0,0,0,0,0,Republican,0,Mark E. Amodei
+NV-3,0,0,0,0,0,0,Democrat,0,Jacky Rosen
+NV-4,0,0,0,0,0,0,Democrat,0,Ruben J. Kihuen
+NY-1,0,0,0,0,0,0,Republican,0,Lee M. Zeldin
+NY-10,0,0,0,0,0,0,Democrat,0,Jerrold Nadler
+NY-11,0,0,0,0,0,0,Republican,0,Daniel M. Donovan, Jr.
+NY-12,0,0,0,0,0,0,Democrat,0,Carolyn B. Maloney
+NY-13,0,0,0,0,0,0,Democrat,0,Adriano Espaillat
+NY-14,0,0,0,0,0,0,Democrat,0,Joseph Crowley
+NY-15,0,0,0,0,0,0,Democrat,0,José E. Serrano
+NY-16,0,0,0,0,0,0,Democrat,0,Eliot L. Engel
+NY-17,0,0,0,0,0,0,Democrat,0,Nita M. Lowey
+NY-18,0,0,0,0,0,0,Democrat,0,Sean Patrick Maloney
+NY-19,0,0,0,0,0,0,Republican,0,John J. Faso
+NY-2,0,0,0,0,0,0,Republican,0,Peter T. King
+NY-20,0,0,0,0,0,0,Democrat,0,Paul Tonko
+NY-21,0,0,0,0,0,0,Republican,0,Elise M. Stefanik
+NY-22,0,0,0,0,0,0,Republican,0,Claudia Tenney
+NY-23,0,0,0,0,0,0,Republican,0,Tom Reed
+NY-24,0,0,0,0,0,0,Republican,0,John Katko
+NY-25,0,0,0,0,0,0,Democrat,0,Louise McIntosh Slaughter
+NY-26,0,0,0,0,0,0,Democrat,0,Brian Higgins
+NY-27,0,0,0,0,0,0,Republican,0,Chris Collins
+NY-3,0,0,0,0,0,0,Democrat,0,Thomas R. Suozzi
+NY-4,0,0,0,0,0,0,Democrat,0,Kathleen M. Rice
+NY-5,0,0,0,0,0,0,Democrat,0,Gregory W. Meeks
+NY-6,0,0,0,0,0,0,Democrat,0,Grace Meng
+NY-7,0,0,0,0,0,0,Democrat,0,Nydia M. Velázquez
+NY-8,0,0,0,0,0,0,Democrat,0,Hakeem S. Jeffries
+NY-9,0,0,0,0,0,0,Democrat,0,Yvette D. Clarke
+OH-1,0,0,0,0,0,0,Republican,0,Steve Chabot
+OH-10,0,0,0,0,0,0,Republican,0,Michael R. Turner
+OH-11,0,0,0,0,0,0,Democrat,0,Marcia L. Fudge
+OH-12,0,0,0,0,0,0,Republican,0,Patrick J. Tiberi
+OH-13,0,0,0,0,0,0,Democrat,0,Tim Ryan
+OH-14,0,0,0,0,0,0,Republican,0,David P. Joyce
+OH-15,0,0,0,0,0,0,Republican,0,Steve Stivers
+OH-16,0,0,0,0,0,0,Republican,0,James B. Renacci
+OH-2,0,0,0,0,0,0,Republican,0,Brad R. Wenstrup
+OH-3,0,0,0,0,0,0,Democrat,0,Joyce Beatty
+OH-4,0,0,0,0,0,0,Republican,0,Jim Jordan
+OH-5,0,0,0,0,0,0,Republican,0,Robert E. Latta
+OH-6,0,0,0,0,0,0,Republican,0,Bill Johnson
+OH-7,0,0,0,0,0,0,Republican,0,Bob Gibbs
+OH-8,0,0,0,0,0,0,Republican,0,Warren Davidson
+OH-9,0,0,0,0,0,0,Democrat,0,Marcy Kaptur
+OK-1,0,0,0,0,0,0,Republican,0,Jim Bridenstine
+OK-2,0,0,0,0,0,0,Republican,0,Markwayne Mullin
+OK-3,0,0,0,0,0,0,Republican,0,Frank D. Lucas
+OK-4,0,0,0,0,0,0,Republican,0,Tom Cole
+OK-5,0,0,0,0,0,0,Republican,0,Steve Russell
+OR-1,0,0,0,0,0,0,Democrat,0,Suzanne Bonamici
+OR-2,0,0,0,0,0,0,Republican,0,Greg Walden
+OR-3,0,0,0,0,0,0,Democrat,0,Earl Blumenauer
+OR-4,0,0,0,0,0,0,Democrat,0,Peter A. DeFazio
+OR-5,0,0,0,0,0,0,Democrat,0,Kurt Schrader
+PA-1,0,0,0,0,0,0,Democrat,0,Robert A. Brady
+PA-10,0,0,0,0,0,0,Republican,0,Tom Marino
+PA-11,0,0,0,0,0,0,Republican,0,Lou Barletta
+PA-12,0,0,0,0,0,0,Republican,0,Keith J. Rothfus
+PA-13,0,0,0,0,0,0,Democrat,0,Brendan F. Boyle
+PA-14,0,0,0,0,0,0,Democrat,0,Michael F. Doyle
+PA-15,0,0,0,0,0,0,Republican,0,Charles W. Dent
+PA-16,0,0,0,0,0,0,Republican,0,Lloyd Smucker
+PA-17,0,0,0,0,0,0,Democrat,0,Matt Cartwright
+PA-18,0,0,0,0,0,0,Republican,0,Tim Murphy
+PA-2,0,0,0,0,0,0,Democrat,0,Dwight Evans
+PA-3,0,0,0,0,0,0,Republican,0,Mike Kelly
+PA-4,0,0,0,0,0,0,Republican,0,Scott Perry
+PA-5,0,0,0,0,0,0,Republican,0,Glenn Thompson
+PA-6,0,0,0,0,0,0,Republican,0,Ryan A. Costello
+PA-7,0,0,0,0,0,0,Republican,0,Patrick Meehan
+PA-8,0,0,0,0,0,0,Republican,0,Brian K. Fitzpatrick
+PA-9,0,0,0,0,0,0,Republican,0,Bill Shuster
+RI-1,0,0,0,0,0,0,Democrat,0,David N. Cicilline
+RI-2,0,0,0,0,0,0,Democrat,0,James R. Langevin
+SC-1,0,0,0,0,0,0,Republican,0,Mark Sanford
+SC-2,0,0,0,0,0,0,Republican,0,Joe Wilson
+SC-3,0,0,0,0,0,0,Republican,0,Jeff Duncan
+SC-4,0,0,0,0,0,0,Republican,0,Trey Gowdy
+SC-5,0,0,0,0,0,0,Republican,0,Ralph Norman
+SC-6,0,0,0,0,0,0,Democrat,0,James E. Clyburn
+SC-7,0,0,0,0,0,0,Republican,0,Tom Rice
+SD-0,0,0,0,0,0,0,Republican,0,Kristi L. Noem
+TN-1,0,0,0,0,0,0,Republican,0,David P. Roe
+TN-2,0,0,0,0,0,0,Republican,0,John J. Duncan, Jr.
+TN-3,0,0,0,0,0,0,Republican,0,Charles J. "Chuck" Fleischmann
+TN-4,0,0,0,0,0,0,Republican,0,Scott DesJarlais
+TN-5,0,0,0,0,0,0,Democrat,0,Jim Cooper
+TN-6,0,0,0,0,0,0,Republican,0,Diane Black
+TN-7,0,0,0,0,0,0,Republican,0,Marsha Blackburn
+TN-8,0,0,0,0,0,0,Republican,0,David Kustoff
+TN-9,0,0,0,0,0,0,Democrat,0,Steve Cohen
+TX-1,0,0,0,0,0,0,Republican,0,Louie Gohmert
+TX-10,0,0,0,0,0,0,Republican,0,Michael T. McCaul
+TX-11,0,0,0,0,0,0,Republican,0,K. Michael Conaway
+TX-12,0,0,0,0,0,0,Republican,0,Kay Granger
+TX-13,0,0,0,0,0,0,Republican,0,Mac Thornberry
+TX-14,0,0,0,0,0,0,Republican,0,Randy K. Weber, Sr.
+TX-15,0,0,0,0,0,0,Democrat,0,Vicente Gonzalez
+TX-16,0,0,0,0,0,0,Democrat,0,Beto O’Rourke
+TX-17,0,0,0,0,0,0,Republican,0,Bill Flores
+TX-18,0,0,0,0,0,0,Democrat,0,Sheila Jackson Lee
+TX-19,0,0,0,0,0,0,Republican,0,Jodey C. Arrington
+TX-2,0,0,0,0,0,0,Republican,0,Ted Poe
+TX-20,0,0,0,0,0,0,Democrat,0,Joaquin Castro
+TX-21,0,0,0,0,0,0,Republican,0,Lamar Smith
+TX-22,0,0,0,0,0,0,Republican,0,Pete Olson
+TX-23,0,0,0,0,0,0,Republican,0,Will Hurd
+TX-24,0,0,0,0,0,0,Republican,0,Kenny Marchant
+TX-25,0,0,0,0,0,0,Republican,0,Roger Williams
+TX-26,0,0,0,0,0,0,Republican,0,Michael C. Burgess
+TX-27,0,0,0,0,0,0,Republican,0,Blake Farenthold
+TX-28,0,0,0,0,0,0,Democrat,0,Henry Cuellar
+TX-29,0,0,0,0,0,0,Democrat,0,Gene Green
+TX-3,0,0,0,0,0,0,Republican,0,Sam Johnson
+TX-30,0,0,0,0,0,0,Democrat,0,Eddie Bernice Johnson
+TX-31,0,0,0,0,0,0,Republican,0,John R. Carter
+TX-32,0,0,0,0,0,0,Republican,0,Pete Sessions
+TX-33,0,0,0,0,0,0,Democrat,0,Marc A. Veasey
+TX-34,0,0,0,0,0,0,Democrat,0,Filemon Vela
+TX-35,0,0,0,0,0,0,Democrat,0,Lloyd Doggett
+TX-36,0,0,0,0,0,0,Republican,0,Brian Babin
+TX-4,0,0,0,0,0,0,Republican,0,John Ratcliffe
+TX-5,0,0,0,0,0,0,Republican,0,Jeb Hensarling
+TX-6,0,0,0,0,0,0,Republican,0,Joe Barton
+TX-7,0,0,0,0,0,0,Republican,0,John Abney Culberson
+TX-8,0,0,0,0,0,0,Republican,0,Kevin Brady
+TX-9,0,0,0,0,0,0,Democrat,0,Al Green
+UT-1,0,0,0,0,0,0,Republican,0,Rob Bishop
+UT-2,0,0,0,0,0,0,Republican,0,Chris Stewart
+UT-3,0,0,0,0,0,0,Republican,0,Chris Stewart
+UT-4,0,0,0,0,0,0,Republican,0,Mia B. Love
+VA-1,0,0,0,0,0,0,Republican,0,Robert J. Wittman
+VA-10,0,0,0,0,0,0,Republican,0,Barbara Comstock
+VA-11,0,0,0,0,0,0,Democrat,0,Gerald E. Connolly
+VA-2,0,0,0,0,0,0,Republican,0,Scott Taylor
+VA-3,0,0,0,0,0,0,Democrat,0,Robert C. "Bobby" Scott
+VA-4,0,0,0,0,0,0,Democrat,0,A. Donald McEachin
+VA-5,0,0,0,0,0,0,Republican,0,Thomas A. Garrett, Jr.
+VA-6,0,0,0,0,0,0,Republican,0,Bob Goodlatte
+VA-7,0,0,0,0,0,0,Republican,0,Dave Brat
+VA-8,0,0,0,0,0,0,Democrat,0,Donald S. Beyer, Jr.
+VA-9,0,0,0,0,0,0,Republican,0,H. Morgan Griffith
+VT-0,0,0,0,0,0,0,Democrat,0,Peter Welch
+WA-1,0,0,0,0,0,0,Democrat,0,Suzan K. DelBene
+WA-10,0,0,0,0,0,0,Democrat,0,Denny Heck
+WA-2,0,0,0,0,0,0,Democrat,0,Rick Larsen
+WA-3,0,0,0,0,0,0,Republican,0,Jaime Herrera Beutler
+WA-4,0,0,0,0,0,0,Republican,0,Dan Newhouse
+WA-5,0,0,0,0,0,0,Republican,0,Cathy McMorris Rodgers
+WA-6,0,0,0,0,0,0,Democrat,0,Derek Kilmer
+WA-7,0,0,0,0,0,0,Democrat,0,Pramila Jayapal
+WA-8,0,0,0,0,0,0,Republican,0,David G. Reichert
+WA-9,0,0,0,0,0,0,Democrat,0,Adam Smith
+WI-1,0,0,0,0,0,0,Republican,0,Paul D. Ryan
+WI-2,0,0,0,0,0,0,Democrat,0,Mark Pocan
+WI-3,0,0,0,0,0,0,Democrat,0,Ron Kind
+WI-4,0,0,0,0,0,0,Democrat,0,Gwen Moore
+WI-5,0,0,0,0,0,0,Republican,0,F. James Sensenbrenner, Jr.
+WI-6,0,0,0,0,0,0,Republican,0,Glenn Grothman
+WI-7,0,0,0,0,0,0,Republican,0,Sean P. Duffy
+WI-8,0,0,0,0,0,0,Republican,0,Mike Gallagher
+WV-1,0,0,0,0,0,0,Republican,0,David B. McKinley
+WV-2,0,0,0,0,0,0,Republican,0,Alexander X. Mooney
+WV-3,0,0,0,0,0,0,Republican,0,Evan H. Jenkins
+WY-0,0,0,0,0,0,0,Republican,0,Liz Cheney
