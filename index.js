@@ -106,7 +106,7 @@ app.get("/district/:state-:district", function(req, res){
   var absolute_efficiency_gap, state_efficiency_gap, district_efficiency_gap;
 
   //Set compactness data
-  var absolute_compactness, state_compactness, district_compactness;
+  var absolute_compactness, state_compactness, country_compactness;
 
   //Set overall gerrymandered rating
   var gerrymander_score;
@@ -143,7 +143,7 @@ app.get("/district/:state-:district", function(req, res){
     compactness: {
       absolute: absolute_compactness,
       state: state_compactness,
-      district: district_compactness,
+      country: country_compactness,
     },
     previous_district: previous_district,
     next_district: next_district,
