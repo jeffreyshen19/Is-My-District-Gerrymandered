@@ -35,6 +35,10 @@ function suffixNumber(i){
   return i + "th";
 }
 
+var csv = fs.readFileSync("./data/master.csv").toString().split("\n");
+
+console.log("Running on port 3000");
+
 //Routes
 app.get("/", function(req, res){
   res.render("index", {postal_codes: postal_codes, state_names: state_names, district_codes: district_codes});
@@ -94,14 +98,15 @@ app.get("/district/:state-:district", function(req, res){
   else if(democrat_states.includes(state)) redistricting_control = "Democrat";
   else redistricting_control = "Independent";
 
-  //Set the state's political affiliation
-  var affiliation;
+  //Set the state's political affiliation + Rep
+  var affiliation = csv[district_code_i + 1].split(",")[7];
+  var rep = csv[district_code_i + 1].split(",")[9];
 
   //Set efficiency gap data
-  var absolute_efficiency_gap, state_efficiency_gap, country_efficiency_gap;
+  var absolute_efficiency_gap, state_efficiency_gap, district_efficiency_gap;
 
   //Set compactness data
-  var absolute_compactness, state_compactness, country_compactness;
+  var absolute_compactness, state_compactness, district_compactness;
 
   //Set overall gerrymandered rating
   var gerrymander_score;
@@ -129,15 +134,16 @@ app.get("/district/:state-:district", function(req, res){
     gerrymander_score: gerrymander_score,
     district_name: district_name,
     redistricting_control: redistricting_control,
+    rep: rep,
     efficiency_gap: {
       absolute: absolute_efficiency_gap,
       state: state_efficiency_gap,
-      country: country_efficiency_gap,
+      district: district_efficiency_gap,
     },
     compactness: {
       absolute: absolute_compactness,
       state: state_compactness,
-      country: country_compactness,
+      district: district_compactness,
     },
     previous_district: previous_district,
     next_district: next_district,

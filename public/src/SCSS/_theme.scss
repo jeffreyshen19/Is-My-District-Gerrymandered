@@ -23,6 +23,7 @@
 $gray: #cccccc;
 $blue: #284184;
 $light-blue: #3F72AF;
+$red: #D64541;
 
 html,
 body {
@@ -106,4 +107,13 @@ center{
 
 strong{
   font-weight: bold;
+}
+
+em{
+  font-weight: bold;
+  color: $light-blue;
+}
+
+.red{
+  color: $red;
 }

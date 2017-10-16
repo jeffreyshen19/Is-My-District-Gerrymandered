@@ -43,8 +43,10 @@ html(lang = "en")
           li 2nd most compact district (5% more compact than state average, 10% more than compact average).
           li Allowable 4% efficiency gap favoring Republicans (a.k.a Democrats waste more votes in #{district_data.state_name}). An efficiency gap below 7% is considered acceptable.
           li #{district_data.redistricting_control} redistricting control
-        br
-        input.btn(value = "CONTACT REPRESENTATIVE")
+          if district_data.affiliation === "Republican"
+            li <em class = "red">Representative:</em> #{district_data.rep} (R)
+          else if district_data.affiliation === "Democrat"
+            li <em>Representative:</em> #{district_data.rep} (D)
     footer
       .left
         if district_data.previous_district != null
