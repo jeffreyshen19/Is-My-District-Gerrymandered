@@ -11,5 +11,7 @@ Determine the center of gravity of the district and measure the distance from th
 * Length/Width
 Find a rectangle enclosing the district and touching it on all four sides, such that the ratio of the length to the width is a maximum. The closer the ratio is to 1, the more compact is the district.
 
+**Notes**
+* Factor in Border
 Credits:
 http://rangevoting.org/YoungCompactness.pdf
