@@ -19,7 +19,7 @@ html(lang = "en")
     #wrapper
       center
         
-        img#svg.svg(src = "/data/svgs/" + district_data.state + "_" + district_data.district +".svg")
+        img#svg.svg(src = "/data/svgs/" + district_data.state + "_" + district_data.district + ".svg")
         br
         br
         h1 #{district_data.district_name}
@@ -40,9 +40,17 @@ html(lang = "en")
           | Split Redistricting Control
         br
         ul 
-          li 2nd most compact district (5% more compact than state average, 10% more than compact average).
+          -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
+          -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
+          li= district_data.compactness.rank + " most compact district (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
           li Allowable 4% efficiency gap favoring Republicans (a.k.a Democrats waste more votes in #{district_data.state_name}). An efficiency gap below 7% is considered acceptable.
-          li #{district_data.redistricting_control} redistricting control
+          if district_data.redistricting_control === "Democrat" 
+            li <em>Democrat</em> redistricting control
+          else if district_data.redistricting_control === "Republican" 
+            li <em class = "red">Republican</em> redistricting control
+          else 
+            li <strong>Split</strong> redistricting control
+            
           if district_data.affiliation === "Republican"
             li <em class = "red">Representative:</em> #{district_data.rep} (R)
           else if district_data.affiliation === "Democrat"
