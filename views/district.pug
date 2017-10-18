@@ -42,12 +42,16 @@ html(lang = "en")
         ul 
           -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
           -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
+          li 1st most gerrymandered district (15% more than state average, 10% more than country average)
           li= district_data.compactness.rank + " most compact district (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
-          li Allowable 4% efficiency gap favoring Republicans (a.k.a Democrats waste more votes in #{district_data.state_name}). An efficiency gap below 7% is considered acceptable.
+          
+          - var efficiency_percent = (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1)
+          - var efficiency_favors = district_data.efficiency_gap.substring(0, 1);
+          li!= (efficiency_percent < 7 ? "Allowable" : "Unacceptably large ") + efficiency_percent + "% efficiency favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
           if district_data.redistricting_control === "Democrat" 
             li <em>Democrat</em> redistricting control
           else if district_data.redistricting_control === "Republican" 
-            li <em class = "red">Republican</em> redistricting control
+            li <em class = "red">Republican</em> redistricting control  
           else 
             li <strong>Split</strong> redistricting control
             
@@ -55,6 +59,11 @@ html(lang = "en")
             li <em class = "red">Representative:</em> #{district_data.rep} (R)
           else if district_data.affiliation === "Democrat"
             li <em>Representative:</em> #{district_data.rep} (D)
+            
+          if district_data.state_affiliation === "Republican"
+            li <em class = "red">Republican</em> State
+          else if district_data.state_affiliation === "Democrat"
+            li <em>Democrat</em> State
     footer
       .left
         if district_data.previous_district != null

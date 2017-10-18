@@ -1,436 +1,436 @@
-district_code,absolute_efficiency_gap,state_efficiency_gap,district_efficiency_gap,absolute_compactness,state_compactness,country_compactness,affiliation,gerrymander_score,rep,compactness_rank
-AK-0,0,0,0,0,0,23.09655172413793,Republican,0,Don Young,435
-AL-1,0,0,0,1,1,23.09655172413793,Republican,0,Bradley Byrne,428
-AL-2,0,0,0,1,1,23.09655172413793,Republican,0,Martha Roby,428
-AL-3,0,0,0,1,1,23.09655172413793,Republican,0,Mike Rogers,428
-AL-4,0,0,0,1,1,23.09655172413793,Republican,0,Robert B. Aderholt,428
-AL-5,0,0,0,1,1,23.09655172413793,Republican,0,Mo Brooks,428
-AL-6,0,0,0,1,1,23.09655172413793,Republican,0,Gary J. Palmer,428
-AL-7,0,0,0,1,1,23.09655172413793,Democrat,0,Terri A. Sewell,428
-AR-1,0,0,0,2,2,23.09655172413793,Republican,0,Eric A. "Rick" Crawford,424
-AR-2,0,0,0,2,2,23.09655172413793,Republican,0,J. French Hill,424
-AR-3,0,0,0,2,2,23.09655172413793,Republican,0,Steve Womack,424
-AR-4,0,0,0,2,2,23.09655172413793,Republican,0,Bruce Westerman,424
-AZ-1,0,0,0,3,3,23.09655172413793,Democrat,0,Tom O’Halleran,415
-AZ-2,0,0,0,3,3,23.09655172413793,Republican,0,Martha McSally,415
-AZ-3,0,0,0,3,3,23.09655172413793,Democrat,0,Raúl M. Grijalva,415
-AZ-4,0,0,0,3,3,23.09655172413793,Republican,0,Paul A. Gosar,415
-AZ-5,0,0,0,3,3,23.09655172413793,Republican,0,Andy Biggs,415
-AZ-6,0,0,0,3,3,23.09655172413793,Republican,0,David Schweikert,415
-AZ-7,0,0,0,3,3,23.09655172413793,Democrat,0,Ruben Gallego,415
-AZ-8,0,0,0,3,3,23.09655172413793,Republican,0,Trent Franks,415
-AZ-9,0,0,0,3,3,23.09655172413793,Democrat,0,Kyrsten Sinema,415
-CA-1,0,0,0,4,4,23.09655172413793,Republican,0,Doug LaMalfa,362
-CA-10,0,0,0,4,4,23.09655172413793,Republican,0,Jeff Denham,362
-CA-11,0,0,0,4,4,23.09655172413793,Democrat,0,Mark DeSaulnier,362
-CA-12,0,0,0,4,4,23.09655172413793,Democrat,0,Nancy Pelosi,362
-CA-13,0,0,0,4,4,23.09655172413793,Democrat,0,Barbara Lee,362
-CA-14,0,0,0,4,4,23.09655172413793,Democrat,0,Jackie Speier,362
-CA-15,0,0,0,4,4,23.09655172413793,Democrat,0,Eric Swalwell,362
-CA-16,0,0,0,4,4,23.09655172413793,Democrat,0,Jim Costa,362
-CA-17,0,0,0,4,4,23.09655172413793,Democrat,0,Ro Khanna,362
-CA-18,0,0,0,4,4,23.09655172413793,Democrat,0,Anna G. Eshoo,362
-CA-19,0,0,0,4,4,23.09655172413793,Democrat,0,Zoe Lofgren,362
-CA-2,0,0,0,4,4,23.09655172413793,Democrat,0,Jared Huffman,362
-CA-20,0,0,0,4,4,23.09655172413793,Democrat,0,Jimmy Panetta,362
-CA-21,0,0,0,4,4,23.09655172413793,Republican,0,David G. Valadao,362
-CA-22,0,0,0,4,4,23.09655172413793,Republican,0,Devin Nunes,362
-CA-23,0,0,0,4,4,23.09655172413793,Republican,0,Kevin McCarthy,362
-CA-24,0,0,0,4,4,23.09655172413793,Democrat,0,Salud O. Carbajal,362
-CA-25,0,0,0,4,4,23.09655172413793,Republican,0,Stephen Knight,362
-CA-26,0,0,0,4,4,23.09655172413793,Democrat,0,Julia Brownley,362
-CA-27,0,0,0,4,4,23.09655172413793,Democrat,0,Judy Chu,362
-CA-28,0,0,0,4,4,23.09655172413793,Democrat,0,Adam B. Schiff,362
-CA-29,0,0,0,4,4,23.09655172413793,Democrat,0,Tony Cárdenas,362
-CA-3,0,0,0,4,4,23.09655172413793,Democrat,0,John Garamendi,362
-CA-30,0,0,0,4,4,23.09655172413793,Democrat,0,Brad Sherman,362
-CA-31,0,0,0,4,4,23.09655172413793,Democrat,0,Pete Aguilar,362
-CA-32,0,0,0,4,4,23.09655172413793,Democrat,0,Grace F. Napolitano,362
-CA-33,0,0,0,4,4,23.09655172413793,Democrat,0,Ted Lieu,362
-CA-34,0,0,0,4,4,23.09655172413793,Democrat,0,Jimmy Gomez,362
-CA-35,0,0,0,4,4,23.09655172413793,Democrat,0,Norma J. Torres,362
-CA-36,0,0,0,4,4,23.09655172413793,Democrat,0,Raul Ruiz,362
-CA-37,0,0,0,4,4,23.09655172413793,Democrat,0,Karen Bass,362
-CA-38,0,0,0,4,4,23.09655172413793,Democrat,0,Linda T. Sánchez,362
-CA-39,0,0,0,4,4,23.09655172413793,Republican,0,Edward R. Royce,362
-CA-4,0,0,0,4,4,23.09655172413793,Republican,0,Tom McClintock,362
-CA-40,0,0,0,4,4,23.09655172413793,Democrat,0,Lucille Roybal-Allard,362
-CA-41,0,0,0,4,4,23.09655172413793,Democrat,0,Mark Takano,362
-CA-42,0,0,0,4,4,23.09655172413793,Republican,0,Ken Calvert,362
-CA-43,0,0,0,4,4,23.09655172413793,Democrat,0,Maxine Waters,362
-CA-44,0,0,0,4,4,23.09655172413793,Democrat,0,Nanette Diaz Barragán,362
-CA-45,0,0,0,4,4,23.09655172413793,Republican,0,Mimi Walters,362
-CA-46,0,0,0,4,4,23.09655172413793,Democrat,0,J. Luis Correa,362
-CA-47,0,0,0,4,4,23.09655172413793,Democrat,0,Alan S. Lowenthal,362
-CA-48,0,0,0,4,4,23.09655172413793,Republican,0,Dana Rohrabacher,362
-CA-49,0,0,0,4,4,23.09655172413793,Republican,0,Darrell E. Issa,362
-CA-5,0,0,0,4,4,23.09655172413793,Democrat,0,Mike Thompson,362
-CA-50,0,0,0,4,4,23.09655172413793,Republican,0,Duncan Hunter,362
-CA-51,0,0,0,4,4,23.09655172413793,Democrat,0,Juan Vargas,362
-CA-52,0,0,0,4,4,23.09655172413793,Democrat,0,Scott H. Peters,362
-CA-53,0,0,0,4,4,23.09655172413793,Democrat,0,Susan A. Davis,362
-CA-6,0,0,0,4,4,23.09655172413793,Democrat,0,Doris O. Matsui,362
-CA-7,0,0,0,4,4,23.09655172413793,Democrat,0,Ami Bera,362
-CA-8,0,0,0,4,4,23.09655172413793,Republican,0,Paul Cook,362
-CA-9,0,0,0,4,4,23.09655172413793,Democrat,0,Jerry McNerney,362
-CO-1,0,0,0,5,5,23.09655172413793,Democrat,0,Diana DeGette,355
-CO-2,0,0,0,5,5,23.09655172413793,Democrat,0,Jared Polis,355
-CO-3,0,0,0,5,5,23.09655172413793,Republican,0,Scott R. Tipton,355
-CO-4,0,0,0,5,5,23.09655172413793,Republican,0,Ken Buck,355
-CO-5,0,0,0,5,5,23.09655172413793,Republican,0,Doug Lamborn,355
-CO-6,0,0,0,5,5,23.09655172413793,Republican,0,Mike Coffman,355
-CO-7,0,0,0,5,5,23.09655172413793,Democrat,0,Ed Perlmutter,355
-CT-1,0,0,0,6,6,23.09655172413793,Democrat,0,John B. Larson,350
-CT-2,0,0,0,6,6,23.09655172413793,Democrat,0,Joe Courtney,350
-CT-3,0,0,0,6,6,23.09655172413793,Democrat,0,Rosa L. DeLauro,350
-CT-4,0,0,0,6,6,23.09655172413793,Democrat,0,James A. Himes,350
-CT-5,0,0,0,6,6,23.09655172413793,Democrat,0,Elizabeth H. Esty,350
-DE-0,0,0,0,7,7,23.09655172413793,Democrat,0,Lisa Blunt Rochester,349
-FL-1,0,0,0,8,8,23.09655172413793,Republican,0,Matt Gaetz,322
-FL-10,0,0,0,8,8,23.09655172413793,Democrat,0,Val Butler Demings,322
-FL-11,0,0,0,8,8,23.09655172413793,Republican,0,Daniel Webster,322
-FL-12,0,0,0,8,8,23.09655172413793,Republican,0,Gus M. Bilirakis,322
-FL-13,0,0,0,8,8,23.09655172413793,Democrat,0,Charlie Crist,322
-FL-14,0,0,0,8,8,23.09655172413793,Democrat,0,Kathy Castor,322
-FL-15,0,0,0,8,8,23.09655172413793,Republican,0,Dennis A. Ross,322
-FL-16,0,0,0,8,8,23.09655172413793,Republican,0,Vern Buchanan,322
-FL-17,0,0,0,8,8,23.09655172413793,Republican,0,Thomas J. Rooney,322
-FL-18,0,0,0,8,8,23.09655172413793,Republican,0,Brian J. Mast,322
-FL-19,0,0,0,8,8,23.09655172413793,Republican,0,Francis Rooney,322
-FL-2,0,0,0,8,8,23.09655172413793,Republican,0,Neal P. Dunn,322
-FL-20,0,0,0,8,8,23.09655172413793,Democrat,0,Alcee L. Hastings,322
-FL-21,0,0,0,8,8,23.09655172413793,Democrat,0,Lois Frankel,322
-FL-22,0,0,0,8,8,23.09655172413793,Democrat,0,Theodore E. Deutch,322
-FL-23,0,0,0,8,8,23.09655172413793,Democrat,0,Debbie Wasserman Schultz,322
-FL-24,0,0,0,8,8,23.09655172413793,Democrat,0,Frederica S. Wilson,322
-FL-25,0,0,0,8,8,23.09655172413793,Republican,0,Mario Diaz-Balart,322
-FL-26,0,0,0,8,8,23.09655172413793,Republican,0,Carlos Curbelo,322
-FL-27,0,0,0,8,8,23.09655172413793,Republican,0,Ileana Ros-Lehtinen,322
-FL-3,0,0,0,8,8,23.09655172413793,Republican,0,Ted S. Yoho,322
-FL-4,0,0,0,8,8,23.09655172413793,Republican,0,John H. Rutherford,322
-FL-5,0,0,0,8,8,23.09655172413793,Democrat,0,Al Lawson, Jr.,322
-FL-6,0,0,0,8,8,23.09655172413793,Republican,0,Ron DeSantis,322
-FL-7,0,0,0,8,8,23.09655172413793,Democrat,0,Stephanie N. Murphy,322
-FL-8,0,0,0,8,8,23.09655172413793,Republican,0,Bill Posey,322
-FL-9,0,0,0,8,8,23.09655172413793,Democrat,0,Darren Soto,322
-GA-1,0,0,0,9,9,23.09655172413793,Republican,0,Earl L. "Buddy" Carter,308
-GA-10,0,0,0,9,9,23.09655172413793,Republican,0,Jody B. Hice,308
-GA-11,0,0,0,9,9,23.09655172413793,Republican,0,Barry Loudermilk,308
-GA-12,0,0,0,9,9,23.09655172413793,Republican,0,Rick W. Allen,308
-GA-13,0,0,0,9,9,23.09655172413793,Democrat,0,David Scott,308
-GA-14,0,0,0,9,9,23.09655172413793,Republican,0,Tom Graves,308
-GA-2,0,0,0,9,9,23.09655172413793,Democrat,0,Sanford D. Bishop, Jr.,308
-GA-3,0,0,0,9,9,23.09655172413793,Republican,0,A. Drew Ferguson IV,308
-GA-4,0,0,0,9,9,23.09655172413793,Democrat,0,Henry C. "Hank" Johnson, Jr.,308
-GA-5,0,0,0,9,9,23.09655172413793,Democrat,0,John Lewis,308
-GA-6,0,0,0,9,9,23.09655172413793,Republican,0,Karen C. Handel,308
-GA-7,0,0,0,9,9,23.09655172413793,Republican,0,Rob Woodall,308
-GA-8,0,0,0,9,9,23.09655172413793,Republican,0,Austin Scott,308
-GA-9,0,0,0,9,9,23.09655172413793,Republican,0,Doug Collins,308
-HI-1,0,0,0,10,10,23.09655172413793,Democrat,0,Colleen Hanabusa,306
-HI-2,0,0,0,10,10,23.09655172413793,Democrat,0,Tulsi Gabbard,306
-IA-1,0,0,0,11,11,23.09655172413793,Republican,0,Rod Blum,302
-IA-2,0,0,0,11,11,23.09655172413793,Democrat,0,David Loebsack,302
-IA-3,0,0,0,11,11,23.09655172413793,Republican,0,David Young,302
-IA-4,0,0,0,11,11,23.09655172413793,Republican,0,Steve King,302
-ID-1,0,0,0,12,12,23.09655172413793,Republican,0,Raúl R. Labrador,300
-ID-2,0,0,0,12,12,23.09655172413793,Republican,0,Michael K. Simpson,300
-IL-1,0,0,0,13,13,23.09655172413793,Democrat,0,Bobby L. Rush,282
-IL-10,0,0,0,13,13,23.09655172413793,Democrat,0,Bradley Scott Schneider,282
-IL-11,0,0,0,13,13,23.09655172413793,Democrat,0,Bill Foster,282
-IL-12,0,0,0,13,13,23.09655172413793,Republican,0,Mike Bost,282
-IL-13,0,0,0,13,13,23.09655172413793,Republican,0,Rodney Davis,282
-IL-14,0,0,0,13,13,23.09655172413793,Republican,0,Randy Hultgren,282
-IL-15,0,0,0,13,13,23.09655172413793,Republican,0,John Shimkus,282
-IL-16,0,0,0,13,13,23.09655172413793,Republican,0,Adam Kinzinger,282
-IL-17,0,0,0,13,13,23.09655172413793,Democrat,0,Cheri Bustos,282
-IL-18,0,0,0,13,13,23.09655172413793,Republican,0,Darin LaHood,282
-IL-2,0,0,0,13,13,23.09655172413793,Democrat,0,Robin L. Kelly,282
-IL-3,0,0,0,13,13,23.09655172413793,Democrat,0,Daniel Lipinski,282
-IL-4,0,0,0,13,13,23.09655172413793,Democrat,0,Luis V. Gutiérrez,282
-IL-5,0,0,0,13,13,23.09655172413793,Democrat,0,Mike Quigley,282
-IL-6,0,0,0,13,13,23.09655172413793,Republican,0,Peter J. Roskam,282
-IL-7,0,0,0,13,13,23.09655172413793,Democrat,0,Danny K. Davis,282
-IL-8,0,0,0,13,13,23.09655172413793,Democrat,0,Raja Krishnamoorthi,282
-IL-9,0,0,0,13,13,23.09655172413793,Democrat,0,Janice D. Schakowsky,282
-IN-1,0,0,0,14,14,23.09655172413793,Democrat,0,Peter J. Visclosky,273
-IN-2,0,0,0,14,14,23.09655172413793,Republican,0,Jackie Walorski,273
-IN-3,0,0,0,14,14,23.09655172413793,Republican,0,Jim Banks,273
-IN-4,0,0,0,14,14,23.09655172413793,Republican,0,Todd Rokita,273
-IN-5,0,0,0,14,14,23.09655172413793,Republican,0,Susan W. Brooks,273
-IN-6,0,0,0,14,14,23.09655172413793,Republican,0,Luke Messer,273
-IN-7,0,0,0,14,14,23.09655172413793,Democrat,0,André Carson,273
-IN-8,0,0,0,14,14,23.09655172413793,Republican,0,Larry Bucshon,273
-IN-9,0,0,0,14,14,23.09655172413793,Republican,0,Trey Hollingsworth,273
-KS-1,0,0,0,15,15,23.09655172413793,Republican,0,Roger W. Marshall,269
-KS-2,0,0,0,15,15,23.09655172413793,Republican,0,Lynn Jenkins,269
-KS-3,0,0,0,15,15,23.09655172413793,Republican,0,Kevin Yoder,269
-KS-4,0,0,0,15,15,23.09655172413793,Republican,0,Ron Estes,269
-KY-1,0,0,0,16,16,23.09655172413793,Republican,0,James Comer,263
-KY-2,0,0,0,16,16,23.09655172413793,Republican,0,Brett Guthrie,263
-KY-3,0,0,0,16,16,23.09655172413793,Democrat,0,John A. Yarmuth,263
-KY-4,0,0,0,16,16,23.09655172413793,Republican,0,Thomas Massie,263
-KY-5,0,0,0,16,16,23.09655172413793,Republican,0,Harold Rogers,263
-KY-6,0,0,0,16,16,23.09655172413793,Republican,0,Andy Barr,263
-LA-1,0,0,0,17,17,23.09655172413793,Republican,0,Steve Scalise,257
-LA-2,0,0,0,17,17,23.09655172413793,Democrat,0,Cedric L. Richmond,257
-LA-3,0,0,0,17,17,23.09655172413793,Republican,0,Clay Higgins,257
-LA-4,0,0,0,17,17,23.09655172413793,Republican,0,Mike Johnson,257
-LA-5,0,0,0,17,17,23.09655172413793,Republican,0,Ralph Lee Abraham,257
-LA-6,0,0,0,17,17,23.09655172413793,Republican,0,Garret Graves,257
-MA-1,0,0,0,18,18,23.09655172413793,Democrat,0,Richard E. Neal,248
-MA-2,0,0,0,18,18,23.09655172413793,Democrat,0,James P. McGovern,248
-MA-3,0,0,0,18,18,23.09655172413793,Democrat,0,Niki Tsongas,248
-MA-4,0,0,0,18,18,23.09655172413793,Democrat,0,Joseph P. Kennedy III,248
-MA-5,0,0,0,18,18,23.09655172413793,Democrat,0,Katherine M. Clark,248
-MA-6,0,0,0,18,18,23.09655172413793,Democrat,0,Seth Moulton,248
-MA-7,0,0,0,18,18,23.09655172413793,Democrat,0,Michael E. Capuano,248
-MA-8,0,0,0,18,18,23.09655172413793,Democrat,0,Stephen F. Lynch,248
-MA-9,0,0,0,18,18,23.09655172413793,Democrat,0,William R. Keating,248
-MD-1,0,0,0,19,19,23.09655172413793,Republican,0,Andy Harris,240
-MD-2,0,0,0,19,19,23.09655172413793,Democrat,0,C. A. Dutch Ruppersberger,240
-MD-3,0,0,0,19,19,23.09655172413793,Democrat,0,John P. Sarbanes,240
-MD-4,0,0,0,19,19,23.09655172413793,Democrat,0,Anthony G. Brown,240
-MD-5,0,0,0,19,19,23.09655172413793,Democrat,0,Steny H. Hoyer,240
-MD-6,0,0,0,19,19,23.09655172413793,Democrat,0,John K. Delaney,240
-MD-7,0,0,0,19,19,23.09655172413793,Democrat,0,Elijah E. Cummings,240
-MD-8,0,0,0,19,19,23.09655172413793,Democrat,0,Jamie Raskin,240
-ME-1,0,0,0,20,20,23.09655172413793,Democrat,0,Chellie Pingree,238
-ME-2,0,0,0,20,20,23.09655172413793,Republican,0,Bruce Poliquin,238
-MI-1,0,0,0,21,21,23.09655172413793,Republican,0,Jack Bergman,224
-MI-10,0,0,0,21,21,23.09655172413793,Republican,0,Paul Mitchell,224
-MI-11,0,0,0,21,21,23.09655172413793,Republican,0,David A. Trott,224
-MI-12,0,0,0,21,21,23.09655172413793,Democrat,0,Debbie Dingell,224
-MI-13,0,0,0,21,21,23.09655172413793,Democrat,0,John Conyers, Jr.,224
-MI-14,0,0,0,21,21,23.09655172413793,Democrat,0,Brenda L. Lawrence,224
-MI-2,0,0,0,21,21,23.09655172413793,Republican,0,Bill Huizenga,224
-MI-3,0,0,0,21,21,23.09655172413793,Republican,0,Justin Amash,224
-MI-4,0,0,0,21,21,23.09655172413793,Republican,0,John R. Moolenaar,224
-MI-5,0,0,0,21,21,23.09655172413793,Democrat,0,Daniel T. Kildee,224
-MI-6,0,0,0,21,21,23.09655172413793,Republican,0,Fred Upton,224
-MI-7,0,0,0,21,21,23.09655172413793,Republican,0,Tim Walberg,224
-MI-8,0,0,0,21,21,23.09655172413793,Republican,0,Mike Bishop,224
-MI-9,0,0,0,21,21,23.09655172413793,Democrat,0,Sander M. Levin,224
-MN-1,0,0,0,22,22,23.09655172413793,Democrat,0,Timothy J. Walz,216
-MN-2,0,0,0,22,22,23.09655172413793,Republican,0,Jason Lewis,216
-MN-3,0,0,0,22,22,23.09655172413793,Republican,0,Erik Paulsen,216
-MN-4,0,0,0,22,22,23.09655172413793,Democrat,0,Betty McCollum,216
-MN-5,0,0,0,22,22,23.09655172413793,Democrat,0,Keith Ellison,216
-MN-6,0,0,0,22,22,23.09655172413793,Republican,0,Tom Emmer,216
-MN-7,0,0,0,22,22,23.09655172413793,Democrat,0,Collin C. Peterson,216
-MN-8,0,0,0,22,22,23.09655172413793,Democrat,0,Richard M. Nolan,216
-MO-1,0,0,0,23,23,23.09655172413793,Democrat,0,Wm. Lacy Clay,208
-MO-2,0,0,0,23,23,23.09655172413793,Republican,0,Ann Wagner,208
-MO-3,0,0,0,23,23,23.09655172413793,Republican,0,Blaine Luetkemeyer,208
-MO-4,0,0,0,23,23,23.09655172413793,Republican,0,Vicky Hartzler,208
-MO-5,0,0,0,23,23,23.09655172413793,Democrat,0,Emanuel Cleaver,208
-MO-6,0,0,0,23,23,23.09655172413793,Republican,0,Sam Graves,208
-MO-7,0,0,0,23,23,23.09655172413793,Republican,0,Billy Long,208
-MO-8,0,0,0,23,23,23.09655172413793,Republican,0,Jason Smith,208
-MS-1,0,0,0,24,24,23.09655172413793,Republican,0,Trent Kelly,204
-MS-2,0,0,0,24,24,23.09655172413793,Democrat,0,Bennie G. Thompson,204
-MS-3,0,0,0,24,24,23.09655172413793,Republican,0,Gregg Harper,204
-MS-4,0,0,0,24,24,23.09655172413793,Republican,0,Steven M. Palazzo,204
-MT-0,0,0,0,25,25,23.09655172413793,Republican,0,Greg Gianforte,203
-NC-1,0,0,0,26,26,23.09655172413793,Democrat,0,G. K. Butterfield,190
-NC-10,0,0,0,26,26,23.09655172413793,Republican,0,Patrick T. McHenry,190
-NC-11,0,0,0,26,26,23.09655172413793,Republican,0,Mark Meadows,190
-NC-12,0,0,0,26,26,23.09655172413793,Democrat,0,Alma S. Adams,190
-NC-13,0,0,0,26,26,23.09655172413793,Republican,0,Ted Budd,190
-NC-2,0,0,0,26,26,23.09655172413793,Republican,0,George Holding,190
-NC-3,0,0,0,26,26,23.09655172413793,Republican,0,Walter B. Jones,190
-NC-4,0,0,0,26,26,23.09655172413793,Democrat,0,David E. Price,190
-NC-5,0,0,0,26,26,23.09655172413793,Republican,0,Virginia Foxx,190
-NC-6,0,0,0,26,26,23.09655172413793,Republican,0,Mark Walker,190
-NC-7,0,0,0,26,26,23.09655172413793,Republican,0,David Rouzer,190
-NC-8,0,0,0,26,26,23.09655172413793,Republican,0,Richard Hudson,190
-NC-9,0,0,0,26,26,23.09655172413793,Republican,0,Robert Pittenger,190
-ND-0,0,0,0,27,27,23.09655172413793,Republican,0,Kevin Cramer,189
-NE-1,0,0,0,28,28,23.09655172413793,Republican,0,Jeff Fortenberry,186
-NE-2,0,0,0,28,28,23.09655172413793,Republican,0,Don Bacon,186
-NE-3,0,0,0,28,28,23.09655172413793,Republican,0,Adrian Smith,186
-NH-1,0,0,0,29,29,23.09655172413793,Democrat,0,Carol Shea-Porter,184
-NH-2,0,0,0,29,29,23.09655172413793,Democrat,0,Ann M. Kuster,184
-NJ-1,0,0,0,30,30,23.09655172413793,Democrat,0,Donald Norcross,172
-NJ-10,0,0,0,30,30,23.09655172413793,Democrat,0,Donald M. Payne, Jr.,172
-NJ-11,0,0,0,30,30,23.09655172413793,Republican,0,Rodney P. Frelinghuysen,172
-NJ-12,0,0,0,30,30,23.09655172413793,Democrat,0,Bonnie Watson Coleman,172
-NJ-2,0,0,0,30,30,23.09655172413793,Republican,0,Frank A. LoBiondo,172
-NJ-3,0,0,0,30,30,23.09655172413793,Republican,0,Thomas MacArthur,172
-NJ-4,0,0,0,30,30,23.09655172413793,Republican,0,Christopher H. Smith,172
-NJ-5,0,0,0,30,30,23.09655172413793,Democrat,0,Josh Gottheimer,172
-NJ-6,0,0,0,30,30,23.09655172413793,Democrat,0,Frank Pallone, Jr.,172
-NJ-7,0,0,0,30,30,23.09655172413793,Republican,0,Leonard Lance,172
-NJ-8,0,0,0,30,30,23.09655172413793,Democrat,0,Albio Sires,172
-NJ-9,0,0,0,30,30,23.09655172413793,Democrat,0,Bill Pascrell, Jr.,172
-NM-1,0,0,0,31,31,23.09655172413793,Democrat,0,Michelle Lujan Grisham,169
-NM-2,0,0,0,31,31,23.09655172413793,Republican,0,Stevan Pearce,169
-NM-3,0,0,0,31,31,23.09655172413793,Democrat,0,Ben Ray Luján,169
-NV-1,0,0,0,32,32,23.09655172413793,Democrat,0,Dina Titus,165
-NV-2,0,0,0,32,32,23.09655172413793,Republican,0,Mark E. Amodei,165
-NV-3,0,0,0,32,32,23.09655172413793,Democrat,0,Jacky Rosen,165
-NV-4,0,0,0,32,32,23.09655172413793,Democrat,0,Ruben J. Kihuen,165
-NY-1,0,0,0,33,33,23.09655172413793,Republican,0,Lee M. Zeldin,138
-NY-10,0,0,0,33,33,23.09655172413793,Democrat,0,Jerrold Nadler,138
-NY-11,0,0,0,33,33,23.09655172413793,Republican,0,Daniel M. Donovan, Jr.,138
-NY-12,0,0,0,33,33,23.09655172413793,Democrat,0,Carolyn B. Maloney,138
-NY-13,0,0,0,33,33,23.09655172413793,Democrat,0,Adriano Espaillat,138
-NY-14,0,0,0,33,33,23.09655172413793,Democrat,0,Joseph Crowley,138
-NY-15,0,0,0,33,33,23.09655172413793,Democrat,0,José E. Serrano,138
-NY-16,0,0,0,33,33,23.09655172413793,Democrat,0,Eliot L. Engel,138
-NY-17,0,0,0,33,33,23.09655172413793,Democrat,0,Nita M. Lowey,138
-NY-18,0,0,0,33,33,23.09655172413793,Democrat,0,Sean Patrick Maloney,138
-NY-19,0,0,0,33,33,23.09655172413793,Republican,0,John J. Faso,138
-NY-2,0,0,0,33,33,23.09655172413793,Republican,0,Peter T. King,138
-NY-20,0,0,0,33,33,23.09655172413793,Democrat,0,Paul Tonko,138
-NY-21,0,0,0,33,33,23.09655172413793,Republican,0,Elise M. Stefanik,138
-NY-22,0,0,0,33,33,23.09655172413793,Republican,0,Claudia Tenney,138
-NY-23,0,0,0,33,33,23.09655172413793,Republican,0,Tom Reed,138
-NY-24,0,0,0,33,33,23.09655172413793,Republican,0,John Katko,138
-NY-25,0,0,0,33,33,23.09655172413793,Democrat,0,Louise McIntosh Slaughter,138
-NY-26,0,0,0,33,33,23.09655172413793,Democrat,0,Brian Higgins,138
-NY-27,0,0,0,33,33,23.09655172413793,Republican,0,Chris Collins,138
-NY-3,0,0,0,33,33,23.09655172413793,Democrat,0,Thomas R. Suozzi,138
-NY-4,0,0,0,33,33,23.09655172413793,Democrat,0,Kathleen M. Rice,138
-NY-5,0,0,0,33,33,23.09655172413793,Democrat,0,Gregory W. Meeks,138
-NY-6,0,0,0,33,33,23.09655172413793,Democrat,0,Grace Meng,138
-NY-7,0,0,0,33,33,23.09655172413793,Democrat,0,Nydia M. Velázquez,138
-NY-8,0,0,0,33,33,23.09655172413793,Democrat,0,Hakeem S. Jeffries,138
-NY-9,0,0,0,33,33,23.09655172413793,Democrat,0,Yvette D. Clarke,138
-OH-1,0,0,0,34,34,23.09655172413793,Republican,0,Steve Chabot,122
-OH-10,0,0,0,34,34,23.09655172413793,Republican,0,Michael R. Turner,122
-OH-11,0,0,0,34,34,23.09655172413793,Democrat,0,Marcia L. Fudge,122
-OH-12,0,0,0,34,34,23.09655172413793,Republican,0,Patrick J. Tiberi,122
-OH-13,0,0,0,34,34,23.09655172413793,Democrat,0,Tim Ryan,122
-OH-14,0,0,0,34,34,23.09655172413793,Republican,0,David P. Joyce,122
-OH-15,0,0,0,34,34,23.09655172413793,Republican,0,Steve Stivers,122
-OH-16,0,0,0,34,34,23.09655172413793,Republican,0,James B. Renacci,122
-OH-2,0,0,0,34,34,23.09655172413793,Republican,0,Brad R. Wenstrup,122
-OH-3,0,0,0,34,34,23.09655172413793,Democrat,0,Joyce Beatty,122
-OH-4,0,0,0,34,34,23.09655172413793,Republican,0,Jim Jordan,122
-OH-5,0,0,0,34,34,23.09655172413793,Republican,0,Robert E. Latta,122
-OH-6,0,0,0,34,34,23.09655172413793,Republican,0,Bill Johnson,122
-OH-7,0,0,0,34,34,23.09655172413793,Republican,0,Bob Gibbs,122
-OH-8,0,0,0,34,34,23.09655172413793,Republican,0,Warren Davidson,122
-OH-9,0,0,0,34,34,23.09655172413793,Democrat,0,Marcy Kaptur,122
-OK-1,0,0,0,35,35,23.09655172413793,Republican,0,Jim Bridenstine,117
-OK-2,0,0,0,35,35,23.09655172413793,Republican,0,Markwayne Mullin,117
-OK-3,0,0,0,35,35,23.09655172413793,Republican,0,Frank D. Lucas,117
-OK-4,0,0,0,35,35,23.09655172413793,Republican,0,Tom Cole,117
-OK-5,0,0,0,35,35,23.09655172413793,Republican,0,Steve Russell,117
-OR-1,0,0,0,36,36,23.09655172413793,Democrat,0,Suzanne Bonamici,112
-OR-2,0,0,0,36,36,23.09655172413793,Republican,0,Greg Walden,112
-OR-3,0,0,0,36,36,23.09655172413793,Democrat,0,Earl Blumenauer,112
-OR-4,0,0,0,36,36,23.09655172413793,Democrat,0,Peter A. DeFazio,112
-OR-5,0,0,0,36,36,23.09655172413793,Democrat,0,Kurt Schrader,112
-PA-1,0,0,0,37,37,23.09655172413793,Democrat,0,Robert A. Brady,94
-PA-10,0,0,0,37,37,23.09655172413793,Republican,0,Tom Marino,94
-PA-11,0,0,0,37,37,23.09655172413793,Republican,0,Lou Barletta,94
-PA-12,0,0,0,37,37,23.09655172413793,Republican,0,Keith J. Rothfus,94
-PA-13,0,0,0,37,37,23.09655172413793,Democrat,0,Brendan F. Boyle,94
-PA-14,0,0,0,37,37,23.09655172413793,Democrat,0,Michael F. Doyle,94
-PA-15,0,0,0,37,37,23.09655172413793,Republican,0,Charles W. Dent,94
-PA-16,0,0,0,37,37,23.09655172413793,Republican,0,Lloyd Smucker,94
-PA-17,0,0,0,37,37,23.09655172413793,Democrat,0,Matt Cartwright,94
-PA-18,0,0,0,37,37,23.09655172413793,Republican,0,Tim Murphy,94
-PA-2,0,0,0,37,37,23.09655172413793,Democrat,0,Dwight Evans,94
-PA-3,0,0,0,37,37,23.09655172413793,Republican,0,Mike Kelly,94
-PA-4,0,0,0,37,37,23.09655172413793,Republican,0,Scott Perry,94
-PA-5,0,0,0,37,37,23.09655172413793,Republican,0,Glenn Thompson,94
-PA-6,0,0,0,37,37,23.09655172413793,Republican,0,Ryan A. Costello,94
-PA-7,0,0,0,37,37,23.09655172413793,Republican,0,Patrick Meehan,94
-PA-8,0,0,0,37,37,23.09655172413793,Republican,0,Brian K. Fitzpatrick,94
-PA-9,0,0,0,37,37,23.09655172413793,Republican,0,Bill Shuster,94
-RI-1,0,0,0,38,38,23.09655172413793,Democrat,0,David N. Cicilline,92
-RI-2,0,0,0,38,38,23.09655172413793,Democrat,0,James R. Langevin,92
-SC-1,0,0,0,39,39,23.09655172413793,Republican,0,Mark Sanford,85
-SC-2,0,0,0,39,39,23.09655172413793,Republican,0,Joe Wilson,85
-SC-3,0,0,0,39,39,23.09655172413793,Republican,0,Jeff Duncan,85
-SC-4,0,0,0,39,39,23.09655172413793,Republican,0,Trey Gowdy,85
-SC-5,0,0,0,39,39,23.09655172413793,Republican,0,Ralph Norman,85
-SC-6,0,0,0,39,39,23.09655172413793,Democrat,0,James E. Clyburn,85
-SC-7,0,0,0,39,39,23.09655172413793,Republican,0,Tom Rice,85
-SD-0,0,0,0,40,40,23.09655172413793,Republican,0,Kristi L. Noem,84
-TN-1,0,0,0,41,41,23.09655172413793,Republican,0,David P. Roe,75
-TN-2,0,0,0,41,41,23.09655172413793,Republican,0,John J. Duncan, Jr.,75
-TN-3,0,0,0,41,41,23.09655172413793,Republican,0,Charles J. "Chuck" Fleischmann,75
-TN-4,0,0,0,41,41,23.09655172413793,Republican,0,Scott DesJarlais,75
-TN-5,0,0,0,41,41,23.09655172413793,Democrat,0,Jim Cooper,75
-TN-6,0,0,0,41,41,23.09655172413793,Republican,0,Diane Black,75
-TN-7,0,0,0,41,41,23.09655172413793,Republican,0,Marsha Blackburn,75
-TN-8,0,0,0,41,41,23.09655172413793,Republican,0,David Kustoff,75
-TN-9,0,0,0,41,41,23.09655172413793,Democrat,0,Steve Cohen,75
-TX-1,0,0,0,42,42,23.09655172413793,Republican,0,Louie Gohmert,39
-TX-10,0,0,0,42,42,23.09655172413793,Republican,0,Michael T. McCaul,39
-TX-11,0,0,0,42,42,23.09655172413793,Republican,0,K. Michael Conaway,39
-TX-12,0,0,0,42,42,23.09655172413793,Republican,0,Kay Granger,39
-TX-13,0,0,0,42,42,23.09655172413793,Republican,0,Mac Thornberry,39
-TX-14,0,0,0,42,42,23.09655172413793,Republican,0,Randy K. Weber, Sr.,39
-TX-15,0,0,0,42,42,23.09655172413793,Democrat,0,Vicente Gonzalez,39
-TX-16,0,0,0,42,42,23.09655172413793,Democrat,0,Beto O’Rourke,39
-TX-17,0,0,0,42,42,23.09655172413793,Republican,0,Bill Flores,39
-TX-18,0,0,0,42,42,23.09655172413793,Democrat,0,Sheila Jackson Lee,39
-TX-19,0,0,0,42,42,23.09655172413793,Republican,0,Jodey C. Arrington,39
-TX-2,0,0,0,42,42,23.09655172413793,Republican,0,Ted Poe,39
-TX-20,0,0,0,42,42,23.09655172413793,Democrat,0,Joaquin Castro,39
-TX-21,0,0,0,42,42,23.09655172413793,Republican,0,Lamar Smith,39
-TX-22,0,0,0,42,42,23.09655172413793,Republican,0,Pete Olson,39
-TX-23,0,0,0,42,42,23.09655172413793,Republican,0,Will Hurd,39
-TX-24,0,0,0,42,42,23.09655172413793,Republican,0,Kenny Marchant,39
-TX-25,0,0,0,42,42,23.09655172413793,Republican,0,Roger Williams,39
-TX-26,0,0,0,42,42,23.09655172413793,Republican,0,Michael C. Burgess,39
-TX-27,0,0,0,42,42,23.09655172413793,Republican,0,Blake Farenthold,39
-TX-28,0,0,0,42,42,23.09655172413793,Democrat,0,Henry Cuellar,39
-TX-29,0,0,0,42,42,23.09655172413793,Democrat,0,Gene Green,39
-TX-3,0,0,0,42,42,23.09655172413793,Republican,0,Sam Johnson,39
-TX-30,0,0,0,42,42,23.09655172413793,Democrat,0,Eddie Bernice Johnson,39
-TX-31,0,0,0,42,42,23.09655172413793,Republican,0,John R. Carter,39
-TX-32,0,0,0,42,42,23.09655172413793,Republican,0,Pete Sessions,39
-TX-33,0,0,0,42,42,23.09655172413793,Democrat,0,Marc A. Veasey,39
-TX-34,0,0,0,42,42,23.09655172413793,Democrat,0,Filemon Vela,39
-TX-35,0,0,0,42,42,23.09655172413793,Democrat,0,Lloyd Doggett,39
-TX-36,0,0,0,42,42,23.09655172413793,Republican,0,Brian Babin,39
-TX-4,0,0,0,42,42,23.09655172413793,Republican,0,John Ratcliffe,39
-TX-5,0,0,0,42,42,23.09655172413793,Republican,0,Jeb Hensarling,39
-TX-6,0,0,0,42,42,23.09655172413793,Republican,0,Joe Barton,39
-TX-7,0,0,0,42,42,23.09655172413793,Republican,0,John Abney Culberson,39
-TX-8,0,0,0,42,42,23.09655172413793,Republican,0,Kevin Brady,39
-TX-9,0,0,0,42,42,23.09655172413793,Democrat,0,Al Green,39
-UT-1,0,0,0,43,43,23.09655172413793,Republican,0,Rob Bishop,35
-UT-2,0,0,0,43,43,23.09655172413793,Republican,0,Chris Stewart,35
-UT-3,0,0,0,43,43,23.09655172413793,Republican,0,Chris Stewart,35
-UT-4,0,0,0,43,43,23.09655172413793,Republican,0,Mia B. Love,35
-VA-1,0,0,0,44,44,23.09655172413793,Republican,0,Robert J. Wittman,24
-VA-10,0,0,0,44,44,23.09655172413793,Republican,0,Barbara Comstock,24
-VA-11,0,0,0,44,44,23.09655172413793,Democrat,0,Gerald E. Connolly,24
-VA-2,0,0,0,44,44,23.09655172413793,Republican,0,Scott Taylor,24
-VA-3,0,0,0,44,44,23.09655172413793,Democrat,0,Robert C. "Bobby" Scott,24
-VA-4,0,0,0,44,44,23.09655172413793,Democrat,0,A. Donald McEachin,24
-VA-5,0,0,0,44,44,23.09655172413793,Republican,0,Thomas A. Garrett, Jr.,24
-VA-6,0,0,0,44,44,23.09655172413793,Republican,0,Bob Goodlatte,24
-VA-7,0,0,0,44,44,23.09655172413793,Republican,0,Dave Brat,24
-VA-8,0,0,0,44,44,23.09655172413793,Democrat,0,Donald S. Beyer, Jr.,24
-VA-9,0,0,0,44,44,23.09655172413793,Republican,0,H. Morgan Griffith,24
-VT-0,0,0,0,45,45,23.09655172413793,Democrat,0,Peter Welch,23
-WA-1,0,0,0,46,46,23.09655172413793,Democrat,0,Suzan K. DelBene,13
-WA-10,0,0,0,46,46,23.09655172413793,Democrat,0,Denny Heck,13
-WA-2,0,0,0,46,46,23.09655172413793,Democrat,0,Rick Larsen,13
-WA-3,0,0,0,46,46,23.09655172413793,Republican,0,Jaime Herrera Beutler,13
-WA-4,0,0,0,46,46,23.09655172413793,Republican,0,Dan Newhouse,13
-WA-5,0,0,0,46,46,23.09655172413793,Republican,0,Cathy McMorris Rodgers,13
-WA-6,0,0,0,46,46,23.09655172413793,Democrat,0,Derek Kilmer,13
-WA-7,0,0,0,46,46,23.09655172413793,Democrat,0,Pramila Jayapal,13
-WA-8,0,0,0,46,46,23.09655172413793,Republican,0,David G. Reichert,13
-WA-9,0,0,0,46,46,23.09655172413793,Democrat,0,Adam Smith,13
-WI-1,0,0,0,47,47,23.09655172413793,Republican,0,Paul D. Ryan,5
-WI-2,0,0,0,47,47,23.09655172413793,Democrat,0,Mark Pocan,5
-WI-3,0,0,0,47,47,23.09655172413793,Democrat,0,Ron Kind,5
-WI-4,0,0,0,47,47,23.09655172413793,Democrat,0,Gwen Moore,5
-WI-5,0,0,0,47,47,23.09655172413793,Republican,0,F. James Sensenbrenner, Jr.,5
-WI-6,0,0,0,47,47,23.09655172413793,Republican,0,Glenn Grothman,5
-WI-7,0,0,0,47,47,23.09655172413793,Republican,0,Sean P. Duffy,5
-WI-8,0,0,0,47,47,23.09655172413793,Republican,0,Mike Gallagher,5
-WV-1,0,0,0,48,48,23.09655172413793,Republican,0,David B. McKinley,2
-WV-2,0,0,0,48,48,23.09655172413793,Republican,0,Alexander X. Mooney,2
-WV-3,0,0,0,48,48,23.09655172413793,Republican,0,Evan H. Jenkins,2
-WY-0,0,0,0,49,49,23.09655172413793,Republican,0,Liz Cheney,1
+district_code,efficiency_gap,absolute_compactness,state_compactness,country_compactness,affiliation,gerrymander_score,rep,compactness_rank,state_affiliation
+AK-0,R0.07,0,0,23.09655172413793,Republican,0,Don Young,435,1
+AL-1,R0.07,1,1,23.09655172413793,Republican,0,Bradley Byrne,428,5
+AL-2,R0.07,1,1,23.09655172413793,Republican,0,Martha Roby,428,5
+AL-3,R0.07,1,1,23.09655172413793,Republican,0,Mike Rogers,428,5
+AL-4,R0.07,1,1,23.09655172413793,Republican,0,Robert B. Aderholt,428,5
+AL-5,R0.07,1,1,23.09655172413793,Republican,0,Mo Brooks,428,5
+AL-6,R0.07,1,1,23.09655172413793,Republican,0,Gary J. Palmer,428,5
+AL-7,R0.07,1,1,23.09655172413793,Democrat,0,Terri A. Sewell,428,5
+AR-1,R0.07,2,2,23.09655172413793,Republican,0,Eric A. "Rick" Crawford,424,4
+AR-2,R0.07,2,2,23.09655172413793,Republican,0,J. French Hill,424,4
+AR-3,R0.07,2,2,23.09655172413793,Republican,0,Steve Womack,424,4
+AR-4,R0.07,2,2,23.09655172413793,Republican,0,Bruce Westerman,424,4
+AZ-1,R0.07,3,3,23.09655172413793,Democrat,0,Tom O’Halleran,415,1
+AZ-2,R0.07,3,3,23.09655172413793,Republican,0,Martha McSally,415,1
+AZ-3,R0.07,3,3,23.09655172413793,Democrat,0,Raúl M. Grijalva,415,1
+AZ-4,R0.07,3,3,23.09655172413793,Republican,0,Paul A. Gosar,415,1
+AZ-5,R0.07,3,3,23.09655172413793,Republican,0,Andy Biggs,415,1
+AZ-6,R0.07,3,3,23.09655172413793,Republican,0,David Schweikert,415,1
+AZ-7,R0.07,3,3,23.09655172413793,Democrat,0,Ruben Gallego,415,1
+AZ-8,R0.07,3,3,23.09655172413793,Republican,0,Trent Franks,415,1
+AZ-9,R0.07,3,3,23.09655172413793,Democrat,0,Kyrsten Sinema,415,1
+CA-1,R0.07,4,4,23.09655172413793,Republican,0,Doug LaMalfa,362,-25
+CA-10,R0.07,4,4,23.09655172413793,Republican,0,Jeff Denham,362,-25
+CA-11,R0.07,4,4,23.09655172413793,Democrat,0,Mark DeSaulnier,362,-25
+CA-12,R0.07,4,4,23.09655172413793,Democrat,0,Nancy Pelosi,362,-25
+CA-13,R0.07,4,4,23.09655172413793,Democrat,0,Barbara Lee,362,-25
+CA-14,R0.07,4,4,23.09655172413793,Democrat,0,Jackie Speier,362,-25
+CA-15,R0.07,4,4,23.09655172413793,Democrat,0,Eric Swalwell,362,-25
+CA-16,R0.07,4,4,23.09655172413793,Democrat,0,Jim Costa,362,-25
+CA-17,R0.07,4,4,23.09655172413793,Democrat,0,Ro Khanna,362,-25
+CA-18,R0.07,4,4,23.09655172413793,Democrat,0,Anna G. Eshoo,362,-25
+CA-19,R0.07,4,4,23.09655172413793,Democrat,0,Zoe Lofgren,362,-25
+CA-2,R0.07,4,4,23.09655172413793,Democrat,0,Jared Huffman,362,-25
+CA-20,R0.07,4,4,23.09655172413793,Democrat,0,Jimmy Panetta,362,-25
+CA-21,R0.07,4,4,23.09655172413793,Republican,0,David G. Valadao,362,-25
+CA-22,R0.07,4,4,23.09655172413793,Republican,0,Devin Nunes,362,-25
+CA-23,R0.07,4,4,23.09655172413793,Republican,0,Kevin McCarthy,362,-25
+CA-24,R0.07,4,4,23.09655172413793,Democrat,0,Salud O. Carbajal,362,-25
+CA-25,R0.07,4,4,23.09655172413793,Republican,0,Stephen Knight,362,-25
+CA-26,R0.07,4,4,23.09655172413793,Democrat,0,Julia Brownley,362,-25
+CA-27,R0.07,4,4,23.09655172413793,Democrat,0,Judy Chu,362,-25
+CA-28,R0.07,4,4,23.09655172413793,Democrat,0,Adam B. Schiff,362,-25
+CA-29,R0.07,4,4,23.09655172413793,Democrat,0,Tony Cárdenas,362,-25
+CA-3,R0.07,4,4,23.09655172413793,Democrat,0,John Garamendi,362,-25
+CA-30,R0.07,4,4,23.09655172413793,Democrat,0,Brad Sherman,362,-25
+CA-31,R0.07,4,4,23.09655172413793,Democrat,0,Pete Aguilar,362,-25
+CA-32,R0.07,4,4,23.09655172413793,Democrat,0,Grace F. Napolitano,362,-25
+CA-33,R0.07,4,4,23.09655172413793,Democrat,0,Ted Lieu,362,-25
+CA-34,R0.07,4,4,23.09655172413793,Democrat,0,Jimmy Gomez,362,-25
+CA-35,R0.07,4,4,23.09655172413793,Democrat,0,Norma J. Torres,362,-25
+CA-36,R0.07,4,4,23.09655172413793,Democrat,0,Raul Ruiz,362,-25
+CA-37,R0.07,4,4,23.09655172413793,Democrat,0,Karen Bass,362,-25
+CA-38,R0.07,4,4,23.09655172413793,Democrat,0,Linda T. Sánchez,362,-25
+CA-39,R0.07,4,4,23.09655172413793,Republican,0,Edward R. Royce,362,-25
+CA-4,R0.07,4,4,23.09655172413793,Republican,0,Tom McClintock,362,-25
+CA-40,R0.07,4,4,23.09655172413793,Democrat,0,Lucille Roybal-Allard,362,-25
+CA-41,R0.07,4,4,23.09655172413793,Democrat,0,Mark Takano,362,-25
+CA-42,R0.07,4,4,23.09655172413793,Republican,0,Ken Calvert,362,-25
+CA-43,R0.07,4,4,23.09655172413793,Democrat,0,Maxine Waters,362,-25
+CA-44,R0.07,4,4,23.09655172413793,Democrat,0,Nanette Diaz Barragán,362,-25
+CA-45,R0.07,4,4,23.09655172413793,Republican,0,Mimi Walters,362,-25
+CA-46,R0.07,4,4,23.09655172413793,Democrat,0,J. Luis Correa,362,-25
+CA-47,R0.07,4,4,23.09655172413793,Democrat,0,Alan S. Lowenthal,362,-25
+CA-48,R0.07,4,4,23.09655172413793,Republican,0,Dana Rohrabacher,362,-25
+CA-49,R0.07,4,4,23.09655172413793,Republican,0,Darrell E. Issa,362,-25
+CA-5,R0.07,4,4,23.09655172413793,Democrat,0,Mike Thompson,362,-25
+CA-50,R0.07,4,4,23.09655172413793,Republican,0,Duncan Hunter,362,-25
+CA-51,R0.07,4,4,23.09655172413793,Democrat,0,Juan Vargas,362,-25
+CA-52,R0.07,4,4,23.09655172413793,Democrat,0,Scott H. Peters,362,-25
+CA-53,R0.07,4,4,23.09655172413793,Democrat,0,Susan A. Davis,362,-25
+CA-6,R0.07,4,4,23.09655172413793,Democrat,0,Doris O. Matsui,362,-25
+CA-7,R0.07,4,4,23.09655172413793,Democrat,0,Ami Bera,362,-25
+CA-8,R0.07,4,4,23.09655172413793,Republican,0,Paul Cook,362,-25
+CA-9,R0.07,4,4,23.09655172413793,Democrat,0,Jerry McNerney,362,-25
+CO-1,R0.07,5,5,23.09655172413793,Democrat,0,Diana DeGette,355,1
+CO-2,R0.07,5,5,23.09655172413793,Democrat,0,Jared Polis,355,1
+CO-3,R0.07,5,5,23.09655172413793,Republican,0,Scott R. Tipton,355,1
+CO-4,R0.07,5,5,23.09655172413793,Republican,0,Ken Buck,355,1
+CO-5,R0.07,5,5,23.09655172413793,Republican,0,Doug Lamborn,355,1
+CO-6,R0.07,5,5,23.09655172413793,Republican,0,Mike Coffman,355,1
+CO-7,R0.07,5,5,23.09655172413793,Democrat,0,Ed Perlmutter,355,1
+CT-1,R0.07,6,6,23.09655172413793,Democrat,0,John B. Larson,350,-5
+CT-2,R0.07,6,6,23.09655172413793,Democrat,0,Joe Courtney,350,-5
+CT-3,R0.07,6,6,23.09655172413793,Democrat,0,Rosa L. DeLauro,350,-5
+CT-4,R0.07,6,6,23.09655172413793,Democrat,0,James A. Himes,350,-5
+CT-5,R0.07,6,6,23.09655172413793,Democrat,0,Elizabeth H. Esty,350,-5
+DE-0,R0.07,7,7,23.09655172413793,Democrat,0,Lisa Blunt Rochester,349,-1
+FL-1,R0.07,8,8,23.09655172413793,Republican,0,Matt Gaetz,322,5
+FL-10,R0.07,8,8,23.09655172413793,Democrat,0,Val Butler Demings,322,5
+FL-11,R0.07,8,8,23.09655172413793,Republican,0,Daniel Webster,322,5
+FL-12,R0.07,8,8,23.09655172413793,Republican,0,Gus M. Bilirakis,322,5
+FL-13,R0.07,8,8,23.09655172413793,Democrat,0,Charlie Crist,322,5
+FL-14,R0.07,8,8,23.09655172413793,Democrat,0,Kathy Castor,322,5
+FL-15,R0.07,8,8,23.09655172413793,Republican,0,Dennis A. Ross,322,5
+FL-16,R0.07,8,8,23.09655172413793,Republican,0,Vern Buchanan,322,5
+FL-17,R0.07,8,8,23.09655172413793,Republican,0,Thomas J. Rooney,322,5
+FL-18,R0.07,8,8,23.09655172413793,Republican,0,Brian J. Mast,322,5
+FL-19,R0.07,8,8,23.09655172413793,Republican,0,Francis Rooney,322,5
+FL-2,R0.07,8,8,23.09655172413793,Republican,0,Neal P. Dunn,322,5
+FL-20,R0.07,8,8,23.09655172413793,Democrat,0,Alcee L. Hastings,322,5
+FL-21,R0.07,8,8,23.09655172413793,Democrat,0,Lois Frankel,322,5
+FL-22,R0.07,8,8,23.09655172413793,Democrat,0,Theodore E. Deutch,322,5
+FL-23,R0.07,8,8,23.09655172413793,Democrat,0,Debbie Wasserman Schultz,322,5
+FL-24,R0.07,8,8,23.09655172413793,Democrat,0,Frederica S. Wilson,322,5
+FL-25,R0.07,8,8,23.09655172413793,Republican,0,Mario Diaz-Balart,322,5
+FL-26,R0.07,8,8,23.09655172413793,Republican,0,Carlos Curbelo,322,5
+FL-27,R0.07,8,8,23.09655172413793,Republican,0,Ileana Ros-Lehtinen,322,5
+FL-3,R0.07,8,8,23.09655172413793,Republican,0,Ted S. Yoho,322,5
+FL-4,R0.07,8,8,23.09655172413793,Republican,0,John H. Rutherford,322,5
+FL-5,R0.07,8,8,23.09655172413793,Democrat,0,Al Lawson, Jr.,322,5
+FL-6,R0.07,8,8,23.09655172413793,Republican,0,Ron DeSantis,322,5
+FL-7,R0.07,8,8,23.09655172413793,Democrat,0,Stephanie N. Murphy,322,5
+FL-8,R0.07,8,8,23.09655172413793,Republican,0,Bill Posey,322,5
+FL-9,R0.07,8,8,23.09655172413793,Democrat,0,Darren Soto,322,5
+GA-1,R0.07,9,9,23.09655172413793,Republican,0,Earl L. "Buddy" Carter,308,6
+GA-10,R0.07,9,9,23.09655172413793,Republican,0,Jody B. Hice,308,6
+GA-11,R0.07,9,9,23.09655172413793,Republican,0,Barry Loudermilk,308,6
+GA-12,R0.07,9,9,23.09655172413793,Republican,0,Rick W. Allen,308,6
+GA-13,R0.07,9,9,23.09655172413793,Democrat,0,David Scott,308,6
+GA-14,R0.07,9,9,23.09655172413793,Republican,0,Tom Graves,308,6
+GA-2,R0.07,9,9,23.09655172413793,Democrat,0,Sanford D. Bishop, Jr.,308,6
+GA-3,R0.07,9,9,23.09655172413793,Republican,0,A. Drew Ferguson IV,308,6
+GA-4,R0.07,9,9,23.09655172413793,Democrat,0,Henry C. "Hank" Johnson, Jr.,308,6
+GA-5,R0.07,9,9,23.09655172413793,Democrat,0,John Lewis,308,6
+GA-6,R0.07,9,9,23.09655172413793,Republican,0,Karen C. Handel,308,6
+GA-7,R0.07,9,9,23.09655172413793,Republican,0,Rob Woodall,308,6
+GA-8,R0.07,9,9,23.09655172413793,Republican,0,Austin Scott,308,6
+GA-9,R0.07,9,9,23.09655172413793,Republican,0,Doug Collins,308,6
+HI-1,R0.07,10,10,23.09655172413793,Democrat,0,Colleen Hanabusa,306,-2
+HI-2,R0.07,10,10,23.09655172413793,Democrat,0,Tulsi Gabbard,306,-2
+IA-1,R0.07,11,11,23.09655172413793,Republican,0,Rod Blum,302,2
+IA-2,R0.07,11,11,23.09655172413793,Democrat,0,David Loebsack,302,2
+IA-3,R0.07,11,11,23.09655172413793,Republican,0,David Young,302,2
+IA-4,R0.07,11,11,23.09655172413793,Republican,0,Steve King,302,2
+ID-1,R0.07,12,12,23.09655172413793,Republican,0,Raúl R. Labrador,300,2
+ID-2,R0.07,12,12,23.09655172413793,Republican,0,Michael K. Simpson,300,2
+IL-1,R0.07,13,13,23.09655172413793,Democrat,0,Bobby L. Rush,282,-4
+IL-10,R0.07,13,13,23.09655172413793,Democrat,0,Bradley Scott Schneider,282,-4
+IL-11,R0.07,13,13,23.09655172413793,Democrat,0,Bill Foster,282,-4
+IL-12,R0.07,13,13,23.09655172413793,Republican,0,Mike Bost,282,-4
+IL-13,R0.07,13,13,23.09655172413793,Republican,0,Rodney Davis,282,-4
+IL-14,R0.07,13,13,23.09655172413793,Republican,0,Randy Hultgren,282,-4
+IL-15,R0.07,13,13,23.09655172413793,Republican,0,John Shimkus,282,-4
+IL-16,R0.07,13,13,23.09655172413793,Republican,0,Adam Kinzinger,282,-4
+IL-17,R0.07,13,13,23.09655172413793,Democrat,0,Cheri Bustos,282,-4
+IL-18,R0.07,13,13,23.09655172413793,Republican,0,Darin LaHood,282,-4
+IL-2,R0.07,13,13,23.09655172413793,Democrat,0,Robin L. Kelly,282,-4
+IL-3,R0.07,13,13,23.09655172413793,Democrat,0,Daniel Lipinski,282,-4
+IL-4,R0.07,13,13,23.09655172413793,Democrat,0,Luis V. Gutiérrez,282,-4
+IL-5,R0.07,13,13,23.09655172413793,Democrat,0,Mike Quigley,282,-4
+IL-6,R0.07,13,13,23.09655172413793,Republican,0,Peter J. Roskam,282,-4
+IL-7,R0.07,13,13,23.09655172413793,Democrat,0,Danny K. Davis,282,-4
+IL-8,R0.07,13,13,23.09655172413793,Democrat,0,Raja Krishnamoorthi,282,-4
+IL-9,R0.07,13,13,23.09655172413793,Democrat,0,Janice D. Schakowsky,282,-4
+IN-1,R0.07,14,14,23.09655172413793,Democrat,0,Peter J. Visclosky,273,5
+IN-2,R0.07,14,14,23.09655172413793,Republican,0,Jackie Walorski,273,5
+IN-3,R0.07,14,14,23.09655172413793,Republican,0,Jim Banks,273,5
+IN-4,R0.07,14,14,23.09655172413793,Republican,0,Todd Rokita,273,5
+IN-5,R0.07,14,14,23.09655172413793,Republican,0,Susan W. Brooks,273,5
+IN-6,R0.07,14,14,23.09655172413793,Republican,0,Luke Messer,273,5
+IN-7,R0.07,14,14,23.09655172413793,Democrat,0,André Carson,273,5
+IN-8,R0.07,14,14,23.09655172413793,Republican,0,Larry Bucshon,273,5
+IN-9,R0.07,14,14,23.09655172413793,Republican,0,Trey Hollingsworth,273,5
+KS-1,R0.07,15,15,23.09655172413793,Republican,0,Roger W. Marshall,269,4
+KS-2,R0.07,15,15,23.09655172413793,Republican,0,Lynn Jenkins,269,4
+KS-3,R0.07,15,15,23.09655172413793,Republican,0,Kevin Yoder,269,4
+KS-4,R0.07,15,15,23.09655172413793,Republican,0,Ron Estes,269,4
+KY-1,R0.07,16,16,23.09655172413793,Republican,0,James Comer,263,4
+KY-2,R0.07,16,16,23.09655172413793,Republican,0,Brett Guthrie,263,4
+KY-3,R0.07,16,16,23.09655172413793,Democrat,0,John A. Yarmuth,263,4
+KY-4,R0.07,16,16,23.09655172413793,Republican,0,Thomas Massie,263,4
+KY-5,R0.07,16,16,23.09655172413793,Republican,0,Harold Rogers,263,4
+KY-6,R0.07,16,16,23.09655172413793,Republican,0,Andy Barr,263,4
+LA-1,R0.07,17,17,23.09655172413793,Republican,0,Steve Scalise,257,4
+LA-2,R0.07,17,17,23.09655172413793,Democrat,0,Cedric L. Richmond,257,4
+LA-3,R0.07,17,17,23.09655172413793,Republican,0,Clay Higgins,257,4
+LA-4,R0.07,17,17,23.09655172413793,Republican,0,Mike Johnson,257,4
+LA-5,R0.07,17,17,23.09655172413793,Republican,0,Ralph Lee Abraham,257,4
+LA-6,R0.07,17,17,23.09655172413793,Republican,0,Garret Graves,257,4
+MA-1,R0.07,18,18,23.09655172413793,Democrat,0,Richard E. Neal,248,-9
+MA-2,R0.07,18,18,23.09655172413793,Democrat,0,James P. McGovern,248,-9
+MA-3,R0.07,18,18,23.09655172413793,Democrat,0,Niki Tsongas,248,-9
+MA-4,R0.07,18,18,23.09655172413793,Democrat,0,Joseph P. Kennedy III,248,-9
+MA-5,R0.07,18,18,23.09655172413793,Democrat,0,Katherine M. Clark,248,-9
+MA-6,R0.07,18,18,23.09655172413793,Democrat,0,Seth Moulton,248,-9
+MA-7,R0.07,18,18,23.09655172413793,Democrat,0,Michael E. Capuano,248,-9
+MA-8,R0.07,18,18,23.09655172413793,Democrat,0,Stephen F. Lynch,248,-9
+MA-9,R0.07,18,18,23.09655172413793,Democrat,0,William R. Keating,248,-9
+MD-1,R0.07,19,19,23.09655172413793,Republican,0,Andy Harris,240,-6
+MD-2,R0.07,19,19,23.09655172413793,Democrat,0,C. A. Dutch Ruppersberger,240,-6
+MD-3,R0.07,19,19,23.09655172413793,Democrat,0,John P. Sarbanes,240,-6
+MD-4,R0.07,19,19,23.09655172413793,Democrat,0,Anthony G. Brown,240,-6
+MD-5,R0.07,19,19,23.09655172413793,Democrat,0,Steny H. Hoyer,240,-6
+MD-6,R0.07,19,19,23.09655172413793,Democrat,0,John K. Delaney,240,-6
+MD-7,R0.07,19,19,23.09655172413793,Democrat,0,Elijah E. Cummings,240,-6
+MD-8,R0.07,19,19,23.09655172413793,Democrat,0,Jamie Raskin,240,-6
+ME-1,R0.07,20,20,23.09655172413793,Democrat,0,Chellie Pingree,238,0
+ME-2,R0.07,20,20,23.09655172413793,Republican,0,Bruce Poliquin,238,0
+MI-1,R0.07,21,21,23.09655172413793,Republican,0,Jack Bergman,224,4
+MI-10,R0.07,21,21,23.09655172413793,Republican,0,Paul Mitchell,224,4
+MI-11,R0.07,21,21,23.09655172413793,Republican,0,David A. Trott,224,4
+MI-12,R0.07,21,21,23.09655172413793,Democrat,0,Debbie Dingell,224,4
+MI-13,R0.07,21,21,23.09655172413793,Democrat,0,John Conyers, Jr.,224,4
+MI-14,R0.07,21,21,23.09655172413793,Democrat,0,Brenda L. Lawrence,224,4
+MI-2,R0.07,21,21,23.09655172413793,Republican,0,Bill Huizenga,224,4
+MI-3,R0.07,21,21,23.09655172413793,Republican,0,Justin Amash,224,4
+MI-4,R0.07,21,21,23.09655172413793,Republican,0,John R. Moolenaar,224,4
+MI-5,R0.07,21,21,23.09655172413793,Democrat,0,Daniel T. Kildee,224,4
+MI-6,R0.07,21,21,23.09655172413793,Republican,0,Fred Upton,224,4
+MI-7,R0.07,21,21,23.09655172413793,Republican,0,Tim Walberg,224,4
+MI-8,R0.07,21,21,23.09655172413793,Republican,0,Mike Bishop,224,4
+MI-9,R0.07,21,21,23.09655172413793,Democrat,0,Sander M. Levin,224,4
+MN-1,R0.07,22,22,23.09655172413793,Democrat,0,Timothy J. Walz,216,-2
+MN-2,R0.07,22,22,23.09655172413793,Republican,0,Jason Lewis,216,-2
+MN-3,R0.07,22,22,23.09655172413793,Republican,0,Erik Paulsen,216,-2
+MN-4,R0.07,22,22,23.09655172413793,Democrat,0,Betty McCollum,216,-2
+MN-5,R0.07,22,22,23.09655172413793,Democrat,0,Keith Ellison,216,-2
+MN-6,R0.07,22,22,23.09655172413793,Republican,0,Tom Emmer,216,-2
+MN-7,R0.07,22,22,23.09655172413793,Democrat,0,Collin C. Peterson,216,-2
+MN-8,R0.07,22,22,23.09655172413793,Democrat,0,Richard M. Nolan,216,-2
+MO-1,R0.07,23,23,23.09655172413793,Democrat,0,Wm. Lacy Clay,208,4
+MO-2,R0.07,23,23,23.09655172413793,Republican,0,Ann Wagner,208,4
+MO-3,R0.07,23,23,23.09655172413793,Republican,0,Blaine Luetkemeyer,208,4
+MO-4,R0.07,23,23,23.09655172413793,Republican,0,Vicky Hartzler,208,4
+MO-5,R0.07,23,23,23.09655172413793,Democrat,0,Emanuel Cleaver,208,4
+MO-6,R0.07,23,23,23.09655172413793,Republican,0,Sam Graves,208,4
+MO-7,R0.07,23,23,23.09655172413793,Republican,0,Billy Long,208,4
+MO-8,R0.07,23,23,23.09655172413793,Republican,0,Jason Smith,208,4
+MS-1,R0.07,24,24,23.09655172413793,Republican,0,Trent Kelly,204,2
+MS-2,R0.07,24,24,23.09655172413793,Democrat,0,Bennie G. Thompson,204,2
+MS-3,R0.07,24,24,23.09655172413793,Republican,0,Gregg Harper,204,2
+MS-4,R0.07,24,24,23.09655172413793,Republican,0,Steven M. Palazzo,204,2
+MT-0,R0.07,25,25,23.09655172413793,Republican,0,Greg Gianforte,203,1
+NC-1,R0.07,26,26,23.09655172413793,Democrat,0,G. K. Butterfield,190,7
+NC-10,R0.07,26,26,23.09655172413793,Republican,0,Patrick T. McHenry,190,7
+NC-11,R0.07,26,26,23.09655172413793,Republican,0,Mark Meadows,190,7
+NC-12,R0.07,26,26,23.09655172413793,Democrat,0,Alma S. Adams,190,7
+NC-13,R0.07,26,26,23.09655172413793,Republican,0,Ted Budd,190,7
+NC-2,R0.07,26,26,23.09655172413793,Republican,0,George Holding,190,7
+NC-3,R0.07,26,26,23.09655172413793,Republican,0,Walter B. Jones,190,7
+NC-4,R0.07,26,26,23.09655172413793,Democrat,0,David E. Price,190,7
+NC-5,R0.07,26,26,23.09655172413793,Republican,0,Virginia Foxx,190,7
+NC-6,R0.07,26,26,23.09655172413793,Republican,0,Mark Walker,190,7
+NC-7,R0.07,26,26,23.09655172413793,Republican,0,David Rouzer,190,7
+NC-8,R0.07,26,26,23.09655172413793,Republican,0,Richard Hudson,190,7
+NC-9,R0.07,26,26,23.09655172413793,Republican,0,Robert Pittenger,190,7
+ND-0,R0.07,27,27,23.09655172413793,Republican,0,Kevin Cramer,189,1
+NE-1,R0.07,28,28,23.09655172413793,Republican,0,Jeff Fortenberry,186,3
+NE-2,R0.07,28,28,23.09655172413793,Republican,0,Don Bacon,186,3
+NE-3,R0.07,28,28,23.09655172413793,Republican,0,Adrian Smith,186,3
+NH-1,R0.07,29,29,23.09655172413793,Democrat,0,Carol Shea-Porter,184,-2
+NH-2,R0.07,29,29,23.09655172413793,Democrat,0,Ann M. Kuster,184,-2
+NJ-1,R0.07,30,30,23.09655172413793,Democrat,0,Donald Norcross,172,-2
+NJ-10,R0.07,30,30,23.09655172413793,Democrat,0,Donald M. Payne, Jr.,172,-2
+NJ-11,R0.07,30,30,23.09655172413793,Republican,0,Rodney P. Frelinghuysen,172,-2
+NJ-12,R0.07,30,30,23.09655172413793,Democrat,0,Bonnie Watson Coleman,172,-2
+NJ-2,R0.07,30,30,23.09655172413793,Republican,0,Frank A. LoBiondo,172,-2
+NJ-3,R0.07,30,30,23.09655172413793,Republican,0,Thomas MacArthur,172,-2
+NJ-4,R0.07,30,30,23.09655172413793,Republican,0,Christopher H. Smith,172,-2
+NJ-5,R0.07,30,30,23.09655172413793,Democrat,0,Josh Gottheimer,172,-2
+NJ-6,R0.07,30,30,23.09655172413793,Democrat,0,Frank Pallone, Jr.,172,-2
+NJ-7,R0.07,30,30,23.09655172413793,Republican,0,Leonard Lance,172,-2
+NJ-8,R0.07,30,30,23.09655172413793,Democrat,0,Albio Sires,172,-2
+NJ-9,R0.07,30,30,23.09655172413793,Democrat,0,Bill Pascrell, Jr.,172,-2
+NM-1,R0.07,31,31,23.09655172413793,Democrat,0,Michelle Lujan Grisham,169,-1
+NM-2,R0.07,31,31,23.09655172413793,Republican,0,Stevan Pearce,169,-1
+NM-3,R0.07,31,31,23.09655172413793,Democrat,0,Ben Ray Luján,169,-1
+NV-1,R0.07,32,32,23.09655172413793,Democrat,0,Dina Titus,165,-2
+NV-2,R0.07,32,32,23.09655172413793,Republican,0,Mark E. Amodei,165,-2
+NV-3,R0.07,32,32,23.09655172413793,Democrat,0,Jacky Rosen,165,-2
+NV-4,R0.07,32,32,23.09655172413793,Democrat,0,Ruben J. Kihuen,165,-2
+NY-1,R0.07,33,33,23.09655172413793,Republican,0,Lee M. Zeldin,138,-9
+NY-10,R0.07,33,33,23.09655172413793,Democrat,0,Jerrold Nadler,138,-9
+NY-11,R0.07,33,33,23.09655172413793,Republican,0,Daniel M. Donovan, Jr.,138,-9
+NY-12,R0.07,33,33,23.09655172413793,Democrat,0,Carolyn B. Maloney,138,-9
+NY-13,R0.07,33,33,23.09655172413793,Democrat,0,Adriano Espaillat,138,-9
+NY-14,R0.07,33,33,23.09655172413793,Democrat,0,Joseph Crowley,138,-9
+NY-15,R0.07,33,33,23.09655172413793,Democrat,0,José E. Serrano,138,-9
+NY-16,R0.07,33,33,23.09655172413793,Democrat,0,Eliot L. Engel,138,-9
+NY-17,R0.07,33,33,23.09655172413793,Democrat,0,Nita M. Lowey,138,-9
+NY-18,R0.07,33,33,23.09655172413793,Democrat,0,Sean Patrick Maloney,138,-9
+NY-19,R0.07,33,33,23.09655172413793,Republican,0,John J. Faso,138,-9
+NY-2,R0.07,33,33,23.09655172413793,Republican,0,Peter T. King,138,-9
+NY-20,R0.07,33,33,23.09655172413793,Democrat,0,Paul Tonko,138,-9
+NY-21,R0.07,33,33,23.09655172413793,Republican,0,Elise M. Stefanik,138,-9
+NY-22,R0.07,33,33,23.09655172413793,Republican,0,Claudia Tenney,138,-9
+NY-23,R0.07,33,33,23.09655172413793,Republican,0,Tom Reed,138,-9
+NY-24,R0.07,33,33,23.09655172413793,Republican,0,John Katko,138,-9
+NY-25,R0.07,33,33,23.09655172413793,Democrat,0,Louise McIntosh Slaughter,138,-9
+NY-26,R0.07,33,33,23.09655172413793,Democrat,0,Brian Higgins,138,-9
+NY-27,R0.07,33,33,23.09655172413793,Republican,0,Chris Collins,138,-9
+NY-3,R0.07,33,33,23.09655172413793,Democrat,0,Thomas R. Suozzi,138,-9
+NY-4,R0.07,33,33,23.09655172413793,Democrat,0,Kathleen M. Rice,138,-9
+NY-5,R0.07,33,33,23.09655172413793,Democrat,0,Gregory W. Meeks,138,-9
+NY-6,R0.07,33,33,23.09655172413793,Democrat,0,Grace Meng,138,-9
+NY-7,R0.07,33,33,23.09655172413793,Democrat,0,Nydia M. Velázquez,138,-9
+NY-8,R0.07,33,33,23.09655172413793,Democrat,0,Hakeem S. Jeffries,138,-9
+NY-9,R0.07,33,33,23.09655172413793,Democrat,0,Yvette D. Clarke,138,-9
+OH-1,R0.07,34,34,23.09655172413793,Republican,0,Steve Chabot,122,8
+OH-10,R0.07,34,34,23.09655172413793,Republican,0,Michael R. Turner,122,8
+OH-11,R0.07,34,34,23.09655172413793,Democrat,0,Marcia L. Fudge,122,8
+OH-12,R0.07,34,34,23.09655172413793,Republican,0,Patrick J. Tiberi,122,8
+OH-13,R0.07,34,34,23.09655172413793,Democrat,0,Tim Ryan,122,8
+OH-14,R0.07,34,34,23.09655172413793,Republican,0,David P. Joyce,122,8
+OH-15,R0.07,34,34,23.09655172413793,Republican,0,Steve Stivers,122,8
+OH-16,R0.07,34,34,23.09655172413793,Republican,0,James B. Renacci,122,8
+OH-2,R0.07,34,34,23.09655172413793,Republican,0,Brad R. Wenstrup,122,8
+OH-3,R0.07,34,34,23.09655172413793,Democrat,0,Joyce Beatty,122,8
+OH-4,R0.07,34,34,23.09655172413793,Republican,0,Jim Jordan,122,8
+OH-5,R0.07,34,34,23.09655172413793,Republican,0,Robert E. Latta,122,8
+OH-6,R0.07,34,34,23.09655172413793,Republican,0,Bill Johnson,122,8
+OH-7,R0.07,34,34,23.09655172413793,Republican,0,Bob Gibbs,122,8
+OH-8,R0.07,34,34,23.09655172413793,Republican,0,Warren Davidson,122,8
+OH-9,R0.07,34,34,23.09655172413793,Democrat,0,Marcy Kaptur,122,8
+OK-1,R0.07,35,35,23.09655172413793,Republican,0,Jim Bridenstine,117,5
+OK-2,R0.07,35,35,23.09655172413793,Republican,0,Markwayne Mullin,117,5
+OK-3,R0.07,35,35,23.09655172413793,Republican,0,Frank D. Lucas,117,5
+OK-4,R0.07,35,35,23.09655172413793,Republican,0,Tom Cole,117,5
+OK-5,R0.07,35,35,23.09655172413793,Republican,0,Steve Russell,117,5
+OR-1,R0.07,36,36,23.09655172413793,Democrat,0,Suzanne Bonamici,112,-3
+OR-2,R0.07,36,36,23.09655172413793,Republican,0,Greg Walden,112,-3
+OR-3,R0.07,36,36,23.09655172413793,Democrat,0,Earl Blumenauer,112,-3
+OR-4,R0.07,36,36,23.09655172413793,Democrat,0,Peter A. DeFazio,112,-3
+OR-5,R0.07,36,36,23.09655172413793,Democrat,0,Kurt Schrader,112,-3
+PA-1,R0.07,37,37,23.09655172413793,Democrat,0,Robert A. Brady,94,8
+PA-10,R0.07,37,37,23.09655172413793,Republican,0,Tom Marino,94,8
+PA-11,R0.07,37,37,23.09655172413793,Republican,0,Lou Barletta,94,8
+PA-12,R0.07,37,37,23.09655172413793,Republican,0,Keith J. Rothfus,94,8
+PA-13,R0.07,37,37,23.09655172413793,Democrat,0,Brendan F. Boyle,94,8
+PA-14,R0.07,37,37,23.09655172413793,Democrat,0,Michael F. Doyle,94,8
+PA-15,R0.07,37,37,23.09655172413793,Republican,0,Charles W. Dent,94,8
+PA-16,R0.07,37,37,23.09655172413793,Republican,0,Lloyd Smucker,94,8
+PA-17,R0.07,37,37,23.09655172413793,Democrat,0,Matt Cartwright,94,8
+PA-18,R0.07,37,37,23.09655172413793,Republican,0,Tim Murphy,94,8
+PA-2,R0.07,37,37,23.09655172413793,Democrat,0,Dwight Evans,94,8
+PA-3,R0.07,37,37,23.09655172413793,Republican,0,Mike Kelly,94,8
+PA-4,R0.07,37,37,23.09655172413793,Republican,0,Scott Perry,94,8
+PA-5,R0.07,37,37,23.09655172413793,Republican,0,Glenn Thompson,94,8
+PA-6,R0.07,37,37,23.09655172413793,Republican,0,Ryan A. Costello,94,8
+PA-7,R0.07,37,37,23.09655172413793,Republican,0,Patrick Meehan,94,8
+PA-8,R0.07,37,37,23.09655172413793,Republican,0,Brian K. Fitzpatrick,94,8
+PA-9,R0.07,37,37,23.09655172413793,Republican,0,Bill Shuster,94,8
+RI-1,R0.07,38,38,23.09655172413793,Democrat,0,David N. Cicilline,92,-2
+RI-2,R0.07,38,38,23.09655172413793,Democrat,0,James R. Langevin,92,-2
+SC-1,R0.07,39,39,23.09655172413793,Republican,0,Mark Sanford,85,5
+SC-2,R0.07,39,39,23.09655172413793,Republican,0,Joe Wilson,85,5
+SC-3,R0.07,39,39,23.09655172413793,Republican,0,Jeff Duncan,85,5
+SC-4,R0.07,39,39,23.09655172413793,Republican,0,Trey Gowdy,85,5
+SC-5,R0.07,39,39,23.09655172413793,Republican,0,Ralph Norman,85,5
+SC-6,R0.07,39,39,23.09655172413793,Democrat,0,James E. Clyburn,85,5
+SC-7,R0.07,39,39,23.09655172413793,Republican,0,Tom Rice,85,5
+SD-0,R0.07,40,40,23.09655172413793,Republican,0,Kristi L. Noem,84,1
+TN-1,R0.07,41,41,23.09655172413793,Republican,0,David P. Roe,75,5
+TN-2,R0.07,41,41,23.09655172413793,Republican,0,John J. Duncan, Jr.,75,5
+TN-3,R0.07,41,41,23.09655172413793,Republican,0,Charles J. "Chuck" Fleischmann,75,5
+TN-4,R0.07,41,41,23.09655172413793,Republican,0,Scott DesJarlais,75,5
+TN-5,R0.07,41,41,23.09655172413793,Democrat,0,Jim Cooper,75,5
+TN-6,R0.07,41,41,23.09655172413793,Republican,0,Diane Black,75,5
+TN-7,R0.07,41,41,23.09655172413793,Republican,0,Marsha Blackburn,75,5
+TN-8,R0.07,41,41,23.09655172413793,Republican,0,David Kustoff,75,5
+TN-9,R0.07,41,41,23.09655172413793,Democrat,0,Steve Cohen,75,5
+TX-1,R0.07,42,42,23.09655172413793,Republican,0,Louie Gohmert,39,14
+TX-10,R0.07,42,42,23.09655172413793,Republican,0,Michael T. McCaul,39,14
+TX-11,R0.07,42,42,23.09655172413793,Republican,0,K. Michael Conaway,39,14
+TX-12,R0.07,42,42,23.09655172413793,Republican,0,Kay Granger,39,14
+TX-13,R0.07,42,42,23.09655172413793,Republican,0,Mac Thornberry,39,14
+TX-14,R0.07,42,42,23.09655172413793,Republican,0,Randy K. Weber, Sr.,39,14
+TX-15,R0.07,42,42,23.09655172413793,Democrat,0,Vicente Gonzalez,39,14
+TX-16,R0.07,42,42,23.09655172413793,Democrat,0,Beto O’Rourke,39,14
+TX-17,R0.07,42,42,23.09655172413793,Republican,0,Bill Flores,39,14
+TX-18,R0.07,42,42,23.09655172413793,Democrat,0,Sheila Jackson Lee,39,14
+TX-19,R0.07,42,42,23.09655172413793,Republican,0,Jodey C. Arrington,39,14
+TX-2,R0.07,42,42,23.09655172413793,Republican,0,Ted Poe,39,14
+TX-20,R0.07,42,42,23.09655172413793,Democrat,0,Joaquin Castro,39,14
+TX-21,R0.07,42,42,23.09655172413793,Republican,0,Lamar Smith,39,14
+TX-22,R0.07,42,42,23.09655172413793,Republican,0,Pete Olson,39,14
+TX-23,R0.07,42,42,23.09655172413793,Republican,0,Will Hurd,39,14
+TX-24,R0.07,42,42,23.09655172413793,Republican,0,Kenny Marchant,39,14
+TX-25,R0.07,42,42,23.09655172413793,Republican,0,Roger Williams,39,14
+TX-26,R0.07,42,42,23.09655172413793,Republican,0,Michael C. Burgess,39,14
+TX-27,R0.07,42,42,23.09655172413793,Republican,0,Blake Farenthold,39,14
+TX-28,R0.07,42,42,23.09655172413793,Democrat,0,Henry Cuellar,39,14
+TX-29,R0.07,42,42,23.09655172413793,Democrat,0,Gene Green,39,14
+TX-3,R0.07,42,42,23.09655172413793,Republican,0,Sam Johnson,39,14
+TX-30,R0.07,42,42,23.09655172413793,Democrat,0,Eddie Bernice Johnson,39,14
+TX-31,R0.07,42,42,23.09655172413793,Republican,0,John R. Carter,39,14
+TX-32,R0.07,42,42,23.09655172413793,Republican,0,Pete Sessions,39,14
+TX-33,R0.07,42,42,23.09655172413793,Democrat,0,Marc A. Veasey,39,14
+TX-34,R0.07,42,42,23.09655172413793,Democrat,0,Filemon Vela,39,14
+TX-35,R0.07,42,42,23.09655172413793,Democrat,0,Lloyd Doggett,39,14
+TX-36,R0.07,42,42,23.09655172413793,Republican,0,Brian Babin,39,14
+TX-4,R0.07,42,42,23.09655172413793,Republican,0,John Ratcliffe,39,14
+TX-5,R0.07,42,42,23.09655172413793,Republican,0,Jeb Hensarling,39,14
+TX-6,R0.07,42,42,23.09655172413793,Republican,0,Joe Barton,39,14
+TX-7,R0.07,42,42,23.09655172413793,Republican,0,John Abney Culberson,39,14
+TX-8,R0.07,42,42,23.09655172413793,Republican,0,Kevin Brady,39,14
+TX-9,R0.07,42,42,23.09655172413793,Democrat,0,Al Green,39,14
+UT-1,R0.07,43,43,23.09655172413793,Republican,0,Rob Bishop,35,4
+UT-2,R0.07,43,43,23.09655172413793,Republican,0,Chris Stewart,35,4
+UT-3,R0.07,43,43,23.09655172413793,Republican,0,Chris Stewart,35,4
+UT-4,R0.07,43,43,23.09655172413793,Republican,0,Mia B. Love,35,4
+VA-1,R0.07,44,44,23.09655172413793,Republican,0,Robert J. Wittman,24,3
+VA-10,R0.07,44,44,23.09655172413793,Republican,0,Barbara Comstock,24,3
+VA-11,R0.07,44,44,23.09655172413793,Democrat,0,Gerald E. Connolly,24,3
+VA-2,R0.07,44,44,23.09655172413793,Republican,0,Scott Taylor,24,3
+VA-3,R0.07,44,44,23.09655172413793,Democrat,0,Robert C. "Bobby" Scott,24,3
+VA-4,R0.07,44,44,23.09655172413793,Democrat,0,A. Donald McEachin,24,3
+VA-5,R0.07,44,44,23.09655172413793,Republican,0,Thomas A. Garrett, Jr.,24,3
+VA-6,R0.07,44,44,23.09655172413793,Republican,0,Bob Goodlatte,24,3
+VA-7,R0.07,44,44,23.09655172413793,Republican,0,Dave Brat,24,3
+VA-8,R0.07,44,44,23.09655172413793,Democrat,0,Donald S. Beyer, Jr.,24,3
+VA-9,R0.07,44,44,23.09655172413793,Republican,0,H. Morgan Griffith,24,3
+VT-0,R0.07,45,45,23.09655172413793,Democrat,0,Peter Welch,23,-1
+WA-1,R0.07,46,46,23.09655172413793,Democrat,0,Suzan K. DelBene,13,-2
+WA-10,R0.07,46,46,23.09655172413793,Democrat,0,Denny Heck,13,-2
+WA-2,R0.07,46,46,23.09655172413793,Democrat,0,Rick Larsen,13,-2
+WA-3,R0.07,46,46,23.09655172413793,Republican,0,Jaime Herrera Beutler,13,-2
+WA-4,R0.07,46,46,23.09655172413793,Republican,0,Dan Newhouse,13,-2
+WA-5,R0.07,46,46,23.09655172413793,Republican,0,Cathy McMorris Rodgers,13,-2
+WA-6,R0.07,46,46,23.09655172413793,Democrat,0,Derek Kilmer,13,-2
+WA-7,R0.07,46,46,23.09655172413793,Democrat,0,Pramila Jayapal,13,-2
+WA-8,R0.07,46,46,23.09655172413793,Republican,0,David G. Reichert,13,-2
+WA-9,R0.07,46,46,23.09655172413793,Democrat,0,Adam Smith,13,-2
+WI-1,R0.07,47,47,23.09655172413793,Republican,0,Paul D. Ryan,5,2
+WI-2,R0.07,47,47,23.09655172413793,Democrat,0,Mark Pocan,5,2
+WI-3,R0.07,47,47,23.09655172413793,Democrat,0,Ron Kind,5,2
+WI-4,R0.07,47,47,23.09655172413793,Democrat,0,Gwen Moore,5,2
+WI-5,R0.07,47,47,23.09655172413793,Republican,0,F. James Sensenbrenner, Jr.,5,2
+WI-6,R0.07,47,47,23.09655172413793,Republican,0,Glenn Grothman,5,2
+WI-7,R0.07,47,47,23.09655172413793,Republican,0,Sean P. Duffy,5,2
+WI-8,R0.07,47,47,23.09655172413793,Republican,0,Mike Gallagher,5,2
+WV-1,R0.07,48,48,23.09655172413793,Republican,0,David B. McKinley,2,3
+WV-2,R0.07,48,48,23.09655172413793,Republican,0,Alexander X. Mooney,2,3
+WV-3,R0.07,48,48,23.09655172413793,Republican,0,Evan H. Jenkins,2,3
+WY-0,R0.07,49,49,23.09655172413793,Republican,0,Liz Cheney,1,1

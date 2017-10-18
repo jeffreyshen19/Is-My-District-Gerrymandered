@@ -30,8 +30,6 @@ district_codes = district_codes.sort(function(a,b){
     return parseInt(a.split("-")[1]) - parseInt(b.split("-")[1]);
 });
 
-console.log(district_codes);
-
 function suffixNumber(i){
   var j = i % 10, k = i % 100;
   if (j == 1 && k != 11) {
@@ -71,7 +69,6 @@ app.post("/lookup", function(req, res){
         url: url
       }, function (err, parts) {
         var districtData = JSON.parse(parts).features[0].properties;
-        console.log(districtData);
         res.redirect("/district/" + districtData.state + "-" + districtData.number);
       });
     }
@@ -110,14 +107,19 @@ app.get("/district/:state-:district", function(req, res){
   else redistricting_control = "Independent";
 
   //Set the state's political affiliation + Rep
-  var affiliation = csv[district_code_i + 1].split(",")[7];
-  var rep = csv[district_code_i + 1].split(",")[9];
+  var affiliation = csv[district_code_i + 1].split(",")[5];
+  var rep = csv[district_code_i + 1].split(",")[7];
+  var state_affiliation = csv[district_code_i + 1].split(",")[9];
+
+  if(state_affiliation < 0) state_affiliation = "Democrat";
+  else if(state_affiliation > 0) state_affiliation = "Republican";
+  else state_affiliation = "Neutral";
 
   //Set efficiency gap data
   var absolute_efficiency_gap, state_efficiency_gap, district_efficiency_gap;
 
   //Set compactness data
-  var absolute_compactness = parseFloat(csv[district_code_i + 1].split(",")[4]), state_compactness = parseFloat(csv[district_code_i + 1].split(",")[5]), country_compactness = parseFloat(csv[district_code_i + 1].split(",")[6]), compactness_rank = parseInt(csv[district_code_i + 1].split(",")[10]);
+  var absolute_compactness = parseFloat(csv[district_code_i + 1].split(",")[2]), state_compactness = parseFloat(csv[district_code_i + 1].split(",")[3]), country_compactness = parseFloat(csv[district_code_i + 1].split(",")[4]), compactness_rank = parseInt(csv[district_code_i + 1].split(",")[8]);
 
   //Set overall gerrymandered rating
   var gerrymander_score;
@@ -146,11 +148,7 @@ app.get("/district/:state-:district", function(req, res){
     district_name: district_name,
     redistricting_control: redistricting_control,
     rep: rep,
-    efficiency_gap: {
-      absolute: absolute_efficiency_gap,
-      state: state_efficiency_gap,
-      district: district_efficiency_gap,
-    },
+    efficiency_gap: csv[district_code_i + 1].split(",")[1],
     compactness: {
       absolute: absolute_compactness,
       state: state_compactness,
@@ -159,7 +157,8 @@ app.get("/district/:state-:district", function(req, res){
     },
     previous_district: previous_district,
     next_district: next_district,
-    affiliation: affiliation
+    affiliation: affiliation,
+    state_affiliation: state_affiliation
   };
 
   res.render("district", {district_data: district_data});

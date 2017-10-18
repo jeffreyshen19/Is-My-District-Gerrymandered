@@ -14,10 +14,10 @@ function addLine(line){
 }
 
 function generateLine(json){
-  return json.district_code + "," + json.absolute_efficiency_gap + "," + json.state_efficiency_gap + "," + json.district_efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.affiliation + "," + json.gerrymander_score + "," + json.rep + "," + json.compactness_rank;
+  return json.district_code + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.affiliation + "," + json.gerrymander_score + "," + json.rep + "," + json.compactness_rank + "," + json.state_affiliation;
 }
 
-addLine("district_code,absolute_efficiency_gap,state_efficiency_gap,district_efficiency_gap,absolute_compactness,state_compactness,country_compactness,affiliation,gerrymander_score,rep,compactness_rank");
+addLine("district_code,efficiency_gap,absolute_compactness,state_compactness,country_compactness,affiliation,gerrymander_score,rep,compactness_rank,state_affiliation");
 
 var representatives_parsed = [];
 
@@ -43,7 +43,7 @@ curl.request({
   var state_districts = [];
   var district_compactness_ranks = [];
   var current_state_i = -1;
-  var csv = fs.readFileSync("compactness.csv").toString().split("\n");
+  var compactness_csv = fs.readFileSync("compactness.csv").toString().split("\n");
 
   for(var k = 0; k < 435; k++){
     if(district_codes[k].split("-")[0] !== postal_codes[current_state_i]){
@@ -52,11 +52,11 @@ curl.request({
       state_districts.push(0);
     }
 
-    district_compactness_ranks.push(parseFloat(csv[k + 1].split(",")[1]));
+    district_compactness_ranks.push(parseFloat(compactness_csv[k + 1].split(",")[1]));
 
-    state_avgs[current_state_i] += parseFloat(csv[k + 1].split(",")[1]);
+    state_avgs[current_state_i] += parseFloat(compactness_csv[k + 1].split(",")[1]);
     state_districts[current_state_i]++;
-    country_avg += parseFloat(csv[k + 1].split(",")[1]);
+    country_avg += parseFloat(compactness_csv[k + 1].split(",")[1]);
   }
 
   var sorted = district_compactness_ranks.slice().sort(function(a,b){return b-a;});
@@ -65,9 +65,34 @@ curl.request({
   for(var l = 0; l < 50; l++) state_avgs[l] /= state_districts[l];
   country_avg /= district_codes.length;
 
+  //Get efficiency gap
+  var efficiency_csv = fs.readFileSync("efficiency.csv").toString().split("\n");
+
+  //Get Representatives and Affiliation
+  current_state_i = -1;
+  var states_affiliation = [], state_rep;
+
+  for(var j = 0; j < district_codes.length; j++){
+    if(district_codes[j].split("-")[0] !== postal_codes[current_state_i]){
+      current_state_i++;
+      states_affiliation.push(0);
+    }
+
+    for(var k = 0; k < representatives_parsed.length; k++){
+      if(representatives_parsed[k].district_code === district_codes[j]) {
+        state_rep = representatives_parsed[k];
+        break;
+      }
+    }
+
+    if(state_rep.party === "Republican") states_affiliation[current_state_i]++;
+    else states_affiliation[current_state_i]--;
+
+  }
+
   for(var j = 0; j < district_codes.length; j++){
     var rep;
-    for(var k = 0; k < representatives_parsed.length; k++){ //Get Representatives
+    for(var k = 0; k < representatives_parsed.length; k++){
       if(representatives_parsed[k].district_code === district_codes[j]) {
         rep = representatives_parsed[k];
         break;
@@ -77,13 +102,12 @@ curl.request({
     var line = generateLine({
       district_code: district_codes[j],
       rep: rep.name,
-      absolute_efficiency_gap: 0,
-      state_efficiency_gap: 0,
-      district_efficiency_gap: 0,
-      absolute_compactness: parseFloat(csv[j + 1].split(",")[1]),
+      efficiency_gap: efficiency_csv[j + 1].split(",")[1],
+      absolute_compactness: parseFloat(compactness_csv[j + 1].split(",")[1]),
       state_compactness: state_avgs[postal_codes.indexOf(district_codes[j].split("-")[0])],
       country_compactness: country_avg,
       affiliation: rep.party,
+      state_affiliation: states_affiliation[postal_codes.indexOf(district_codes[j].split("-")[0])],
       gerrymander_score: 0,
       compactness_rank: district_compactness_ranks[j]
     });
