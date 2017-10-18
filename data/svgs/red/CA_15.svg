@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="20.281197"
+   height="39.039951"
+   id="svg2"
+   sodipodi:docname="CA_15.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata56">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs54" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview52"
+     showgrid="false"
+     inkscape:zoom="0.12542268"
+     inkscape:cx="1204.2514"
+     inkscape:cy="-24.902399"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="m 15.936726,39.03995 -1.10445,-0.59889 c 0.72029,-0.78802 -0.54421,-1.91145 -1.79626,-3.1635 L 10.75957,33.00111 10.39036,31.51619 C 10.18728,30.69947 9.52419,29.138 8.91679,28.04627 8.3094,26.95455 6.40453,24.45334 4.68375,22.48802 L 1.55501,18.91476 3.44164,15.24873 2.7094,10.46528 H 2.24589 c -0.25493,0 -0.86453,-0.40101 -1.3547,-0.89118 C 0.40102,9.08393 0,8.48901 0,8.25212 0,8.01517 0.63802,7.47986 1.41782,7.06251 L 2.83564,6.30369 2.93168,0 c 1.02491,0.45529 1.98055,1.52932 3.44234,1.35096 l 5.0374,-0.69048 -0.35241,5.55134 H 7.76019 l -0.42478,1.24609 2.1045,2.59898 -2.63437,2.84251 c -0.07744,2.74558 0.03719,4.72282 0.63201,7.51638 l 4.09864,2.24277 3.530716,6.57852 2.68654,1.36128 2.52775,4.0134 z"
+     style="opacity:1;fill:#D64541;fill-opacity:1"
+     id="CA_15"
+     inkscape:connector-curvature="0" />
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="27.816"
+   height="81.666496"
+   id="svg2"
+   sodipodi:docname="TX_26.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata152">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs150" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview148"
+     showgrid="false"
+     inkscape:zoom="0.12542268"
+     inkscape:cx="-0.32995371"
+     inkscape:cy="359.95977"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M 4.577,81.6665 3.3628,79.398 5.1342,73.2735 6.8055,71.8864 6.8265,65.5033 4.8207,58.991 1e-4,58.981 V 32.326 h 16.032 L 14.9574,22.2837 9.0742,19.0732 10.8047,14.1779 h 2.5796 l 1.3611,-1.3611 V 8.5594 L 19.9781,3.4008 19.4789,-3e-4 h 1.3774 l 1.3961,32.2696 5.2534,0.3403 0.3103,19.5376 c -4.0519,-0.053 -3.7251,1.5227 -9.1008,4.7279 l -0.6109,1.723 -7.7672,0.3829 -0.7615,5.0781 1.9109,4.0268 2.8298,2.226 -1.96,2.9913 -3.1992,1.2076 -0.6087,1.3359 c -0.3347,0.7347 -0.6086,1.9409 -0.6086,2.6806 0,0.7396 -0.1549,1.7484 -0.3442,2.2418 l -0.3443,0.8971 z"
+     style="fill:#D64541"
+     id="TX_26"
+     inkscape:connector-curvature="0" />
+</svg>

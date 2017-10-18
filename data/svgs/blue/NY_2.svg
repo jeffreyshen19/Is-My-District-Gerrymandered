@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="23.761"
+   height="17.24584"
+   id="svg2"
+   sodipodi:docname="NY_2.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata96">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs94" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview92"
+     showgrid="false"
+     inkscape:zoom="0.12542268"
+     inkscape:cx="-1084.9915"
+     inkscape:cy="-312.69034"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M 18.2563,15.60835 23.761,11.81079 20.5209,7.9087 22.6809,5.22601 19.9634,3.30981 13.7967,4.70342 12.0199,2.33429 H 9.9643 L 8.1178,0.41808 4.3202,0 3.9021,1.18456 2.8221,1.77684 0,1.84654 l 3.275,4.87761 -2.3691,3.55369 2.9265,0.97551 1.6724,-0.0697 3.1007,6.06217 0.871,-0.6968 -0.2787,-2.26461 1.2194,0.62713 0.5226,-0.48777 -0.3135,-0.6968 2.9265,-1.08004 1.1498,1.742 3.6582,-2.40396 0.3832,1.84652 -1.4284,0.90584 z"
+     style="fill:#3F72AF;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="NY_2"
+     inkscape:connector-curvature="0" />
+</svg>

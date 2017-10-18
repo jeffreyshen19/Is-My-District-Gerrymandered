@@ -70,7 +70,9 @@ footer{
 }
 
 #wrapper{
-  height: calc(100vh - 50px);
+  padding-top: 100px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 
 #svg{

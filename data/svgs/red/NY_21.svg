@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="57.3022"
+   height="46.968441"
+   id="svg2"
+   sodipodi:docname="NY_21.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata112">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs110" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview108"
+     showgrid="false"
+     inkscape:zoom="0.12542268"
+     inkscape:cx="-995.05145"
+     inkscape:cy="-402.02929"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M 14.9562,44.75155 9.4665,40.60769 11.3168,32.89202 7.3524,25.46917 6.6963,20.81412 1.4475,19.79788 0,9.81773 11.4871,10.44662 10.2545,4.48541 17.1033,0 20.0506,7.05433 28.2222,5.45339 28.7408,6.706 32.7499,6.7668 35.757,8.87305 c 0.8554,-0.53232 1.2222,-1.63742 2.5662,-1.59698 l 0.592,2.74759 5.4061,4.47815 c 1.6232,-1.42692 2.8986,-2.15801 3.594,-4.39672 l 1.8746,-0.23195 3.22,7.42494 1.5387,0.0502 -0.6697,1.74518 1.3827,3.82364 h 2.0406 l -0.7148,4.56659 -1.9606,-0.6223 -1.4334,1.727 -2.2112,0.058 -1.0583,2.14007 0.5593,1.38028 -19.8035,9.18206 0.027,3.26978 -2.3911,0.96366 -2.5866,-0.6039 -1.4591,1.99013 z"
+     style="fill:#D64541;fill-opacity:1"
+     id="NY_21"
+     inkscape:connector-curvature="0" />
+</svg>
