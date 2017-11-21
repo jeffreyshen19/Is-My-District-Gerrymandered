@@ -106,6 +106,8 @@ curl.request({
       }
     }
 
+    console.log(compactness_csv[j + 1]);
+
     var line = generateLine({
       district_code: district_codes[j],
       rep: rep.name,

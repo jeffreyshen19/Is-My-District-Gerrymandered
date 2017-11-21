@@ -84,8 +84,6 @@ app.get("/district/:state-:district", function(req, res){
   var district_code = state + "-" + parseInt(district);
   var district_code_i = district_codes.indexOf(district_code);
 
-  console.log(district_code_i);
-
   if(district_code_i == -1) res.redirect("/404");
 
   //Set full state name
@@ -102,11 +100,15 @@ app.get("/district/:state-:district", function(req, res){
 
   //Set whether district is Republican, Democrat, or Independently redistricted
   var redistricting_control;
-  var republican_states = ["UT","TX","LA","OK","KS","AL","GA","FL","TN","SC","NC","VA","WI","MI","IN","OH","PA","NH"];
-  var democrat_states = ["IL", "AR", "WV", "MD", "MA", "RI"];
-  if(republican_states.includes(state)) redistricting_control = "Republican";
-  else if(democrat_states.includes(state)) redistricting_control = "Democrat";
-  else redistricting_control = "Independent";
+
+  if(district === "00" || district === "0") redistricting_control = "State is not redistricted (State only has one district)";
+  else {
+    var republican_states = ["UT","TX","LA","OK","KS","AL","GA","FL","TN","SC","NC","VA","WI","MI","IN","OH","PA","NH"];
+    var democrat_states = ["IL", "AR", "WV", "MD", "MA", "RI"];
+    if(republican_states.includes(state)) redistricting_control = "Republican";
+    else if(democrat_states.includes(state)) redistricting_control = "Democrat";
+    else redistricting_control = "Independent";
+  }
 
   //Set the state's political affiliation + Rep
   var affiliation = csv[district_code_i + 1].split(",")[5];
@@ -126,6 +128,11 @@ app.get("/district/:state-:district", function(req, res){
   //Set overall gerrymandered rating
   var gerrymander_score;
 
+  if(district === "00" || district === "0") gerrymander_score = 0;
+  else {
+    gerrymander_score = 100;
+  }
+
   //Set previous and next district
   var previous_district, next_district;
 
@@ -142,6 +149,7 @@ app.get("/district/:state-:district", function(req, res){
     next_district = district_codes[district_code_i + 1];
   }
 
+  //Render district
   var district_data = {
     state: state,
     district: parseInt(district),

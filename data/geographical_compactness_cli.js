@@ -12,18 +12,16 @@ district_codes = district_codes.sort(function(a,b){
     return parseInt(a.split("-")[1]) - parseInt(b.split("-")[1]);
 });
 
-content += "district,compactness\n";
+var geographical_compactness, geojson, area, perimeter, polsbypopper;
 
-var geographical_compactness, geojson, area, perimeter;
+var district = process.argv.slice(2);
 
-for(var i = 0; i < 435; i++){
-  geojson = JSON.parse(fs.readFileSync("./raw/districts/" + district_codes[i] + "/shape.geojson").toString());
-  area = geojsonArea.geometry(geojson.geometry); //in meters^2
-  perimeter = turf.lineDistance(geojson.geometry, 'kilometers') * 1000; //meters
+geojson = JSON.parse(fs.readFileSync("./raw/districts/" + district + "/shape.geojson").toString());
+area = geojsonArea.geometry(geojson.geometry); //in meters^2
+perimeter = turf.lineDistance(geojson.geometry, 'kilometers') * 1000; //meters
 
-  geographical_compactness = 4 * Math.PI * area / (perimeter * perimeter); //Using polsbypopper
+//Polsby Popper
+polsbypopper = 4 * Math.PI * area / (perimeter * perimeter); //Ratio of area to area of circle with same perimeter (the larger, the more compact)
+geographical_compactness = polsbypopper;
 
-  content += district_codes[i] + "," + geographical_compactness + "\n";
-}
-
-fs.writeFileSync("compactness.csv", content);
+console.log(district + ": " + polsbypopper);
