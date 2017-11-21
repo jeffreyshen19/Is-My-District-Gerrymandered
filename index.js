@@ -84,6 +84,8 @@ app.get("/district/:state-:district", function(req, res){
   var district_code = state + "-" + parseInt(district);
   var district_code_i = district_codes.indexOf(district_code);
 
+  console.log(district_code_i);
+
   if(district_code_i == -1) res.redirect("/404");
 
   //Set full state name
