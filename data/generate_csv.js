@@ -108,12 +108,11 @@ curl.request({
 
     var absolute_compactness = parseFloat(compactness_csv[j + 1].split(",")[1]);
     var district = district_codes[j].split("-")[1];
-
-    console.log(compactness_csv[j + 1]);
+    var efficiency_gap = parseFloat(efficiency_csv[j + 1].split(",")[1].substring(1));
 
     if(district === "00" || district === "0") gerrymander_score = 0;
     else {
-      gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + 0.5 * 0; //Score is 50% due to geographical compactness, 50% to efficiency gap
+      gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); //Score is 50% due to geographical compactness, 50% to efficiency gap
     }
 
     var line = generateLine({
