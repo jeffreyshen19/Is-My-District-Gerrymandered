@@ -106,18 +106,26 @@ curl.request({
       }
     }
 
+    var absolute_compactness = parseFloat(compactness_csv[j + 1].split(",")[1]);
+    var district = district_codes[j].split("-")[1];
+
     console.log(compactness_csv[j + 1]);
+
+    if(district === "00" || district === "0") gerrymander_score = 0;
+    else {
+      gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + 0.5 * 0; //Score is 50% due to geographical compactness, 50% to efficiency gap
+    }
 
     var line = generateLine({
       district_code: district_codes[j],
       rep: rep.name,
       efficiency_gap: efficiency_csv[j + 1].split(",")[1],
-      absolute_compactness: parseFloat(compactness_csv[j + 1].split(",")[1]),
+      absolute_compactness: absolute_compactness,
       state_compactness: state_avgs[postal_codes.indexOf(district_codes[j].split("-")[0])],
       country_compactness: country_avg,
       affiliation: rep.party,
       state_affiliation: states_affiliation[postal_codes.indexOf(district_codes[j].split("-")[0])],
-      gerrymander_score: 0,
+      gerrymander_score: gerrymander_score,
       compactness_rank: district_compactness_ranks[j]
     });
 

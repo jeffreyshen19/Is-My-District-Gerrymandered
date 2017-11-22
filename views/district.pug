@@ -34,10 +34,18 @@ html(lang = "en")
         br 
         br 
         p 
-          i.fa.fa-fw.fa-square-o 
+          if district_data.compactness.absolute >= district_data.compactness.country
+            i.fa.fa-fw.fa-check-square-o 
+          else 
+            i.fa.fa-fw.fa-square-o 
           | Compact
-          i.fa.fa-fw.fa-square-o 
-          | Minimal Voter Wastage 
+          
+          if (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1) < 7
+            i.fa.fa-fw.fa-check-square-o 
+          else 
+            i.fa.fa-fw.fa-square-o 
+          | Minimal Voter Wastage
+          
           if district_data.district !== 0 || district_data.district !== 00
             if district_data.redistricting_control === "Independent"
               i.fa.fa-fw.fa-check-square-o 
@@ -49,7 +57,6 @@ html(lang = "en")
           //Compactness  
           -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
           -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
-          li 1st most gerrymandered district (15% more than state average, 10% more than country average)
           li!= "<strong>" + district_data.compactness.rank + " least compact district</strong> (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
           
           //Efficiency

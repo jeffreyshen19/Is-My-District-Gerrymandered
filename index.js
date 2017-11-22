@@ -126,12 +126,7 @@ app.get("/district/:state-:district", function(req, res){
   var absolute_compactness = parseFloat(csv[district_code_i + 1].split(",")[2]), state_compactness = parseFloat(csv[district_code_i + 1].split(",")[3]), country_compactness = parseFloat(csv[district_code_i + 1].split(",")[4]), compactness_rank = parseInt(csv[district_code_i + 1].split(",")[8]);
 
   //Set overall gerrymandered rating
-  var gerrymander_score;
-
-  if(district === "00" || district === "0") gerrymander_score = 0;
-  else {
-    gerrymander_score = 100;
-  }
+  var gerrymander_score = parseInt(csv[district_code_i + 1].split(",")[6]);
 
   //Set previous and next district
   var previous_district, next_district;
