@@ -12,6 +12,22 @@ district_codes = district_codes.sort(function(a,b){
     return parseInt(a.split("-")[1]) - parseInt(b.split("-")[1]);
 });
 
+function convertToVotes(str){
+  str = str.replace("at large", "").replace(/[0-9]+\./g, ""); //Trim excess words
+  str = str.trim();
+  str = str.split(" ");
+
+  var republican = null, democrat = null;
+
+  if(str.indexOf("republican") != -1) republican = parseInt(str[str.indexOf("republican") + 1].replace(/,/g, ""));
+  if(str.indexOf("democrat") != -1) democrat = parseInt(str[str.indexOf("democrat") + 1].replace(/,/g, ""));
+
+  return {
+    "republican": republican,
+    "democrat": democrat
+  };
+}
+
 content += "district,efficiency_gap\n";
 
 //Read pdf
@@ -52,7 +68,7 @@ extract("./raw/2016election.pdf", {
     word = text[i].toLowerCase();
 
     if(word === "recapitulation" && i != 47 && (text[i + 5].toLowerCase().split("—")[1] !== "continued" && text[i + 6].toLowerCase().split("—")[1] !== "continued")) { //Stop search when "Recapitulation" is reached
-      if(searching) votingData[state].districts.push(currentString);
+      if(searching) votingData[state].districts.push(convertToVotes(currentString));
 
       if(state == 49) break;
 
@@ -68,7 +84,7 @@ extract("./raw/2016election.pdf", {
     }
     else{ //Otherwise, look for 1., 2., 3., etc. and extract voting data for each district
       if(word.includes("" + district + ".") || (word === "at" && text[i + 1].toLowerCase() === "large" && text[i - 1].toLowerCase() === "representative")){
-        if(searching == true) votingData[state].districts.push(currentString);
+        if(searching == true) votingData[state].districts.push(convertToVotes(currentString));
         searching = true;
         currentString = "";
         district++;
@@ -77,8 +93,6 @@ extract("./raw/2016election.pdf", {
       if(searching) currentString += word + " ";
     }
   }
-
-
 
   fs.writeFileSync("election.json", JSON.stringify(votingData));
   console.log("done");

@@ -1,151 +1,1456 @@
 [{
   "name": "Alabama",
-  "districts": ["1. bradley byrne, republican 208,083 write-in 7,810 ", "2. martha roby, republican 134,886 nathan mathis, democrat 112,089 write-in 29,609 ", "3. mike rogers, republican 192,164 jesse smith, democrat 94,549 write-in 391 ", "4. robert b. aderholt, republican 235,925 write-in 3,519 ", "5. mo brooks, republican 205,647 will boyd, jr., democrat 102,234 write-in 445 ", "6. gary j. palmer, republican 245,313 david j. putman, democrat 83,709 write-in 284 ", "7. terri a. sewell, democrat 229,330 write-in 3,698 "]
+  "districts": [{
+    "republican": 208083,
+    "democrat": null
+  }, {
+    "republican": 134886,
+    "democrat": 112089
+  }, {
+    "republican": 192164,
+    "democrat": 94549
+  }, {
+    "republican": 235925,
+    "democrat": null
+  }, {
+    "republican": 205647,
+    "democrat": 102234
+  }, {
+    "republican": 245313,
+    "democrat": 83709
+  }, {
+    "republican": null,
+    "democrat": 229330
+  }]
 }, {
   "name": "Alaska",
-  "districts": ["at large don young, republican 155,088 steve lindbeck, democrat 111,019 jim c. mcdermott, libertarian 31,770 bernie souphanavong, nonaffiliated 9,093 write-in 1,228 "]
+  "districts": [{
+    "republican": 155088,
+    "democrat": 111019
+  }]
 }, {
   "name": "Arizona",
-  "districts": ["1. paul babeu, republican 121,745 tom o’halleran, democrat 142,219 ray parrish, green 16,746 ", "2. martha mcsally, republican 179,806 matt heinz, democrat 135,873 ", "3. raúl m. grijalva, democrat 148,973 bill abatecola, write-in (republican) 1,303 jaime vasquez, write-in (republican) 332 harvey martin, write-in (democratic) 283 federico a. sanchez, write-in (independent) 144\n, 3 arizona—continued for united states ", "representative—continued\n4. paul a. gosar, republican 203,487 mikel weisser, democrat 81,296 ", "5. andy biggs, republican 205,184 talia fuentes, democrat 114,940 ", "6. david schweikert, republican 201,578 w. john williamson, democrat 122,866 ", "7. eve nunez, republican 39,286 ruben gallego, democrat 119,465 neil b. westbrooks, write-in (green) 60 ", "8. trent franks, republican 204,942 mark salazar, green 93,954 hayden keener iii, write-in (republican) 75 ", "9. dave giles, republican 108,350 kyrsten sinema, democrat 169,055 cary dolego, write-in (green) 56 axel bello, write-in (independent) 46\n, "]
+  "districts": [{
+    "republican": 121745,
+    "democrat": 142219
+  }, {
+    "republican": 179806,
+    "democrat": 135873
+  }, {
+    "republican": null,
+    "democrat": 148973
+  }, {
+    "republican": 203487,
+    "democrat": 81296
+  }, {
+    "republican": 205184,
+    "democrat": 114940
+  }, {
+    "republican": 201578,
+    "democrat": 122866
+  }, {
+    "republican": 39286,
+    "democrat": 119465
+  }, {
+    "republican": 204942,
+    "democrat": null
+  }, {
+    "republican": 108350,
+    "democrat": 169055
+  }]
 }, {
   "name": "Arkansas",
-  "districts": ["1. eric a. “rick” crawford, republican 183,866 mark west, libertarian 57,181 ", "2. j. french hill, republican 176,472 dianne curry, democrat 111,347 chris hayes, libertarian 14,342 write-in 303 ", "3. steve womack, republican 217,192 steve isaacson, libertarian 63,715 ", "4. bruce westerman, republican 182,885 kerry hicks, libertarian 61,274 "]
+  "districts": [{
+    "republican": 183866,
+    "democrat": null
+  }, {
+    "republican": 176472,
+    "democrat": 111347
+  }, {
+    "republican": 217192,
+    "democrat": null
+  }, {
+    "republican": 182885,
+    "democrat": null
+  }]
 }, {
   "name": "California",
-  "districts": ["1. doug lamalfa, republican 185,448 jim reed, democrat 128,588 ", "2. dale k. mensing, republican 76,572 jared huffman, democrat 254,194 ", "3. n. eugene cleek, republican 104,453 john garamendi, democrat 152,513\n, 6 california—continued for united states representative—continued ", "4. tom mcclintock, republican 220,133 robert w. derlet, democrat 130,845 ", "5. carlos santamaria, republican 67,565 mike thompson, democrat 224,526 ", "6. robert “bob” evans, republican 57,848 doris o. matsui, democrat 177,565 ", "7. scott r. jones, republican 145,168 ami bera, democrat 152,133 ", "8. paul cook, republican 136,972 rita ramirez, democrat 83,035 ", "9. antonio c. “tony” amador, republican 98,992 jerry mcnerney, democrat 133,163 ", "10. jeff denham, republican 124,671 michael eggman, democrat 116,470 ", "11. roger allen petersen, republican 83,341 mark desaulnier, democrat 214,868 ", "12. nancy pelosi, democrat 274,035 preston picus, no party preference 64,810 ", "13. sue caro, republican 29,754 barbara lee, democrat 293,117 ", "14. angel cardenas, republican 54,817 jackie speier, democrat 231,630 ", "15. danny r. turner, republican 70,619 eric swalwell, democrat 198,578 ", "16. johnny m. tacherra, republican 70,483 jim costa, democrat 97,473 ", "17. ro khanna, democrat 142,268 michael m. honda, democrat 90,924 ", "18. richard b. fox, republican 93,470 anna g. eshoo, democrat 230,460 ", "19. g. burt lancaster, republican 64,061 zoe lofgren, democrat 181,802 ", "20. casey lucius, republican 74,811 jimmy panetta, democrat 180,980 ", "21. david g. valadao, republican 75,126 emilio huerta, democrat 57,282 ", "22. devin nunes, republican 158,755 louie j. campos, democrat 76,211 ", "23. kevin mccarthy, republican 167,116 wendy reed, democrat 74,468 ", "24. justin donald fareed, republican 144,780 salud carbajal, democrat 166,034 ", "25. stephen knight, republican 138,755 bryan caforio, democrat 122,406\n, 7 california—continued for united states ", "representative—continued\n26. rafael a. dagnesses, republican 111,059 julia brownley, democrat 169,248 ", "27. jack orswell, republican 81,655 judy chu, democrat 168,977 ", "28. lenore solis, republican 59,526 adam b. schiff, democrat 210,883 ", "29. tony cárdenas, democrat 128,407 richard alarcon, democrat 43,417 ", "30. mark reed, republican 77,325 brad sherman, democrat 205,279 ", "31. paul chabot, republican 94,866 pete aguilar, democrat 121,070 ", "32. grace f. napolitano, democrat 114,926 roger hernández, democrat 71,720 ", "33. kenneth w. wright, republican 110,822 ted lieu, democrat 219,397 ", "34. xavier becerra, democrat 122,842 adrienne nicole edwards, democrat 36,314 ", "35. tyler fischella, republican 47,309 norma j. torres, democrat 124,044 ", "36. jeff stone, republican 88,269 raul ruiz, democrat 144,348 ", "37. karen bass, democrat 192,490 chris blake wiggins, democrat 44,782 ", "38. ryan downing, republican 68,524 linda t. sánchez, democrat 163,590 ", "39. edward r. royce, republican 150,777 brett murdock, democrat 112,679 ", "40. lucille roybal-allard, democrat 106,554 roman gabriel gonzalez, no party preference 42,743 ", "41. doug shepherd, republican 69,159 mark takano, democrat 128,164 ", "42. ken calvert, republican 149,547 tim sheridan, democrat 104,689 ", "43. omar navarro, republican 52,499 maxine waters, democrat 167,017 ", "44. nanette diaz barragán, democrat 93,124 isadore hall iii, democrat 85,289 ", "45. mimi walters, republican 182,618 ron varasteh, democrat 129,231 ", "46. lou correa, democrat 115,248 bao nguyen, democrat 49,345 ", "47. andy whallon, republican 88,109 alan s. lowenthal, democrat 154,759\n, 8 california—continued for united states representative—continued ", "48. dana rohrabacher, republican 178,701 suzanne savary, democrat 127,715 ", "49. darrell e. issa, republican 155,888 doug applegate, democrat 154,267 ", "50. duncan hunter, republican 179,937 patrick malloy, democrat 103,646 ", "51. juan m. hidalgo, jr., republican 54,362 juan vargas, democrat 145,162 ", "52. denise gitsham, republican 139,403 scott h. peters, democrat 181,253 ", "53. james veltmeyer, republican 97,968 susan a. davis, democrat 198,988 "]
+  "districts": [{
+    "republican": 185448,
+    "democrat": 128588
+  }, {
+    "republican": 76572,
+    "democrat": 254194
+  }, {
+    "republican": 104453,
+    "democrat": 152513
+  }, {
+    "republican": 220133,
+    "democrat": 130845
+  }, {
+    "republican": 67565,
+    "democrat": 224526
+  }, {
+    "republican": 57848,
+    "democrat": 177565
+  }, {
+    "republican": 145168,
+    "democrat": 152133
+  }, {
+    "republican": 136972,
+    "democrat": 83035
+  }, {
+    "republican": 98992,
+    "democrat": 133163
+  }, {
+    "republican": 124671,
+    "democrat": 116470
+  }, {
+    "republican": 83341,
+    "democrat": 214868
+  }, {
+    "republican": null,
+    "democrat": 274035
+  }, {
+    "republican": 29754,
+    "democrat": 293117
+  }, {
+    "republican": 54817,
+    "democrat": 231630
+  }, {
+    "republican": 70619,
+    "democrat": 198578
+  }, {
+    "republican": 70483,
+    "democrat": 97473
+  }, {
+    "republican": null,
+    "democrat": 142268
+  }, {
+    "republican": 93470,
+    "democrat": 230460
+  }, {
+    "republican": 64061,
+    "democrat": 181802
+  }, {
+    "republican": 74811,
+    "democrat": 180980
+  }, {
+    "republican": 75126,
+    "democrat": 57282
+  }, {
+    "republican": 158755,
+    "democrat": 76211
+  }, {
+    "republican": 167116,
+    "democrat": 74468
+  }, {
+    "republican": 144780,
+    "democrat": 166034
+  }, {
+    "republican": 138755,
+    "democrat": 122406
+  }, {
+    "republican": 111059,
+    "democrat": 169248
+  }, {
+    "republican": 81655,
+    "democrat": 168977
+  }, {
+    "republican": 59526,
+    "democrat": 210883
+  }, {
+    "republican": null,
+    "democrat": 128407
+  }, {
+    "republican": 77325,
+    "democrat": 205279
+  }, {
+    "republican": 94866,
+    "democrat": 121070
+  }, {
+    "republican": null,
+    "democrat": 114926
+  }, {
+    "republican": 110822,
+    "democrat": 219397
+  }, {
+    "republican": null,
+    "democrat": 122842
+  }, {
+    "republican": 47309,
+    "democrat": 124044
+  }, {
+    "republican": 88269,
+    "democrat": 144348
+  }, {
+    "republican": null,
+    "democrat": 192490
+  }, {
+    "republican": 68524,
+    "democrat": 163590
+  }, {
+    "republican": 150777,
+    "democrat": 112679
+  }, {
+    "republican": null,
+    "democrat": 106554
+  }, {
+    "republican": 69159,
+    "democrat": 128164
+  }, {
+    "republican": 149547,
+    "democrat": 104689
+  }, {
+    "republican": 52499,
+    "democrat": 167017
+  }, {
+    "republican": null,
+    "democrat": 93124
+  }, {
+    "republican": 182618,
+    "democrat": 129231
+  }, {
+    "republican": null,
+    "democrat": 115248
+  }, {
+    "republican": 88109,
+    "democrat": 154759
+  }, {
+    "republican": 178701,
+    "democrat": 127715
+  }, {
+    "republican": 155888,
+    "democrat": 154267
+  }, {
+    "republican": 179937,
+    "democrat": 103646
+  }, {
+    "republican": 54362,
+    "democrat": 145162
+  }, {
+    "republican": 139403,
+    "democrat": 181253
+  }, {
+    "republican": 97968,
+    "democrat": 198988
+  }]
 }, {
   "name": "Colorado",
-  "districts": ["1. charles “casper” stockham, republican 105,030 diana degette, democrat 257,254 darrell dinges, libertarian 16,752 ", "2. nicholas morse, republican 170,001 jared polis, democrat 260,175 richard longstreth, libertarian 27,136 ", "3. scott r. tipton, republican 204,220 gail schwartz, democrat 150,914 gaylon kent, libertarian 18,903 ", "4. ken buck, republican 248,230 bob seay, democrat 123,642 bruce griffith, libertarian 18,761\n, 10 colorado—continued for united states ", "representative—continued\n5. doug lamborn, republican 225,445 misty plowright, democrat 111,676 mike mcredmond, libertarian 24,872 ", "6. mike coffman, republican 191,626 morgan carroll, democrat 160,372 norm olsen, libertarian 18,778 robert lee worthey, green 5,641 ", "7. george athanasopoulos, republican 144,066 ed perlmutter, democrat 199,758 martin l. buchanan, libertarian 18,186\n, "]
+  "districts": [{
+    "republican": 105030,
+    "democrat": 257254
+  }, {
+    "republican": 170001,
+    "democrat": 260175
+  }, {
+    "republican": 204220,
+    "democrat": 150914
+  }, {
+    "republican": 248230,
+    "democrat": 123642
+  }, {
+    "republican": 225445,
+    "democrat": 111676
+  }, {
+    "republican": 191626,
+    "democrat": 160372
+  }, {
+    "republican": 144066,
+    "democrat": 199758
+  }]
 }, {
   "name": "Connecticut",
-  "districts": ["1. matthew m. corey, republican 105,674 john b. larson, democrat 187,021 working families 13,665 s. michael derosa, green 6,563 charles jackson, write-in 1 mark stewart, write-in 1 ", "2. daria novak, republican 111,149 joe courtney, democrat 186,210 working families 22,608 jonathan pelto, green 5,332 daniel reale, libertarian 4,949 elizabeth f. traceski, write-in 9 ", "3. angel cadena, republican 95,786 rosa l. delauro, democrat 192,274 working families 21,298 christopher schaefer, write-in 18 andrew rule, write-in 3 ", "4. john shaban, republican 120,653 independent 5,071 james a. himes, democrat 187,811 carl e. vassar, write-in 5 ", "5. clay cope, republican 124,900 independent 4,901 elizabeth h. esty, democrat 163,499 working families 15,753 john pistone, write-in 28 ann-marie adams, write-in 1 "]
+  "districts": [{
+    "republican": 105674,
+    "democrat": 187021
+  }, {
+    "republican": 111149,
+    "democrat": 186210
+  }, {
+    "republican": 95786,
+    "democrat": 192274
+  }, {
+    "republican": 120653,
+    "democrat": 187811
+  }, {
+    "republican": 124900,
+    "democrat": 163499
+  }]
 }, {
   "name": "Delaware",
-  "districts": ["at large hans reigle, republican 172,301 lisa blunt rochester, democrat 233,554 mark j. perri, green 8,326 scott a. gesty, libertarian 6,436 "]
+  "districts": [{
+    "republican": 172301,
+    "democrat": 233554
+  }]
 }, {
   "name": "Florida",
-  "districts": ["1. matt gaetz, republican 255,107 steven specht, democrat 114,079 ", "2. neal dunn, republican 231,163 walter dartland, democrat 102,801 rob lapham, libertarian party of florida 9,395 antoine edward roberts, write-in 3 ", "3. ted s. yoho, republican 193,843 kenneth “ken” mcgurn, democrat 136,338 tom wells, no party affiliation 12,519 ", "4. john rutherford, republican 287,509 david e. bruderly, democrat 113,088 gary l. koniz, no party affiliation 9,054 daniel murphy, write-in 11 ", "5. glo smith, republican 108,325 al lawson, democrat 194,549 ", "6. ron desantis, republican 213,519 william “bill” mccullough, democrat 151,051\n, 14 florida—continued for united states representative—continued ", "7. john l. mica, republican 171,583 stephanie murphy, democrat 182,039 mike plaskon, write-in 33 ", "8. bill posey, republican 246,483 corry westbrook, democrat 127,127 bill stinson, no party affiliation 16,951 ", "9. wayne liebnitzky, republican 144,450 darren soto, democrat 195,311 ", "10. thuy lowe, republican 107,498 val demings, democrat 198,491 ", "11. daniel webster, republican 258,016 dave koller, democrat 124,713 bruce ray riggs, no party affiliation 11,990 ", "12. gus m. bilirakis, republican 253,559 robert matthew tager, democrat 116,110 ", "13. david w. jolly, republican 171,149 charlie crist, democrat 184,693 ", "14. christine quinn, republican 121,088 kathy castor, democrat 195,789 ", "15. dennis a. ross, republican 182,999 jim lange, democrat 135,475 ", "16. vern buchanan, republican 230,654 jan schneider, democrat 155,262 ", "17. thomas j. rooney, republican 209,348 april freeman, democrat 115,974 john w. sawyer iii, no party affiliation 13,353 ", "18. brian mast, republican 201,488 randy perkins, democrat 161,918 carla spalding, no party affiliation 12,503 marilyn holloman, write-in 9 ", "19. francis rooney, republican 239,225 robert m. neeld, democrat 123,812 david byron, write-in 109 timothy john rossano, write-in 20 ", "20. gary stein, republican 54,646 alcee l. hastings, democrat 222,914 ", "21. paul spain, republican 118,038 lois frankel, democrat 210,606 w. michael “mike” trout, no party affiliation 7,217 ", "22. andrea leigh mcgee, republican 138,737 theodore e. deutch, democrat 199,113 ", "23. joseph “joe” kaufman, republican 130,818 debbie wasserman schultz, democrat 183,225 don endriss, no party affiliation 5,180 lyle milstein, no party affiliation 3,897 ", "24. frederica s. wilson, democrat (1)\n, 15 florida—continued for united states representative—continued ", "25. mario diaz-balart, republican 157,921 alina valdes, democrat 95,319 ", "26. carlos curbelo, republican 148,547 joe garcia, democrat 115,493 jose peixoto, no party affiliation 16,502 ", "27. ileana ros-lehtinen, republican 157,917 scott fuhrman, democrat 129,760 "]
+  "districts": [{
+    "republican": 255107,
+    "democrat": 114079
+  }, {
+    "republican": 231163,
+    "democrat": 102801
+  }, {
+    "republican": 193843,
+    "democrat": 136338
+  }, {
+    "republican": 287509,
+    "democrat": 113088
+  }, {
+    "republican": 108325,
+    "democrat": 194549
+  }, {
+    "republican": 213519,
+    "democrat": 151051
+  }, {
+    "republican": 171583,
+    "democrat": 182039
+  }, {
+    "republican": 246483,
+    "democrat": 127127
+  }, {
+    "republican": 144450,
+    "democrat": 195311
+  }, {
+    "republican": 107498,
+    "democrat": 198491
+  }, {
+    "republican": 258016,
+    "democrat": 124713
+  }, {
+    "republican": 253559,
+    "democrat": 116110
+  }, {
+    "republican": 171149,
+    "democrat": 184693
+  }, {
+    "republican": 121088,
+    "democrat": 195789
+  }, {
+    "republican": 182999,
+    "democrat": 135475
+  }, {
+    "republican": 230654,
+    "democrat": 155262
+  }, {
+    "republican": 209348,
+    "democrat": 115974
+  }, {
+    "republican": 201488,
+    "democrat": 161918
+  }, {
+    "republican": 239225,
+    "democrat": 123812
+  }, {
+    "republican": 54646,
+    "democrat": 222914
+  }, {
+    "republican": 118038,
+    "democrat": 210606
+  }, {
+    "republican": 138737,
+    "democrat": 199113
+  }, {
+    "republican": 130818,
+    "democrat": 183225
+  }, {
+    "republican": null,
+    "democrat": null
+  }, {
+    "republican": 157921,
+    "democrat": 95319
+  }, {
+    "republican": 148547,
+    "democrat": 115493
+  }, {
+    "republican": 157917,
+    "democrat": 129760
+  }]
 }, {
   "name": "Georgia",
-  "districts": ["1. earl l. “buddy” carter, republican 210,243 nathan russo, write-in 869\n, 16 georgia—continued for united states representative—continued ", "2. greg duke, republican 94,056 sanford d. bishop, jr., democrat 148,543 ", "3. drew ferguson, republican 207,218 angela pendley, democrat 95,969 ", "4. victor armendariz, republican 70,593 henry c. “hank” johnson, jr., democrat 220,146 ", "5. douglas bell, republican 46,768 john lewis, democrat 253,781 ", "6. tom price, republican 201,088 rodney stooksbury, democrat 124,917 ", "7. rob woodall, republican 174,081 rashid malik, democrat 114,220 ", "8. austin scott, republican 173,983 james neal harris, democrat 83,225 ", "9. doug collins, republican 256,535 ", "10. jody b. hice, republican 243,725 leonard ware, write-in 886 patrick a. boggs, write-in 210 ", "11. barry loudermilk, republican 217,935 don wilson, democrat 105,383 ", "12. rick w. allen, republican 159,492 patricia c. mccracken, democrat 99,420 ", "13. david scott, democrat 252,833 ", "14. tom graves, republican 216,743 "]
+  "districts": [{
+    "republican": 210243,
+    "democrat": null
+  }, {
+    "republican": 94056,
+    "democrat": 148543
+  }, {
+    "republican": 207218,
+    "democrat": 95969
+  }, {
+    "republican": 70593,
+    "democrat": 220146
+  }, {
+    "republican": 46768,
+    "democrat": 253781
+  }, {
+    "republican": 201088,
+    "democrat": 124917
+  }, {
+    "republican": 174081,
+    "democrat": 114220
+  }, {
+    "republican": 173983,
+    "democrat": 83225
+  }, {
+    "republican": 256535,
+    "democrat": null
+  }, {
+    "republican": 243725,
+    "democrat": null
+  }, {
+    "republican": 217935,
+    "democrat": 105383
+  }, {
+    "republican": 159492,
+    "democrat": 99420
+  }, {
+    "republican": null,
+    "democrat": 252833
+  }, {
+    "republican": 216743,
+    "democrat": null
+  }]
 }, {
   "name": "Hawaii",
-  "districts": ["representative\n1. shirlene d. “shirl” ostrov, republican 45,958 colleen wakako hanabusa, democrat 145,417 alan j. k. yim, libertarian 6,601 calvin “g” griffin, nonpartisan 4,381 blank votes 11,013 over votes 161 ", "2. angela aulani kaaihue, republican 39,668 tulsi gabbard, democrat 170,848 blank votes 13,483 over votes 134\n, "]
+  "districts": [{
+    "republican": 45958,
+    "democrat": 145417
+  }, {
+    "republican": 39668,
+    "democrat": 170848
+  }]
 }, {
   "name": "Idaho",
-  "districts": ["1. raúl r. labrador, republican 242,252 james piotrowski, democrat 113,052 write-in 53 ", "2. michael k. simpson, republican 205,292 jennifer martinez, democrat 95,940 anthony tomkins, constitution 25,005 "]
+  "districts": [{
+    "republican": 242252,
+    "democrat": 113052
+  }, {
+    "republican": 205292,
+    "democrat": 95940
+  }]
 }, {
   "name": "Illinois",
-  "districts": ["1. august “o’neill” deuser, republican 81,817 bobby l. rush, democrat 234,037 tabitha carson, write-in 8 ", "2. john f. morrow, republican 59,471 robin l. kelly, democrat 235,051 ", "3. daniel lipinski, democrat 225,320 diane harris, write-in 91 ", "4. luis v. gutiérrez, democrat 171,297\n, 20 illinois—continued for united states representative—continued ", "5. vince kolber, republican 86,222 mike quigley, democrat 212,842 rob sherman, green 14,657 michael krynski, write-in 3 ", "6. peter j. roskam, republican 208,555 amanda howland, democrat 143,591 ", "7. jeffrey a. leef, republican 46,882 danny k. davis, democrat 250,584 ", "8. peter “pete” dicianni, republican 103,617 raja krishnamoorthi, democrat 144,954 ", "9. joan mccarthy lasonde, republican 109,550 janice d. schakowsky, democrat 217,306 david williams, write-in 79 susanne atanus, write-in 13 ", "10. robert j. dold, republican 135,535 brad schneider, democrat 150,435 joseph william kopsick, write-in 26 ", "11. tonia khouri, republican 108,995 bill foster, democrat 166,578 ", "12. mike bost, republican 169,976 charles “c. j.” baricevic, democrat 124,246 paula bradshaw, green 18,780 ", "13. rodney davis, republican 187,583 mark d. wicklund, democrat 126,811 ", "14. randy hultgren, republican 200,508 jim walz, democrat 137,589 ", "15. john shimkus, republican 274,554 ", "16. adam kinzinger, republican 259,722 john f. burchardt, write-in 131 ", "17. patrick harlan, republican 113,943 cheri bustos, democrat 173,125 ", "18. darin lahood, republican 250,506 junius rodriguez, democrat 96,770 don vance, write-in 7 "]
+  "districts": [{
+    "republican": 81817,
+    "democrat": 234037
+  }, {
+    "republican": 59471,
+    "democrat": 235051
+  }, {
+    "republican": null,
+    "democrat": 225320
+  }, {
+    "republican": null,
+    "democrat": 171297
+  }, {
+    "republican": 86222,
+    "democrat": 212842
+  }, {
+    "republican": 208555,
+    "democrat": 143591
+  }, {
+    "republican": 46882,
+    "democrat": 250584
+  }, {
+    "republican": 103617,
+    "democrat": 144954
+  }, {
+    "republican": 109550,
+    "democrat": 217306
+  }, {
+    "republican": 135535,
+    "democrat": 150435
+  }, {
+    "republican": 108995,
+    "democrat": 166578
+  }, {
+    "republican": 169976,
+    "democrat": 124246
+  }, {
+    "republican": 187583,
+    "democrat": 126811
+  }, {
+    "republican": 200508,
+    "democrat": 137589
+  }, {
+    "republican": 274554,
+    "democrat": null
+  }, {
+    "republican": 259722,
+    "democrat": null
+  }, {
+    "republican": 113943,
+    "democrat": 173125
+  }, {
+    "republican": 250506,
+    "democrat": 96770
+  }]
 }, {
   "name": "Indiana",
-  "districts": ["1. peter j. visclosky, democrat 207,515 donna dunn, libertarian 47,051 john meyer, write-in (independent) 17 ", "2. jackie walorski, republican 164,355 lynn c. coleman, democrat 102,401 ron cenkush, libertarian 10,601 ", "3. jim banks, republican 201,396 tommy a. schrader, democrat 66,023 pepper snyder, libertarian 19,828 ", "4. todd rokita, republican 193,412 john dale, democrat 91,256 steven m. mayoras, libertarian 14,766 ", "5. susan w. brooks, republican 221,957 angela demaree, democrat 123,849 matthew wittlief, libertarian 15,329 ", "6. luke messer, republican 204,920 barry welsh, democrat 79,135 rich turvey, libertarian 12,330 ", "7. catherine “cat” ping, republican 94,456 andré carson, democrat 158,739 drew thompson, libertarian 11,475 ", "8. larry bucshon, republican 187,702 ron drake, democrat 93,356 andrew horning, libertarian 13,655 ", "9. trey hollingsworth, republican 174,791 shelli yoder, democrat 130,627 russell brooksbank, libertarian 17,425\n, 22 indiana—continued "]
+  "districts": [{
+    "republican": null,
+    "democrat": 207515
+  }, {
+    "republican": 164355,
+    "democrat": 102401
+  }, {
+    "republican": 201396,
+    "democrat": 66023
+  }, {
+    "republican": 193412,
+    "democrat": 91256
+  }, {
+    "republican": 221957,
+    "democrat": 123849
+  }, {
+    "republican": 204920,
+    "democrat": 79135
+  }, {
+    "republican": 94456,
+    "democrat": 158739
+  }, {
+    "republican": 187702,
+    "democrat": 93356
+  }, {
+    "republican": 174791,
+    "democrat": 130627
+  }]
 }, {
   "name": "Iowa",
-  "districts": ["1. rod blum, republican 206,903 monica vernon, democrat 177,403 write-in (no party) 671 ", "2. christopher peters, republican 170,933 david loebsack, democrat 198,571 write-in (no party) 528 ", "3. david young, republican 208,598 jim mowrer, democrat 155,002 bryan jack holder, libertarian 15,372 claudia addy, nominated by petition 6,348 joe grandanette, nominated by petition 4,518 write-in (no party) 449 ", "4. steve king, republican 226,719 kim weaver, democrat 142,993 write-in (no party) 547\n, "]
+  "districts": [{
+    "republican": 206903,
+    "democrat": 177403
+  }, {
+    "republican": 170933,
+    "democrat": 198571
+  }, {
+    "republican": 208598,
+    "democrat": 155002
+  }, {
+    "republican": 226719,
+    "democrat": 142993
+  }]
 }, {
   "name": "Kansas",
-  "districts": ["1. roger marshall, republican 169,992 alan lapolice, independent 67,739 kerry burt, libertarian 19,366 tim huelskamp, write-in 874 ", "2. lynn jenkins, republican 181,228 britani potter, democrat 96,840 james houston bales, libertarian 19,333 ", "3. kevin yoder, republican 176,022 jay sidie, democrat 139,300 steven a. hohe, libertarian 27,791 ", "4. mike pompeo, republican 166,998 daniel b. giroux, democrat 81,495 miranda allen, independent 19,021 gorden j. bakken, libertarian 7,737 "]
+  "districts": [{
+    "republican": 169992,
+    "democrat": null
+  }, {
+    "republican": 181228,
+    "democrat": 96840
+  }, {
+    "republican": 176022,
+    "democrat": 139300
+  }, {
+    "republican": 166998,
+    "democrat": 81495
+  }]
 }, {
   "name": "Kentucky",
-  "districts": ["1. james r. comer, republican 216,959 samuel l. gaskins, democrat 81,710 terry mcintosh, write-in 332 ", "2. brett guthrie, republican 251,825\n, 25 kentucky—continued for united states representative—continued ", "3. harold bratcher, republican 122,093 john a. yarmuth, democrat 212,401 ", "4. thomas massie, republican 233,922 calvin sidle, democrat 94,065 ", "5. harold rogers, republican 221,242 ", "6. andy barr, republican 202,099 nancy jo kemper, democrat 128,728 "]
+  "districts": [{
+    "republican": 216959,
+    "democrat": 81710
+  }, {
+    "republican": 251825,
+    "democrat": null
+  }, {
+    "republican": 122093,
+    "democrat": 212401
+  }, {
+    "republican": 233922,
+    "democrat": 94065
+  }, {
+    "republican": 221242,
+    "democrat": null
+  }, {
+    "republican": 202099,
+    "democrat": 128728
+  }]
 }, {
   "name": "Louisiana",
-  "districts": ["1. steve scalise, republican 243,645 lee ann dugas, democrat 41,840 danil ezekiel faust, democrat 12,708 joseph “joe” swider, democrat 9,237 howard kearney, libertarian 9,405 eliot barron, green 6,717 chuemai yang, no party 3,236 ", "2. cedric l. richmond, democrat 198,289 melvin l. “kip” holden, democrat 57,125 kenneth cutno, democrat 28,855 ", "3. clay higgins, republican 2 77,671 scott a. angelle, republican 2 60,762 “gus” rantz, republican 25,662 “greg” ellison, republican 24,882 brett geymann, republican 21,607 bryan barrilleaux, republican 6,223 grover joseph rees, republican 2,457 herman l. vidrine, republican 1,357 jacob “dorian phibian” hebert, democrat 28,385 larry rader, democrat 27,830 guy mclendon, libertarian 2,937 kenny p. scelfo, sr., no party 2,670 ", "4. “mike” johnson, republican 3 87,370 ralph “trey” baucum, republican 50,412 oliver jenkins, republican 44,521 elbert guillory, republican 21,017 “rick” john, republican 13,220 marshall jones, democrat 3 46,579 mark david halverson, no party 3,149 kenneth j. krefft, no party 2,493 ", "5. ralph lee abraham, republican 208,545 billy burkette, republican 47,117 ", "6. garret graves, republican 207,483 robert lamar “bob” bell, republican 33,592 richard lieberman, democrat 49,380 jermaine sampson, democrat 29,822 richard m. fontanesi, libertarian 7,603 devin lance graham, other 3,218 "]
+  "districts": [{
+    "republican": 243645,
+    "democrat": 41840
+  }, {
+    "republican": null,
+    "democrat": 198289
+  }, {
+    "republican": 2,
+    "democrat": 28385
+  }, {
+    "republican": 3,
+    "democrat": 3
+  }, {
+    "republican": 208545,
+    "democrat": null
+  }, {
+    "republican": 207483,
+    "democrat": 49380
+  }]
 }, {
   "name": "Maine",
-  "districts": ["received\n482,591. 2 this vote count is from louisiana’s december 10, 2016, general (runoff) election, which was held because neither candidate received a majority of the\nvote in louisiana’s open (nonpartisan) primary on november 8, 2016. scott a. angelle received 91,532 votes in the primary, and clay higgins ", "received\n84,912. 3 this vote count is from louisiana’s december 10, 2016, general (runoff) election, which was held because neither candidate received a majority of the\nvote in louisiana’s open (nonpartisan) primary on november 8, 2016. “mike” johnson received 70,580 votes in the primary, and marshall jones ", "received\n80,593.\n, 27 maine for presidential electors republican 335,593 democratic 357,735 libertarian 38,105 blank votes 23,965 green independent 14,251 unenrolled 2,243 for united states representative 1. mark i. holbrook, republican 164,569 chellie pingree, democrat 227,546 james j. bouchard, write-in (libertarian) 276 blank votes 14,551 2. bruce poliquin, republican 192,878 emily ann cain, democrat 159,081 jay parker dresser, write-in (unenrolled) 224 blank votes 12,703 "]
+  "districts": [{
+    "republican": null,
+    "democrat": null
+  }, {
+    "republican": null,
+    "democrat": null
+  }, {
+    "republican": 335593,
+    "democrat": 227546
+  }]
 }, {
   "name": "Maryland",
-  "districts": ["1. andy harris, republican 242,574 joe werner, democrat 103,622 matt beers, libertarian 15,370 other write-ins 531 ", "2. pat mcdonough, republican 102,577 c. a. dutch ruppersberger, democrat 192,183 kristin s. kasprzak, libertarian 14,128 other write-ins 592\n, 28 maryland—continued for united states ", "representative—continued\n3. mark plaster, republican 115,048 john p. sarbanes, democrat 214,640 nnabu eze, green 9,461 ann dalrymple, write-in (democratic) 63 other write-ins 463 ", "4. george e. mcdermott, republican 68,670 anthony g. brown, democrat 237,501 kamesha t. clark, green 8,204 benjamin lee krause, libertarian 5,744 adrian petrus, write-in (democratic) 18 other write-ins 513 ", "5. mark arness, republican 105,931 steny h. hoyer, democrat 242,989 jason summers, libertarian 11,078 other write-ins 636 ", "6. amie hoeber, republican 133,081 john k. delaney, democrat 185,770 david l. howser, libertarian 6,889 george gluck, green 5,824 ted athey, write-in (unaffiliated) 103 other write-ins 306 ", "7. corrogan r. vaughn, republican 69,556 elijah e. cummings, democrat 238,838 myles b. hoenig, green 9,715 william t. newton, write-in (republican) 202 michael t. pearson, write-in (republican) 17 other write-ins 584 ", "8. dan cox, republican 124,651 jamie raskin, democrat 220,657 nancy wallace, green 11,201 jasen wunder, libertarian 7,283 kevin levester little, write-in (independent) 5 other write-ins 527\n, "]
+  "districts": [{
+    "republican": 242574,
+    "democrat": 103622
+  }, {
+    "republican": 102577,
+    "democrat": 192183
+  }, {
+    "republican": 115048,
+    "democrat": 214640
+  }, {
+    "republican": 68670,
+    "democrat": 237501
+  }, {
+    "republican": 105931,
+    "democrat": 242989
+  }, {
+    "republican": 133081,
+    "democrat": 185770
+  }, {
+    "republican": 69556,
+    "democrat": 238838
+  }, {
+    "republican": 124651,
+    "democrat": 220657
+  }]
 }, {
   "name": "Massachusetts",
-  "districts": ["representative\n1. richard e. neal, democrat 235,803 frederick o. mayock, independent 57,504 thomas t. simmons, libertarian 27,511 blank votes 28,137 all others 721 ", "2. james p. mcgovern, democrat 275,487 blank votes 82,786 all others 4,924 ", "3. ann wofford, republican 107,519 niki tsongas, democrat 236,713 blank votes 15,532 all others 360 ", "4. david a. rosa, republican 113,055 joseph p. kennedy iii, democrat 265,823 blank votes 16,091 all others 335 ", "5. katherine m. clark, democrat 285,606 blank votes 95,648 all others 4,201 ", "6. seth moulton, democrat 308,923 blank votes 101,694 all others 5,132 ", "7. michael e. capuano, democrat 253,354 blank votes 52,734 all others 3,557 ", "8. william burke, republican 102,744 stephen f. lynch, democrat 271,019 blank votes 21,744 all others 502 ", "9. mark c. alliegro, republican 127,803 william r. keating, democrat 211,790 paul j. harrington, independent 26,233 christopher d. cataldo, unenrolled 8,338 anna grace raduc, unenrolled 5,320 blank votes 23,747 all others 411\n, "]
+  "districts": [{
+    "republican": null,
+    "democrat": 235803
+  }, {
+    "republican": null,
+    "democrat": 275487
+  }, {
+    "republican": 107519,
+    "democrat": 236713
+  }, {
+    "republican": 113055,
+    "democrat": 265823
+  }, {
+    "republican": null,
+    "democrat": 285606
+  }, {
+    "republican": null,
+    "democrat": 308923
+  }, {
+    "republican": null,
+    "democrat": 253354
+  }, {
+    "republican": 102744,
+    "democrat": 271019
+  }, {
+    "republican": 127803,
+    "democrat": 211790
+  }]
 }, {
   "name": "Michigan",
-  "districts": ["1. jack bergman, republican 197,777 lon johnson, democrat 144,334 diane bostow, libertarian 13,386 ellis boal, green 4,774 ", "2. bill huizenga, republican 212,508 dennis b. murphy, democrat 110,391 erwin j. haas, libertarian 8,154 matthew a. brady, green 5,353 ronald e. graeser, u.s. taxpayers 2,904 joshua arnold, write-in 18 ", "3. justin amash, republican 203,545 douglas smith, democrat 128,400 ted gerrard, u.s. taxpayers 10,420 ", "4. john r. moolenaar, republican 194,572 debra wirth, democrat 101,277 leonard schwartz, libertarian 8,516 george m. zimmer, u.s. taxpayers 5,595 jordan salvi, green 3,953 keith butkovich, natural law 1,838 ", "5. al hardwick, republican 112,102 daniel t. kildee, democrat 195,279 steve sluka, libertarian 7,006 harley mikkelson, green 4,904 ", "6. fred upton, republican 193,259 paul clements, democrat 119,980 lorence wenke, libertarian 16,248 richard miller overton, write-in 78 ", "7. tim walberg, republican 184,321 gretchen d. driskell, democrat 134,010 ken proctor, libertarian 16,476 ", "8. mike bishop, republican 205,629 suzanna shkreli, democrat 143,791 jeff wood, libertarian 9,619 maria green, green 5,679 jeremy burgess, natural law 2,250 ", "9. christopher r. morse, republican 128,937 sander m. levin, democrat 199,661 matthew orlando, libertarian 9,563 john v. mcdermott, green 6,614 ", "10. paul mitchell, republican 215,132 frank accavitti, jr., democrat 110,112 lisa lane gioia, libertarian 10,612 benjamin nofs, green 5,127 ", "11. david a. trott, republican 200,872 anil kumar, democrat 152,461 kerry bentivolio, no party affiliation 16,610 jonathan ray osment, libertarian 9,545\n, 33 michigan—continued for united states ", "representative—continued\n12. jeff jones, republican 96,104 debbie dingell, democrat 211,378 gary walkowicz, working class 9,183 tom bagwell, libertarian 7,489 dylan calewarts, green 4,377 ejaz virk, write-in 11 ", "13. jeff gorman, republican 40,541 john conyers, jr., democrat 198,771 tiffany hayden, libertarian 9,648 sam johnson, working class 8,835 clyde darnell lynch, write-in 2 ", "14. howard klausner, republican 58,103 brenda l. lawrence, democrat 244,135 gregory creswell, libertarian 4,893 marcia squier, green 3,843\n, "]
+  "districts": [{
+    "republican": 197777,
+    "democrat": 144334
+  }, {
+    "republican": 212508,
+    "democrat": 110391
+  }, {
+    "republican": 203545,
+    "democrat": 128400
+  }, {
+    "republican": 194572,
+    "democrat": 101277
+  }, {
+    "republican": 112102,
+    "democrat": 195279
+  }, {
+    "republican": 193259,
+    "democrat": 119980
+  }, {
+    "republican": 184321,
+    "democrat": 134010
+  }, {
+    "republican": 205629,
+    "democrat": 143791
+  }, {
+    "republican": 128937,
+    "democrat": 199661
+  }, {
+    "republican": 215132,
+    "democrat": 110112
+  }, {
+    "republican": 200872,
+    "democrat": 152461
+  }, {
+    "republican": 96104,
+    "democrat": 211378
+  }, {
+    "republican": 40541,
+    "democrat": 198771
+  }, {
+    "republican": 58103,
+    "democrat": 244135
+  }]
 }, {
   "name": "Minnesota",
-  "districts": ["representative\n1. jim hagedorn, republican 166,524 timothy j. walz, democrat 169,071 write-in 278 ", "2. jason lewis, republican 173,970 angie craig, democratic-farmer-labor 167,315 paula overby, independence 28,870 write-in 360 ", "3. erik paulsen, republican 223,075 terri e. bonoff, democratic-farmer-labor 169,238 write-in 1,144 ", "4. greg ryan, republican 121,033 betty mccollum, democrat 203,299 susan pendergast sindt, legal marijuana now 27,152 write-in 461 ", "5. frank nelson drake, republican 80,660 keith ellison, democrat 249,957 dennis schuller, legal marijuana now 30,759 write-in 499 ", "6. tom emmer, republican 235,385 david snyder, democratic-farmer-labor 123,010 write-in 535 ", "7. dave hughes, republican 156,944 collin c. peterson, democrat 173,572 write-in 307 ", "8. stewart mills, republican 177,088 richard m. nolan, democrat 179,097 write-in 786\n, "]
+  "districts": [{
+    "republican": 166524,
+    "democrat": 169071
+  }, {
+    "republican": 173970,
+    "democrat": null
+  }, {
+    "republican": 223075,
+    "democrat": null
+  }, {
+    "republican": 121033,
+    "democrat": 203299
+  }, {
+    "republican": 80660,
+    "democrat": 249957
+  }, {
+    "republican": 235385,
+    "democrat": null
+  }, {
+    "republican": 156944,
+    "democrat": 173572
+  }, {
+    "republican": 177088,
+    "democrat": 179097
+  }]
 }, {
   "name": "Mississippi",
-  "districts": ["representative\n1. trent kelly, republican 206,455 jacob owens, democrat 83,947 chase wilson, libertarian 6,181 cathy l. toole, reform 3,840 ", "2. john bouie ii, republican 83,542 bennie g. thompson, democrat 192,343 troy ray, independent 6,918 johnny mcleod, reform 3,823 ", "3. gregg harper, republican 209,490 dennis quinn, democrat 96,101 roger i. gerrard, veterans party of america 8,696 lajena sheets, reform 2,158 ", "4. steven m. palazzo, republican 181,323 mark gladney, democrat 77,505 richard blake mccluskey, libertarian 14,687 shawn o’hara, reform 5,264\n, "]
+  "districts": [{
+    "republican": 206455,
+    "democrat": 83947
+  }, {
+    "republican": 83542,
+    "democrat": 192343
+  }, {
+    "republican": 209490,
+    "democrat": 96101
+  }, {
+    "republican": 181323,
+    "democrat": 77505
+  }]
 }, {
   "name": "Missouri",
-  "districts": ["1. steven g. bailey, republican 62,714 wm. lacy clay, democrat 236,993 robb e. cunningham, libertarian 14,317 ", "2. ann wagner, republican 241,954 bill otto, democrat 155,689 jim higgins, libertarian 11,758 david justus arnold, green 3,895 ", "3. blaine luetkemeyer, republican 249,865 kevin miller, democrat 102,891 dan hogan, libertarian 11,962 doanita simmons, constitution 3,605 harold davis, write-in 10 ", "4. vicky hartzler, republican 225,348 gordon christensen, democrat 92,510 mark bliss, libertarian 14,376 ", "5. jacob turk, republican 123,771 emanuel cleaver, democrat 190,766 roy welborn, libertarian 9,733 ", "6. sam graves, republican 238,388 david m. blackwell, democrat 99,692 russ lee monchil, libertarian 8,123 mike diel, green 4,241 ", "7. billy long, republican 228,692 genevieve “gen” williams, democrat 92,756 benjamin t. brixey, libertarian 17,153 amber thomsen, write-in 6 ", "8. jason smith, republican 229,792 dave cowell, democrat 70,009 jonathan shell, libertarian 9,070 "]
+  "districts": [{
+    "republican": 62714,
+    "democrat": 236993
+  }, {
+    "republican": 241954,
+    "democrat": 155689
+  }, {
+    "republican": 249865,
+    "democrat": 102891
+  }, {
+    "republican": 225348,
+    "democrat": 92510
+  }, {
+    "republican": 123771,
+    "democrat": 190766
+  }, {
+    "republican": 238388,
+    "democrat": 99692
+  }, {
+    "republican": 228692,
+    "democrat": 92756
+  }, {
+    "republican": 229792,
+    "democrat": 70009
+  }]
 }, {
   "name": "Montana",
-  "districts": ["at large ryan k. zinke, republican 285,358 denise juneau, democrat 205,919 rick breckenridge, libertarian 16,554 "]
+  "districts": [{
+    "republican": 285358,
+    "democrat": 205919
+  }]
 }, {
   "name": "Nebraska",
-  "districts": ["1. jeff fortenberry, republican 189,771 daniel m. wik, democrat 83,467 ", "2. don bacon, republican 141,066 brad ashford, democrat 137,602 steven laird, libertarian 9,640 ", "3. adrian smith, republican 226,720 "]
+  "districts": [{
+    "republican": 189771,
+    "democrat": 83467
+  }, {
+    "republican": 141066,
+    "democrat": 137602
+  }, {
+    "republican": 226720,
+    "democrat": null
+  }]
 }, {
   "name": "Nevada",
-  "districts": ["1. mary perry, republican 54,174 dina titus, democrat 116,537 reuben d’silva, no political party 13,897 kamau a. bakari, independent american 3,744 ", "2. mark e. amodei, republican 182,676 h. d. “chip” evans, democrat 115,722 john h. everhart, independent american 8,693 drew knight, no political party 6,245 ", "3. danny tarkanian, republican 142,926 jacky rosen, democrat 146,869 warren markowitz, independent american 11,602 david goossen, no political party 9,566 ", "4. cresent hardy, republican 118,328 ruben kihuen, democrat 128,985 steve brown, libertarian 10,206 mike little, independent american 8,327 "]
+  "districts": [{
+    "republican": 54174,
+    "democrat": 116537
+  }, {
+    "republican": 182676,
+    "democrat": 115722
+  }, {
+    "republican": 142926,
+    "democrat": 146869
+  }, {
+    "republican": 118328,
+    "democrat": 128985
+  }]
 }, {
   "name": "New Hampshire",
-  "districts": ["representative\n1. frank c. guinta, republican 157,176 carol shea-porter, democrat 162,080 shawn p. o’connor, independent 34,735 brendan kelly, independent 6,074 robert lombardo, libertarian 5,507 john potucek, write-in 163 write-in 55 scatter 194 ", "2. jim lawrence, republican 158,825 ann m. kuster, democrat 174,371 john j. babiarz, independent 17,076 scatter 237\n, "]
+  "districts": [{
+    "republican": 157176,
+    "democrat": 162080
+  }, {
+    "republican": 158825,
+    "democrat": 174371
+  }]
 }, {
   "name": "New Jersey",
-  "districts": ["1. bob patterson, republican 112,388 donald norcross, democrat 183,231 scot john tomaszewski, socialist 5,473 william f. sihr iv, libertarian 2,410 michael berman, americanindependents.org 1,971 ", "2. frank a. lobiondo, republican 176,338 david h. cole, democrat 110,838 john ordille, libertarian 3,773 james keenan, make government work 2,653 steven fenichel, representing the 99% 1,574 eric beechwood, people’s independent progressive 1,387 gabriel brian franco, for political revolution 1,232 ", "3. thomas macarthur, republican 194,596 frederick john lavergne, democrat 127,526 lawrence w. berlinski, jr., constitution 5,938 ", "4. christopher h. smith, republican 211,992 lorna phillipson, democrat 111,532 hank schroeder, economic growth 5,840 jeremy marcus, libertarian 3,320 ", "5. scott garrett, republican 157,690 joshua s. gottheimer, democrat 172,587 claudio belusic, libertarian 7,424 ", "6. brent sonnek-schmelz, republican 91,908 frank pallone, jr., democrat 167,895 rajit b. malliah, green 1,912 judith shamy, libertarian 1,720 ", "7. leonard lance, republican 185,850 peter jacob, democrat 148,188 dan o’neill, libertarian 5,343 arthur t. haussmann, jr., conservative 4,254 ", "8. agha khan, republican 32,337 albio sires, democrat 134,733 pablo olivera, wake up america 4,381 dan delaney, libertarian 3,438 ", "9. hector l. castillo, republican 65,376 bill pascrell, jr., democrat 162,642 diego rivera, libertarian 3,327 jeff boss, nsa did 911 1,897 ", "10. david h. pinckney, republican 26,450 donald m. payne, jr., democrat 190,856 joanne miller, women of power 3,719 aaron walter fraser, new beginning’s 1,746\n, 45 new jersey—continued for united states ", "representative—continued\n11. rodney p. frelinghuysen, republican 194,299 joseph m. wenzel, democrat 130,162 thomas depasquale, financial independence 7,056 jeff hetrick, libertarian 3,475 ", "12. steven j. uccio, republican 92,407 bonnie watson coleman, democrat 181,430 r. edward forchion, legalize marijuana party 6,094 robert shapiro, teddy roosevelt progressive 2,775 thomas fitzpatrick, libertarian 2,482 steven welzer, green 2,135 michael r. bollentin, we the people 1,311\n, "]
+  "districts": [{
+    "republican": 112388,
+    "democrat": 183231
+  }, {
+    "republican": 176338,
+    "democrat": 110838
+  }, {
+    "republican": 194596,
+    "democrat": 127526
+  }, {
+    "republican": 211992,
+    "democrat": 111532
+  }, {
+    "republican": 157690,
+    "democrat": 172587
+  }, {
+    "republican": 91908,
+    "democrat": 167895
+  }, {
+    "republican": 185850,
+    "democrat": 148188
+  }, {
+    "republican": 32337,
+    "democrat": 134733
+  }, {
+    "republican": 65376,
+    "democrat": 162642
+  }, {
+    "republican": 26450,
+    "democrat": 190856
+  }, {
+    "republican": 194299,
+    "democrat": 130162
+  }, {
+    "republican": 92407,
+    "democrat": 181430
+  }]
 }, {
   "name": "New Mexico",
-  "districts": ["representative\n1. richard gregory priem, republican 96,879 michelle lujan grisham, democrat 181,088 ", "2. stevan pearce, republican 143,515 merrie lee soules, democrat 85,232 jack a. mcgrann, write-in 70 ", "3. michael h. romero, republican 102,730 ben ray luján, democrat 170,612\n, "]
+  "districts": [{
+    "republican": 96879,
+    "democrat": 181088
+  }, {
+    "republican": 143515,
+    "democrat": 85232
+  }, {
+    "republican": 102730,
+    "democrat": 170612
+  }]
 }, {
   "name": "New York",
-  "districts": ["representative\n1. lee m. zeldin, republican 158,409 conservative 23,327 independence 5,920 reform 843 anna e. throne-holst, democrat 126,635 working families 6,147 women’s equality 2,496 blank votes 17,542 void 122 scattering 113 ", "2. peter t. king, republican/tax revolt 157,571 conservative 21,810 reform 2,125 duwayne gregory, democrat 102,270 working families 4,017 independence 3,213 women’s equality 1,438 blank votes 24,660 void 297 scattering 151 ", "3. jack m. martins, republican 133,954 conservative 16,410 reform 1,940 thomas r. suozzi, democrat 171,775 blank votes 26,483 void 229 scattering 175 ", "4. david h. gurfein, republican 111,246 conservative 14,137 reform 1,055 kathleen m. rice, democrat 181,861 women’s equality 4,562 blank votes 29,823 void 356 scattering 139\n, 51 new york—continued for united states representative—continued ", "5. michael a. o’reilly, republican 26,791 conservative 3,521 gregory w. meeks, democrat 197,852 women’s equality 1,963 frank francois, green 3,587 blank votes 15,357 scattering 139 void 26 ", "6. danniel s. maio, republican 43,770 conservative 4,875 blue lives matter 1,972 grace meng, democrat 131,463 women’s equality 5,043 haris bhatti, haris bhatti party 2,123 blank votes 20,945 scattering 187 ", "7. allan e. romaguera, republican 14,941 conservative 2,537 nydia m. velázquez, democrat 165,819 women’s equality 6,327 blank votes 17,093 scattering 266 ", "8. hakeem s. jeffries, democrat 203,235 working families 11,360 daniel j. cavanagh, conservative 15,401 blank votes 27,399 scattering 207 ", "9. yvette d. clarke, democrat 198,886 working families 15,303 alan bellone, conservative 17,576 blank votes 24,759 scattering 329 ", "10. philip rosenthal, republican 46,275 conservative 4,646 independence 2,093 stop iran deal 843 jerrold nadler, democrat 180,117 working families 10,471 women’s equality 1,783 blank votes 19,991 scattering 297 ", "11. daniel m. donovan, jr., republican 122,606 conservative 12,824 independence 5,636 reform 1,868 richard a. reichard, democrat 85,257 henry j. bardel, green 3,906 blank votes 19,401 scattering 220 ", "12. robert ardini, republican 49,398 carolyn b. maloney, democrat 230,153 working families 14,205 blank votes 18,219 scattering 314\n, 52 new york—continued for united states ", "representative—continued\n13. robert a. evans, jr., republican 13,129 independence 2,960 adriano espaillat, democrat 207,194 daniel vila rivera, green 8,248 scott lloyd fenstermaker, transparent government 1,877 blank votes 21,502 scattering 329 ", "14. frank j. spotorno, republican 26,891 conservative 3,654 joseph crowley, democrat 138,367 working families 7,317 women’s equality 1,903 blank votes 18,978 scattering 191 ", "15. alejandro vega, republican 6,129 josé e. serrano, democrat 165,688 eduardo ramirez, conservative 2,104 blank votes 19,667 scattering 115 ", "16. eliot l. engel, democrat 198,811 working families 8,518 women’s equality 2,528 derickson k. lawrence, people’s choice 11,825 blank votes 65,326 scattering 548 ", "17. nita m. lowey, democrat 193,819 working families 15,706 women’s equality 5,005 blank votes 108,978 scattering 2,055 void 8 ", "18. phil oliva, republican 111,117 conservative 16,968 reform 1,284 sean patrick maloney, democrat 140,951 independence 10,356 working families 8,771 women’s equality 1,982 blank votes 27,551 scattering 98 void 45 ", "19. john j. faso, republican 135,905 conservative 21,353 independence 8,028 reform 885 zephyr teachout, democrat 125,956 working families 15,268 blank votes 18,823 scattering 219 void 151\n, 53 new york—continued for united states ", "representative—continued\n20. joe vitollo, republican 83,328 conservative 15,902 reform 1,508 paul tonko, democrat 188,428 working families 10,935 independence 10,622 women’s equality 3,036 blank votes 18,388 scattering 183 void 169 ", "21. elise m. stefanik, republican 152,597 conservative 15,526 independence 8,799 reform 964 mike derrick, democrat 75,965 working families 6,196 matthew j. funiciello, green 12,452 blank votes 15,888 void 117 scattering 107 ", "22. claudia tenney, republican 113,287 conservative 16,157 kim a. myers, democrat 102,734 working families 11,532 martin babinec, reform 24,595 upstate jobs 10,043 blank votes 17,413 scattering 183 void 142 ", "23. tom reed, republican 136,964 conservative 16,420 independence 6,790 reform 876 john f. plumb, democrat 106,600 working families 11,984 blank votes 16,402 scattering 101 void 61 ", "24. john katko, republican 150,330 conservative 20,399 independence 10,931 reform 1,101 colleen deacon, democrat 110,550 working families 8,490 blank votes 13,286 scattering 314 void 28 ", "25. mark w. assini, republican 113,840 conservative 20,883 independence 6,856 reform 1,071 louise mcintosh slaughter, democrat 168,660 working families 10,195 women’s equality 4,095 blank votes 10,451 scattering 231 void 104\n, 54 new york—continued for united states ", "representative—continued\n26. shelly schratz, republican 56,930 conservative 16,447 brian higgins, democrat 195,322 working families 16,138 women’s equality 3,829 blank votes 22,140 scattering 13 ", "27. chris collins, republican 175,509 conservative 34,292 independence 9,995 reform 1,089 diana k. kastenbaum, democrat 107,832 blank votes 25,582 scattering 92 void 35\n, "]
+  "districts": [{
+    "republican": 158409,
+    "democrat": 126635
+  }, {
+    "republican": null,
+    "democrat": 102270
+  }, {
+    "republican": 133954,
+    "democrat": 171775
+  }, {
+    "republican": 111246,
+    "democrat": 181861
+  }, {
+    "republican": 26791,
+    "democrat": 197852
+  }, {
+    "republican": 43770,
+    "democrat": 131463
+  }, {
+    "republican": 14941,
+    "democrat": 165819
+  }, {
+    "republican": null,
+    "democrat": 203235
+  }, {
+    "republican": null,
+    "democrat": 198886
+  }, {
+    "republican": 46275,
+    "democrat": 180117
+  }, {
+    "republican": 122606,
+    "democrat": 85257
+  }, {
+    "republican": 49398,
+    "democrat": 230153
+  }, {
+    "republican": 13129,
+    "democrat": 207194
+  }, {
+    "republican": 26891,
+    "democrat": 138367
+  }, {
+    "republican": 6129,
+    "democrat": 165688
+  }, {
+    "republican": null,
+    "democrat": 198811
+  }, {
+    "republican": null,
+    "democrat": 193819
+  }, {
+    "republican": 111117,
+    "democrat": 140951
+  }, {
+    "republican": 135905,
+    "democrat": 125956
+  }, {
+    "republican": 83328,
+    "democrat": 188428
+  }, {
+    "republican": 152597,
+    "democrat": 75965
+  }, {
+    "republican": 113287,
+    "democrat": 102734
+  }, {
+    "republican": 136964,
+    "democrat": 106600
+  }, {
+    "republican": 150330,
+    "democrat": 110550
+  }, {
+    "republican": 113840,
+    "democrat": 168660
+  }, {
+    "republican": 56930,
+    "democrat": 195322
+  }, {
+    "republican": 175509,
+    "democrat": 107832
+  }]
 }, {
   "name": "North Carolina",
-  "districts": ["1. h. powell dew, jr., republican 101,567 g. k. butterfield, democrat 240,661 j. j. summerell, libertarian 8,471 ", "2. george holding, republican 221,485 john p. mcneil, democrat 169,082 ", "3. walter b. jones, republican 217,531 ernest t. reeves, democrat 106,170 ", "4. sue googe, republican 130,161 david e. price, democrat 279,380 ", "5. virginia foxx, republican 207,625 josh brannon, democrat 147,887 ", "6. mark walker, republican 207,983 pete glidewell, democrat 143,167 ", "7. david rouzer, republican 211,801 j. wesley casteen, democrat 135,905 ", "8. richard hudson, republican 189,863 thomas mills, democrat 133,182 ", "9. robert pittenger, republican 193,452 christian cano, democrat 139,041 ", "10. patrick t. mchenry, republican 220,825 andy millard, democrat 128,919 ", "11. mark meadows, republican 230,405 rick bryson, democrat 129,103 ", "12. leon threatt, republican 115,185 alma s. adams, democrat 234,115 ", "13. ted budd, republican 199,443 bruce davis, democrat 156,049 "]
+  "districts": [{
+    "republican": 101567,
+    "democrat": 240661
+  }, {
+    "republican": 221485,
+    "democrat": 169082
+  }, {
+    "republican": 217531,
+    "democrat": 106170
+  }, {
+    "republican": 130161,
+    "democrat": 279380
+  }, {
+    "republican": 207625,
+    "democrat": 147887
+  }, {
+    "republican": 207983,
+    "democrat": 143167
+  }, {
+    "republican": 211801,
+    "democrat": 135905
+  }, {
+    "republican": 189863,
+    "democrat": 133182
+  }, {
+    "republican": 193452,
+    "democrat": 139041
+  }, {
+    "republican": 220825,
+    "democrat": 128919
+  }, {
+    "republican": 230405,
+    "democrat": 129103
+  }, {
+    "republican": 115185,
+    "democrat": 234115
+  }, {
+    "republican": 199443,
+    "democrat": 156049
+  }]
 }, {
   "name": "North Dakota",
-  "districts": ["at large kevin cramer, republican 233,980 chase iron eyes, democratic-nonpartisan league 80,377 jack seaman, libertarian 23,528 write-in 574 "]
+  "districts": [{
+    "republican": 233980,
+    "democrat": null
+  }]
 }, {
   "name": "Ohio",
-  "districts": ["1. steve chabot, republican 210,014 michele young, democrat 144,644 sholom d. keller, write-in 114 kiumars g. kiani, write-in 16\n, 60 ohio—continued for united states representative—continued ", "2. brad r. wenstrup, republican 221,193 william r. smith, democrat 111,694 janet everhard, write-in 7,392 ", "3. john adams, republican 91,560 joyce beatty, democrat 199,791 ", "4. jim jordan, republican 210,227 janet garrett, democrat 98,981 ", "5. robert e. latta, republican 244,599 james neu, jr., democrat 100,392 ", "6. bill johnson, republican 213,975 michael l. lorentz, democrat 88,780 ", "7. bob gibbs, republican 198,221 roy rich, democrat 89,638 dan phillip, no party 21,694 ", "8. warren davidson, republican 223,833 steven fought, democrat 1 87,794 derrick james hendricks, green 13,879 ", "9. donald p. larson, republican 88,427 marcy kaptur, democrat 193,966 george skalsky, write-in 5 ", "10. michael r. turner, republican 215,724 robert klepinger, democrat 109,981 tom mcmasters, no party 10,890 david a. harlow, write-in 7 ", "11. beverly a. goldstein, republican 59,769 marcia l. fudge, democrat 242,917 ", "12. patrick j. tiberi, republican 251,266 ed albertson, democrat 112,638 joe manchik, green 13,474 john j. baumeister, write-in 156 ", "13. richard a. morckel, republican 99,377 tim ryan, democrat 208,610 calvin hill, sr., write-in 17 ", "14. david p. joyce, republican 219,191 michael wager, democrat 130,907 andrew jarvi, write-in 171 ", "15. steve stivers, republican 222,847 scott wharton, democrat 113,960 ", "16. james b. renacci, republican 225,794 keith mundy, democrat 119,830 "]
+  "districts": [{
+    "republican": 210014,
+    "democrat": 144644
+  }, {
+    "republican": 221193,
+    "democrat": 111694
+  }, {
+    "republican": 91560,
+    "democrat": 199791
+  }, {
+    "republican": 210227,
+    "democrat": 98981
+  }, {
+    "republican": 244599,
+    "democrat": 100392
+  }, {
+    "republican": 213975,
+    "democrat": 88780
+  }, {
+    "republican": 198221,
+    "democrat": 89638
+  }, {
+    "republican": 223833,
+    "democrat": 1
+  }, {
+    "republican": 88427,
+    "democrat": 193966
+  }, {
+    "republican": 215724,
+    "democrat": 109981
+  }, {
+    "republican": 59769,
+    "democrat": 242917
+  }, {
+    "republican": 251266,
+    "democrat": 112638
+  }, {
+    "republican": 99377,
+    "democrat": 208610
+  }, {
+    "republican": 219191,
+    "democrat": 130907
+  }, {
+    "republican": 222847,
+    "democrat": 113960
+  }, {
+    "republican": 225794,
+    "democrat": 119830
+  }]
 }, {
   "name": "Oklahoma",
-  "districts": ["1. jim bridenstine, republican (1) ", "2. markwayne mullin, republican 189,839 joshua harris-till, democrat 62,387 john mccarthy, independent 16,644 ", "3. frank d. lucas, republican 227,525 frankie robbins, democrat 63,090 ", "4. tom cole, republican 204,143 christina owen, democrat 76,472 sevier white, libertarian 12,574 ", "5. steve russell, republican 160,184 al mcaffrey, democrat 103,273 zachary knight, libertarian 17,113 "]
+  "districts": [{
+    "republican": null,
+    "democrat": null
+  }, {
+    "republican": 189839,
+    "democrat": 62387
+  }, {
+    "republican": 227525,
+    "democrat": 63090
+  }, {
+    "republican": 204143,
+    "democrat": 76472
+  }, {
+    "republican": 160184,
+    "democrat": 103273
+  }]
 }, {
   "name": "Oregon",
-  "districts": ["1. brian j. heinrich, republican 139,756 suzanne bonamici, democrat 225,391 kyle sheahan, libertarian 12,257 miscellaneous 691 ", "2. greg walden, republican 272,952 james “jim” crary, democrat 106,640 miscellaneous 1,147 ", "3. earl blumenauer, democrat 274,687 david w. walker, independent 78,154 david delk, progressive 27,978 miscellaneous 1,536 ", "4. art robinson, republican 157,743 peter a. defazio, democrat 220,628 mike beilstein, pacific green 12,194 gil guthrie, libertarian 6,527 miscellaneous 476 ", "5. colm willis, republican 160,443 kurt schrader, democrat 199,505 marvin sandnes, pacific green 12,542 miscellaneous 618 "]
+  "districts": [{
+    "republican": 139756,
+    "democrat": 225391
+  }, {
+    "republican": 272952,
+    "democrat": 106640
+  }, {
+    "republican": null,
+    "democrat": 274687
+  }, {
+    "republican": 157743,
+    "democrat": 220628
+  }, {
+    "republican": 160443,
+    "democrat": 199505
+  }]
 }, {
   "name": "Pennsylvania",
-  "districts": ["1. deborah williams, republican 53,219 robert a. brady, democrat 245,791 ", "2. james a. jones, republican 35,131 dwight evans, democrat 322,514 ", "3. mike kelly, republican 244,893 ", "4. scott perry, republican 220,628 joshua burkholder, democrat 113,372 ", "5. glenn thompson, republican 206,761 kerith strano taylor, democrat 101,082 ", "6. ryan a. costello, republican 207,469 mike parrish, democrat 155,000 ", "7. patrick meehan, republican 225,678 mary ellen balchunis, democrat 153,824 ", "8. brian fitzpatrick, republican 207,263 steve santarsiero, democrat 173,555 ", "9. bill shuster, republican 186,580 art halvorson, democrat 107,985 ", "10. tom marino, republican 211,282 mike molesevich, democrat 89,823 ", "11. lou barletta, republican 199,421 mike marsicano, democrat 113,800 ", "12. keith j. rothfus, republican 221,851 erin r. mcclelland, democrat 137,353 ", "13. brendan f. boyle, democrat 239,316 ", "14. lenny mcallister, republican 87,999 michael f. doyle, democrat 255,293 ", "15. charles w. dent, republican 190,618 rick daugherty, democrat 124,129 paul rizzo, libertarian 11,727 ", "16. lloyd k. smucker, republican 168,669 christina hartman, democrat 134,586 shawn patrick house, libertarian 10,518 ", "17. matt connolly, republican 135,430 matt cartwright, democrat 157,734 ", "18. tim murphy, republican 293,684 "]
+  "districts": [{
+    "republican": 53219,
+    "democrat": 245791
+  }, {
+    "republican": 35131,
+    "democrat": 322514
+  }, {
+    "republican": 244893,
+    "democrat": null
+  }, {
+    "republican": 220628,
+    "democrat": 113372
+  }, {
+    "republican": 206761,
+    "democrat": 101082
+  }, {
+    "republican": 207469,
+    "democrat": 155000
+  }, {
+    "republican": 225678,
+    "democrat": 153824
+  }, {
+    "republican": 207263,
+    "democrat": 173555
+  }, {
+    "republican": 186580,
+    "democrat": 107985
+  }, {
+    "republican": 211282,
+    "democrat": 89823
+  }, {
+    "republican": 199421,
+    "democrat": 113800
+  }, {
+    "republican": 221851,
+    "democrat": 137353
+  }, {
+    "republican": null,
+    "democrat": 239316
+  }, {
+    "republican": 87999,
+    "democrat": 255293
+  }, {
+    "republican": 190618,
+    "democrat": 124129
+  }, {
+    "republican": 168669,
+    "democrat": 134586
+  }, {
+    "republican": 135430,
+    "democrat": 157734
+  }, {
+    "republican": 293684,
+    "democrat": null
+  }]
 }, {
   "name": "Rhode Island",
-  "districts": ["1. harold russell taub, republican 71,023 david n. cicilline, democrat 130,534 write-in 814 ", "2. rhue r. reis, republican 70,301 james r. langevin, democrat 133,108 jeffrey c. johnson, independent 16,253 salvatore g. caiozzo, independent 8,942 write-in 544 "]
+  "districts": [{
+    "republican": 71023,
+    "democrat": 130534
+  }, {
+    "republican": 70301,
+    "democrat": 133108
+  }]
 }, {
   "name": "South Carolina",
-  "districts": ["representative\n1. mark sanford, republican 190,410 dimitri cherny, democrat 110,539 working families 5,757 green 3,483 michael grier, jr., libertarian 11,614 albert travison, american 2,774 write-in 593 ", "2. joe wilson, republican 183,746 arik bjorn, democrat 105,306 green 4,146 eddie mccain, american 11,444 write-in 354 ", "3. jeff duncan, republican 196,325 hosea cleveland, democrat 72,933 write-in 282 ", "4. trey gowdy, republican 198,648 chris fedalei, democrat 91,676 michael chandler, constitution 5,103 write-in 243 ", "5. mick mulvaney, republican 161,669 fran person, democrat 105,772 rudy barnes, jr., american 5,388 write-in 177 ", "6. laura sterling, republican 70,099 james e. clyburn, democrat 177,947 rich piotrowski, libertarian 3,131 prince charles mallory, green 2,499 write-in 225 ", "7. tom rice, republican 176,468 mal hyman, democrat 103,454 working families 6,747 green 2,543 write-in 251\n, "]
+  "districts": [{
+    "republican": 190410,
+    "democrat": 110539
+  }, {
+    "republican": 183746,
+    "democrat": 105306
+  }, {
+    "republican": 196325,
+    "democrat": 72933
+  }, {
+    "republican": 198648,
+    "democrat": 91676
+  }, {
+    "republican": 161669,
+    "democrat": 105772
+  }, {
+    "republican": 70099,
+    "democrat": 177947
+  }, {
+    "republican": 176468,
+    "democrat": 103454
+  }]
 }, {
   "name": "South Dakota",
-  "districts": ["at large kristi l. noem, republican 237,163 paula hawks, democrat 132,810 "]
+  "districts": [{
+    "republican": 237163,
+    "democrat": 132810
+  }]
 }, {
   "name": "Tennessee",
-  "districts": ["1. david p. roe, republican 198,293 alan bohms, democrat 39,024 robert d. franklin, independent 15,702 paul krane, write-in 6 ", "2. john j. duncan, jr., republican 212,455 stuart starr, democrat 68,401 ", "3. charles j. “chuck” fleischmann, republican 176,613 melody shekari, democrat 76,727 rick tyler, independent 5,098 cassandra mitchell, independent 5,075 topher kersting, independent 2,493 ", "4. scott desjarlais, republican 165,796 steven reynolds, democrat 89,141 ", "5. stacy ries snyder, republican 102,433 jim cooper, democrat 171,111 ", "6. diane black, republican 202,234 david w. kent, democrat 61,995 david ross, independent 20,261 ", "7. marsha blackburn, republican 200,407 tharon chandler, democrat 65,226 leonard d. ladner, independent 11,880 ", "8. david kustoff, republican 194,386 rickey hobson, democrat 70,925 shelia l. godwin, independent 6,442 james hart, independent 4,057 adrian m. montague, independent 2,497 mark j. rawles, independent 2,445 karen free spirit talley-lane, independent 1,981\n, 68 tennessee—continued for united states representative—continued ", "9. wayne alberson, republican 41,123 steve cohen, democrat 171,631 paul cook, independent 5,203 "]
+  "districts": [{
+    "republican": 198293,
+    "democrat": 39024
+  }, {
+    "republican": 212455,
+    "democrat": 68401
+  }, {
+    "republican": 176613,
+    "democrat": 76727
+  }, {
+    "republican": 165796,
+    "democrat": 89141
+  }, {
+    "republican": 102433,
+    "democrat": 171111
+  }, {
+    "republican": 202234,
+    "democrat": 61995
+  }, {
+    "republican": 200407,
+    "democrat": 65226
+  }, {
+    "republican": 194386,
+    "democrat": 70925
+  }, {
+    "republican": 41123,
+    "democrat": 171631
+  }]
 }, {
   "name": "Texas",
-  "districts": ["1. louie gohmert, republican 192,434 shirley j. mckellar, democrat 62,847 phil gray, libertarian 5,062 write-in 66 ", "2. ted poe, republican 168,692 pat bryan, democrat 100,231 james b. veasaw, libertarian 6,429 joshua darr, green 2,884 ", "3. sam johnson, republican 193,684 adam p. bell, democrat 109,420 scott jameson, libertarian 10,448 paul blair, green 2,915 ", "4. john ratcliffe, republican 216,643 cody wommack, libertarian 29,577 ", "5. jeb hensarling, republican 155,469 ken ashby, libertarian 37,406 ", "6. joe barton, republican 159,444 ruby faye woolridge, democrat 106,667 darrel smith, jr., green 7,185 ", "7. john abney culberson, republican 143,542 james cargas, democrat 111,991 ", "8. kevin brady, republican 236,379 ", "9. jeff martin, republican 36,491 al green, democrat 152,032\n, 69 texas—continued for united states ", "representative—continued\n10. michael t. mccaul, republican 179,221 tawana w. cadien, democrat 120,170 bill kelsey, libertarian 13,209 ", "11. k. michael conaway, republican 201,871 nicholas landholt, libertarian 23,677 ", "12. kay granger, republican 196,482 bill bradshaw, democrat 76,029 ed colliver, libertarian 10,604 ", "13. mac thornberry, republican 199,050 calvin deweese, libertarian 14,725 h. f. “rusty” tomlinson, green 7,467 ", "14. randy k. weber, sr., republican 160,631 michael cole, democrat 99,054 ", "15. tim westley, republican 66,877 vicente gonzalez, democrat 101,712 vanessa s. tijerina, green 5,448 ross lynn leone, libertarian 3,442 ", "16. beto o’rourke, democrat 150,228 jaime o. perez, libertarian 17,491 mary l. gourdoux, green 7,510 ", "17. bill flores, republican 149,417 william matta, democrat 86,603 clark patterson, libertarian 9,708 ", "18. lori bartley, republican 48,306 sheila jackson lee, democrat 150,157 thomas kleven, green 5,845 ", "19. jodey arrington, republican 176,314 troy bonar, libertarian 17,376 mark lawson, green 9,785 ", "20. joaquin castro, democrat 149,640 jeffrey c. blunt, libertarian 29,055 paul pipkin, green 8,974 ", "21. lamar smith, republican 202,967 tom wakely, democrat 129,765 mark loewe, libertarian 14,735 antonio “tony” diaz, green 8,564 ", "22. pete olson, republican 181,864 mark gibson, democrat 123,679 ", "23. will hurd, republican 110,577 pete p. gallego, democrat 107,526 ruben s. corvalan, libertarian 10,862 ", "24. kenny marchant, republican 154,845 jan mcdowell, democrat 108,389 mike kolls, libertarian 8,625 kevin mccormick, green 3,776 ", "25. roger williams, republican 180,988 kathi thomas, democrat 117,073 loren marc schneiderman, libertarian 12,135\n, 70 texas—continued for united states representative—continued ", "26. michael c. burgess, republican 211,730 eric mauck, democrat 94,507 mark boler, libertarian 12,843 ", "27. blake farenthold, republican 142,251 raul “roy” barrera, democrat 88,329 ", "28. zeffen hardin, republican 57,740 henry cuellar, democrat 122,086 michael d. cary, green 4,616 ", "29. julio garza, republican 31,646 gene green, democrat 95,649 n. ruben perez, libertarian 3,234 james partsch-galvan, green 1,453 ", "30. charles lingerfelt, republican 41,518 eddie bernice johnson, democrat 170,502 jarrett r. woods, libertarian 4,753 thom prentice, green 2,053 ", "31. john r. carter, republican 166,060 mike clark, democrat 103,852 scott ballard, libertarian 14,676 ", "32. pete sessions, republican 162,868 ed rankin, libertarian 43,490 gary stuard, green 22,813 ", "33. m. mark mitchell, republican 33,222 marc a. veasey, democrat 93,147 ", "34. rey gonzalez, jr., republican 62,323 filemon vela, democrat 104,638 ", "35. susan narvaiz, republican 62,384 lloyd doggett, democrat 124,612 rhett rosenquest smith, libertarian 6,504 scott trimble, green 4,076 ", "36. brian babin, republican 193,675 hal j. ridley, jr., green 24,890 "]
+  "districts": [{
+    "republican": 192434,
+    "democrat": 62847
+  }, {
+    "republican": 168692,
+    "democrat": 100231
+  }, {
+    "republican": 193684,
+    "democrat": 109420
+  }, {
+    "republican": 216643,
+    "democrat": null
+  }, {
+    "republican": 155469,
+    "democrat": null
+  }, {
+    "republican": 159444,
+    "democrat": 106667
+  }, {
+    "republican": 143542,
+    "democrat": 111991
+  }, {
+    "republican": 236379,
+    "democrat": null
+  }, {
+    "republican": 36491,
+    "democrat": 152032
+  }, {
+    "republican": 179221,
+    "democrat": 120170
+  }, {
+    "republican": 201871,
+    "democrat": null
+  }, {
+    "republican": 196482,
+    "democrat": 76029
+  }, {
+    "republican": 199050,
+    "democrat": null
+  }, {
+    "republican": 160631,
+    "democrat": 99054
+  }, {
+    "republican": 66877,
+    "democrat": 101712
+  }, {
+    "republican": null,
+    "democrat": 150228
+  }, {
+    "republican": 149417,
+    "democrat": 86603
+  }, {
+    "republican": 48306,
+    "democrat": 150157
+  }, {
+    "republican": 176314,
+    "democrat": null
+  }, {
+    "republican": null,
+    "democrat": 149640
+  }, {
+    "republican": 202967,
+    "democrat": 129765
+  }, {
+    "republican": 181864,
+    "democrat": 123679
+  }, {
+    "republican": 110577,
+    "democrat": 107526
+  }, {
+    "republican": 154845,
+    "democrat": 108389
+  }, {
+    "republican": 180988,
+    "democrat": 117073
+  }, {
+    "republican": 211730,
+    "democrat": 94507
+  }, {
+    "republican": 142251,
+    "democrat": 88329
+  }, {
+    "republican": 57740,
+    "democrat": 122086
+  }, {
+    "republican": 31646,
+    "democrat": 95649
+  }, {
+    "republican": 41518,
+    "democrat": 170502
+  }, {
+    "republican": 166060,
+    "democrat": 103852
+  }, {
+    "republican": 162868,
+    "democrat": null
+  }, {
+    "republican": 33222,
+    "democrat": 93147
+  }, {
+    "republican": 62323,
+    "democrat": 104638
+  }, {
+    "republican": 62384,
+    "democrat": 124612
+  }, {
+    "republican": 193675,
+    "democrat": null
+  }]
 }, {
   "name": "Utah",
-  "districts": ["1. rob bishop, republican 182,925 peter c. clemens, democrat 73,380 craig bowden, libertarian 16,296 chadwick h. fairbanks iii, unaffiliated 4,850 ", "2. chris stewart, republican 170,524 charlene albarran, democrat 93,778 paul j. mccollaum, jr., constitution 12,517 ", "3. jason chaffetz, republican 209,589 stephen p. tryon, democrat 75,716 ", "4. mia b. love, republican 147,597 doug owens, democrat 113,413 collin r. simonsen, constitution 13,559 "]
+  "districts": [{
+    "republican": 182925,
+    "democrat": 73380
+  }, {
+    "republican": 170524,
+    "democrat": 93778
+  }, {
+    "republican": 209589,
+    "democrat": 75716
+  }, {
+    "republican": 147597,
+    "democrat": 113413
+  }]
 }, {
   "name": "Vermont",
   "districts": []
 }, {
   "name": "Virginia",
-  "districts": ["1. robert j. wittman, republican 230,213 m. d. “matt” rowe, democrat 140,785 glenda gail parker, independent 12,866 write-in 737 ", "2. scott w. taylor, republican 190,475 shaun d. brown, democrat 119,440 write-in 652 ", "3. m. l. “marty” williams, republican 103,289 robert c. “bobby” scott, democrat 208,337 write-in 714 ", "4. michael l. “mike” wade, republican 145,731 a. donald mceachin, democrat 200,136 write-in 789 ", "5. tom a. garrett, jr., republican 207,758 jane d. dittmar, democrat 148,339 write-in 659 ", "6. bob goodlatte, republican 225,471 kai e. degner, democrat 112,170 write-in 768 ", "7. dave brat, republican 218,057 eileen m. bedell, democrat 160,159 write-in 947 ", "8. charles a. hernick, republican 98,387 donald s. beyer, jr., democrat 246,653 julio gracia, independent 14,664 write-in 972 ", "9. h. morgan griffith, republican 212,838 derek w. kitts, democrat 87,877 janice allen boyd, independent 9,050 write-in 549 ", "10. barbara comstock, republican 210,791 luann l. bennett, democrat 187,712 write-in 1,580 ", "11. gerald e. connolly, democrat 247,818 write-in 34,185 "]
+  "districts": [{
+    "republican": 230213,
+    "democrat": 140785
+  }, {
+    "republican": 190475,
+    "democrat": 119440
+  }, {
+    "republican": 103289,
+    "democrat": 208337
+  }, {
+    "republican": 145731,
+    "democrat": 200136
+  }, {
+    "republican": 207758,
+    "democrat": 148339
+  }, {
+    "republican": 225471,
+    "democrat": 112170
+  }, {
+    "republican": 218057,
+    "democrat": 160159
+  }, {
+    "republican": 98387,
+    "democrat": 246653
+  }, {
+    "republican": 212838,
+    "democrat": 87877
+  }, {
+    "republican": 210791,
+    "democrat": 187712
+  }, {
+    "republican": null,
+    "democrat": 247818
+  }]
 }, {
   "name": "Washington",
-  "districts": ["1. robert j. sutherland, republican 155,779 suzan k. delbene, democrat 193,619 ", "2. marc hennemann, republican 117,094 rick larsen, democrat 208,314 ", "3. jaime herrera beutler, republican 193,457 jim moeller, democrat 119,820 ", "4. dan newhouse, republican 132,517 clint didier, republican 97,402 ", "5. cathy mcmorris rodgers, republican 192,959 joe pakootas, democrat 130,575 ", "6. todd a. bloom, republican 126,116 derek kilmer, democrat 201,718 ", "7. pramila jayapal, democrat 212,010 brady piñero walkinshaw, democrat 166,744 ", "8. david g. reichert, republican 193,145 tony ventrella, democrat 127,720 ", "9. doug basler, republican 76,317 adam smith, democrat 205,165 ", "10. jim postma, republican 120,104 denny heck, democrat 170,460 "]
+  "districts": [{
+    "republican": 155779,
+    "democrat": 193619
+  }, {
+    "republican": 117094,
+    "democrat": 208314
+  }, {
+    "republican": 193457,
+    "democrat": 119820
+  }, {
+    "republican": 132517,
+    "democrat": null
+  }, {
+    "republican": 192959,
+    "democrat": 130575
+  }, {
+    "republican": 126116,
+    "democrat": 201718
+  }, {
+    "republican": null,
+    "democrat": 212010
+  }, {
+    "republican": 193145,
+    "democrat": 127720
+  }, {
+    "republican": 76317,
+    "democrat": 205165
+  }, {
+    "republican": 120104,
+    "democrat": 170460
+  }]
 }, {
   "name": "West Virginia",
-  "districts": ["1. david b. mckinley, republican 163,469 mike manypenny, democrat 73,534 ", "2. alexander x. mooney, republican 140,807 mark hunt, democrat 101,207 ", "3. evan h. jenkins, republican 140,741 matt detch, democrat 49,708 zane lawhorn, libertarian 16,883 "]
+  "districts": [{
+    "republican": 163469,
+    "democrat": 73534
+  }, {
+    "republican": 140807,
+    "democrat": 101207
+  }, {
+    "republican": 140741,
+    "democrat": 49708
+  }]
 }, {
   "name": "Wisconsin",
-  "districts": ["1. paul d. ryan, republican 230,072 ryan solen, democrat 107,003 spencer zimmerman, trump conservative 9,429 jason lebeck, libertarian 7,486 scattering 255\n, 77 wisconsin—continued for united states ", "representative—continued\n2. peter theron, republican 124,044 mark pocan, democrat 273,537 scattering 479 ", "3. ron kind, democrat 257,401 ryan peterson, write-in (republican) 169 scattering 2,800 ", "4. gwen moore, democrat 220,181 robert r. raymond, independent 33,494 andy craig, libertarian 32,183 scattering 1,051 ", "5. f. james sensenbrenner, jr., republican 260,706 khary penebaker, democrat 114,477 john arndt, libertarian 15,324 scattering 337 ", "6. glenn grothman, republican 204,147 sarah lloyd, democrat 133,072 jeff dahlke, independent 19,716 scattering 248 ", "7. sean p. duffy, republican 223,418 mary hoeft, democrat 138,643 scattering 210 ", "8. mike gallagher, republican 227,892 tom nelson, democrat 135,682 wendy gribben, write-in (wisconsin green) 16 jerry kobishop, write-in (democratic) 2 scattering 188\n, "]
+  "districts": [{
+    "republican": 230072,
+    "democrat": 107003
+  }, {
+    "republican": 124044,
+    "democrat": 273537
+  }, {
+    "republican": null,
+    "democrat": 257401
+  }, {
+    "republican": null,
+    "democrat": 220181
+  }, {
+    "republican": 260706,
+    "democrat": 114477
+  }, {
+    "republican": 204147,
+    "democrat": 133072
+  }, {
+    "republican": 223418,
+    "democrat": 138643
+  }, {
+    "republican": 227892,
+    "democrat": 135682
+  }]
 }, {
   "name": "Wyoming",
-  "districts": ["at large liz cheney, republican 156,176 ryan greene, democrat 75,466 daniel clyde cummings, constitution 10,362 lawrence gerard struempf, libertarian 9,033 under votes 6,621 write-in 739 over votes 391 "]
+  "districts": [{
+    "republican": 156176,
+    "democrat": 75466
+  }]
 }]
