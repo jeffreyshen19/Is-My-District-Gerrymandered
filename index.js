@@ -53,6 +53,10 @@ app.get("/", function(req, res){
   res.render("index", {postal_codes: postal_codes, state_names: state_names, district_codes: district_codes});
 });
 
+app.get("/random", function(req, res){
+  res.redirect("/district/" + district_codes[Math.floor(Math.random() * 435)]);
+});
+
 app.get("/about", function(req, res){
   res.render("about");
 });
