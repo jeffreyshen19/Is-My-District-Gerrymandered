@@ -14,6 +14,7 @@
     "curlrequest": "^1.0.1",
     "express": "^4.16.2",
     "node-geocoder": "^3.21.0",
+    "pdf-text-extract": "^1.5.0",
     "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {
