@@ -21,10 +21,10 @@ function addLine(line){
 }
 
 function generateLine(json){
-  return json.district_code + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.affiliation + "," + json.gerrymander_score + "," + json.rep + "," + json.compactness_rank + "," + json.state_affiliation;
+  return json.district_code + "," + json.rep + "," + json.affiliation + "," + json.state_affiliation + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.compactness_rank + "," + json.redistricting_control + "," + json.gerrymander_score;
 }
 
-addLine("district_code,efficiency_gap,absolute_compactness,state_compactness,country_compactness,affiliation,gerrymander_score,rep,compactness_rank,state_affiliation");
+addLine("district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score");
 
 var representatives_parsed = [];
 
@@ -125,7 +125,8 @@ curl.request({
       affiliation: rep.party,
       state_affiliation: states_affiliation[postal_codes.indexOf(district_codes[j].split("-")[0])],
       gerrymander_score: gerrymander_score,
-      compactness_rank: district_compactness_ranks[j]
+      compactness_rank: district_compactness_ranks[j],
+      redistricting_control: ""
     });
 
     addLine(line);

@@ -115,9 +115,9 @@ app.get("/district/:state-:district", function(req, res){
   }
 
   //Set the state's political affiliation + Rep
-  var affiliation = csv[district_code_i + 1].split(",")[5];
-  var rep = csv[district_code_i + 1].split(",")[7];
-  var state_affiliation = csv[district_code_i + 1].split(",")[9];
+  var affiliation = csv[district_code_i + 1].split(",")[2];
+  var rep = csv[district_code_i + 1].split(",")[1];
+  var state_affiliation = csv[district_code_i + 1].split(",")[3];
 
   if(state_affiliation < 0) state_affiliation = "Democrat";
   else if(state_affiliation > 0) state_affiliation = "Republican";
@@ -127,10 +127,10 @@ app.get("/district/:state-:district", function(req, res){
   var absolute_efficiency_gap, state_efficiency_gap, district_efficiency_gap;
 
   //Set compactness data
-  var absolute_compactness = parseFloat(csv[district_code_i + 1].split(",")[2]), state_compactness = parseFloat(csv[district_code_i + 1].split(",")[3]), country_compactness = parseFloat(csv[district_code_i + 1].split(",")[4]), compactness_rank = parseInt(csv[district_code_i + 1].split(",")[8]);
+  var absolute_compactness = parseFloat(csv[district_code_i + 1].split(",")[5]), state_compactness = parseFloat(csv[district_code_i + 1].split(",")[6]), country_compactness = parseFloat(csv[district_code_i + 1].split(",")[7]), compactness_rank = parseInt(csv[district_code_i + 1].split(",")[8]);
 
   //Set overall gerrymandered rating
-  var gerrymander_score = parseInt(csv[district_code_i + 1].split(",")[6]);
+  var gerrymander_score = parseInt(csv[district_code_i + 1].split(",")[10]);
 
   //Set previous and next district
   var previous_district, next_district;
@@ -157,7 +157,7 @@ app.get("/district/:state-:district", function(req, res){
     district_name: district_name,
     redistricting_control: redistricting_control,
     rep: rep,
-    efficiency_gap: csv[district_code_i + 1].split(",")[1],
+    efficiency_gap: csv[district_code_i + 1].split(",")[4],
     compactness: {
       absolute: absolute_compactness,
       state: state_compactness,
