@@ -89,88 +89,90 @@ app.get("/district/:state-:district", function(req, res){
   var district_code_i = district_codes.indexOf(district_code);
 
   if(district_code_i == -1) res.redirect("/404");
-
-  //Set full state name
-  var state_name = state_names[postal_codes.indexOf(state)];
-
-  //Set full district name (California 37th District)
-  var district_name;
-  if(district === "00" || district === "0"){
-    district_name = state_name + "'s at Large District";
-  }
+  else if(district === "00") res.redirect("/district/" + state + "-0");
   else{
-    district_name = state_name + "'s " + suffixNumber(parseInt(district)) + " District";
+    //Set full state name
+    var state_name = state_names[postal_codes.indexOf(state)];
+
+    //Set full district name (California 37th District)
+    var district_name;
+    if(district === "0"){
+      district_name = state_name + "'s at Large District";
+    }
+    else{
+      district_name = state_name + "'s " + suffixNumber(parseInt(district)) + " District";
+    }
+
+    //Set whether district is Republican, Democrat, or Independently redistricted
+    var redistricting_control;
+
+    if(district === "0") redistricting_control = "State is not redistricted (State only has one district)";
+    else {
+      var republican_states = ["UT","TX","LA","OK","KS","AL","GA","FL","TN","SC","NC","VA","WI","MI","IN","OH","PA","NH"];
+      var democrat_states = ["IL", "AR", "WV", "MD", "MA", "RI"];
+      if(republican_states.includes(state)) redistricting_control = "Republican";
+      else if(democrat_states.includes(state)) redistricting_control = "Democrat";
+      else redistricting_control = "Independent";
+    }
+
+    //Set the state's political affiliation + Rep
+    var affiliation = csv[district_code_i + 1].split(",")[2];
+    var rep = csv[district_code_i + 1].split(",")[1];
+    var state_affiliation = csv[district_code_i + 1].split(",")[3];
+
+    if(state_affiliation < 0) state_affiliation = "Democrat";
+    else if(state_affiliation > 0) state_affiliation = "Republican";
+    else state_affiliation = "Neutral";
+
+    //Set efficiency gap data
+    var absolute_efficiency_gap, state_efficiency_gap, district_efficiency_gap;
+
+    //Set compactness data
+    var absolute_compactness = parseFloat(csv[district_code_i + 1].split(",")[5]), state_compactness = parseFloat(csv[district_code_i + 1].split(",")[6]), country_compactness = parseFloat(csv[district_code_i + 1].split(",")[7]), compactness_rank = parseInt(csv[district_code_i + 1].split(",")[8]);
+
+    //Set overall gerrymandered rating
+    var gerrymander_score = parseInt(csv[district_code_i + 1].split(",")[10]);
+
+    //Set previous and next district
+    var previous_district, next_district;
+
+    if(district_code_i == 0){
+      previous_district = null;
+      next_district = district_codes[1];
+    }
+    else if(district_code_i == district_codes.length - 1){
+      previous_district = district_codes[district_codes.length - 2];
+      next_district = null;
+    }
+    else{
+      previous_district = district_codes[district_code_i - 1];
+      next_district = district_codes[district_code_i + 1];
+    }
+
+    //Render district
+    var district_data = {
+      state: state,
+      district: parseInt(district),
+      state_name: state_name,
+      gerrymander_score: gerrymander_score,
+      district_name: district_name,
+      redistricting_control: redistricting_control,
+      rep: rep,
+      efficiency_gap: csv[district_code_i + 1].split(",")[4],
+      compactness: {
+        absolute: absolute_compactness,
+        state: state_compactness,
+        country: country_compactness,
+        rank: suffixNumber(compactness_rank)
+      },
+      previous_district: previous_district,
+      next_district: next_district,
+      affiliation: affiliation,
+      state_affiliation: state_affiliation
+    };
+
+    res.render("district", {district_data: district_data});
   }
-
-  //Set whether district is Republican, Democrat, or Independently redistricted
-  var redistricting_control;
-
-  if(district === "00" || district === "0") redistricting_control = "State is not redistricted (State only has one district)";
-  else {
-    var republican_states = ["UT","TX","LA","OK","KS","AL","GA","FL","TN","SC","NC","VA","WI","MI","IN","OH","PA","NH"];
-    var democrat_states = ["IL", "AR", "WV", "MD", "MA", "RI"];
-    if(republican_states.includes(state)) redistricting_control = "Republican";
-    else if(democrat_states.includes(state)) redistricting_control = "Democrat";
-    else redistricting_control = "Independent";
-  }
-
-  //Set the state's political affiliation + Rep
-  var affiliation = csv[district_code_i + 1].split(",")[2];
-  var rep = csv[district_code_i + 1].split(",")[1];
-  var state_affiliation = csv[district_code_i + 1].split(",")[3];
-
-  if(state_affiliation < 0) state_affiliation = "Democrat";
-  else if(state_affiliation > 0) state_affiliation = "Republican";
-  else state_affiliation = "Neutral";
-
-  //Set efficiency gap data
-  var absolute_efficiency_gap, state_efficiency_gap, district_efficiency_gap;
-
-  //Set compactness data
-  var absolute_compactness = parseFloat(csv[district_code_i + 1].split(",")[5]), state_compactness = parseFloat(csv[district_code_i + 1].split(",")[6]), country_compactness = parseFloat(csv[district_code_i + 1].split(",")[7]), compactness_rank = parseInt(csv[district_code_i + 1].split(",")[8]);
-
-  //Set overall gerrymandered rating
-  var gerrymander_score = parseInt(csv[district_code_i + 1].split(",")[10]);
-
-  //Set previous and next district
-  var previous_district, next_district;
-
-  if(district_code_i == 0){
-    previous_district = null;
-    next_district = district_codes[1];
-  }
-  else if(district_code_i == district_codes.length - 1){
-    previous_district = district_codes[district_codes.length - 2];
-    next_district = null;
-  }
-  else{
-    previous_district = district_codes[district_code_i - 1];
-    next_district = district_codes[district_code_i + 1];
-  }
-
-  //Render district
-  var district_data = {
-    state: state,
-    district: parseInt(district),
-    state_name: state_name,
-    gerrymander_score: gerrymander_score,
-    district_name: district_name,
-    redistricting_control: redistricting_control,
-    rep: rep,
-    efficiency_gap: csv[district_code_i + 1].split(",")[4],
-    compactness: {
-      absolute: absolute_compactness,
-      state: state_compactness,
-      country: country_compactness,
-      rank: suffixNumber(compactness_rank)
-    },
-    previous_district: previous_district,
-    next_district: next_district,
-    affiliation: affiliation,
-    state_affiliation: state_affiliation
-  };
-
-  res.render("district", {district_data: district_data});
 });
 
 app.use(function (req, res, next){ //Handler for 404 page
