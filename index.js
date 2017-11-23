@@ -36,19 +36,29 @@ app.get("/about", function(req, res){ //About page
   res.render("about");
 });
 
+app.get("/no/taxation/without/representation", function(req, res){
+  res.render("territories");
+});
+
+
 app.post("/lookup", function(req, res){ //Handler for finding district based on address
   var address = req.body.address;
   var zip = req.body.zip;
 
   geocoder.geocode(address + " " + zip + " USA", function(err, result) {
+    console.log(result);
     if(result.length != 0){
       var url = "https://api.mapbox.com/v4/govtrack.cd-115-2016/tilequery/" + result[0].longitude + "," + result[0].latitude + ".json?radius=0&access_token=pk.eyJ1IjoiZ292dHJhY2siLCJhIjoiY2lua2J1cmwzMHhyNnVrbHl3bmx4ZnZneiJ9.Wld_AdbKwOgmF2ZXn2SPmw";
+
+
 
       curl.request({
         url: url
       }, function (err, parts) {
         var districtData = JSON.parse(parts).features[0].properties;
-        res.redirect("/district/" + districtData.state + "-" + districtData.number);
+
+        if(postal_codes.indexOf(districtData.state) == -1) res.redirect("/no/taxation/without/representation");
+        else res.redirect("/district/" + districtData.state + "-" + districtData.number);
       });
     }
     else{ //Throw error
@@ -65,6 +75,7 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
 
   if(district_code_i == -1) res.redirect("/404");
   else if(district === "00") res.redirect("/district/" + state + "-0");
+  else if(district.charAt(0) === "0" && district.length > 1) res.redirect("/district/" + state + "-" + district.substring(1));
   else{
     var district_name, state_name, redistricting_control, affiliation, rep, state_affiliation, efficiency_gap, previous_district, next_district, gerrymander_score, absolute_compactness, state_compactness, country_compactness, compactness_rank;
 
