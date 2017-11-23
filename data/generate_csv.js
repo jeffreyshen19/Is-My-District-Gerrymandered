@@ -8,7 +8,7 @@ function generateLine(json){ //Generates csv formatted string
 }
 
 var content = "", representatives_parsed = [];
-content += "district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score";
+content += "district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score\n";
 
 curl.request({
   url: "https://theunitedstates.io/congress-legislators/legislators-current.json"
@@ -57,7 +57,6 @@ curl.request({
 
   //Get efficiency gap
   var efficiency_csv = fs.readFileSync("efficiency.csv").toString().split("\n");
-  var efficiency_gap = parseFloat(efficiency_csv[j + 1].split(",")[1].substring(1));
 
   //Get Representatives and Affiliation
   current_state_i = -1;
@@ -92,6 +91,7 @@ curl.request({
 
     var absolute_compactness = parseFloat(compactness_csv[n + 1].split(",")[1]);
     var district = district_codes[n].split("-")[1];
+    var efficiency_gap = parseFloat(efficiency_csv[n + 1].split(",")[1].substring(1));
 
     if(district === "0") gerrymander_score = 0;
     else gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); //Score is 50% due to geographical compactness, 50% to efficiency gap

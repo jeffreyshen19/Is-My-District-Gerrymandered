@@ -1,7 +1,7 @@
 var fs = require('fs');
 var geojsonArea = require('geojson-area');
 var turf = require('turf');
-eval(fs.readFileSync('bin/util.js') + ""); //Include util.js in a traditional "c" style manner
+eval(fs.readFileSync('../bin/util.js') + ""); //Include util.js in a traditional "c" style manner
 
 var content = "", geographical_compactness, geojson, area, perimeter;
 
