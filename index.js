@@ -86,15 +86,29 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
     if(district === "0") district_name = state_name + "'s at Large District";
     else district_name = state_name + "'s " + suffixNumber(parseInt(district)) + " District";
 
-    //Set whether district is Republican, Democrat, or Independently redistricte
-    if(district === "0") redistricting_control = "State is not redistricted (State only has one district)";
-    else {
-      var republican_states = ["UT","TX","LA","OK","KS","AL","GA","FL","TN","SC","NC","VA","WI","MI","IN","OH","PA","NH"];
-      var democrat_states = ["IL", "AR", "WV", "MD", "MA", "RI"];
-      if(republican_states.includes(state)) redistricting_control = "Republican";
-      else if(democrat_states.includes(state)) redistricting_control = "Democrat";
-      else redistricting_control = "Independent";
-    }
+    //Set how state is redistricted
+    redistricting_control = csv[district_code_i + 1].split(",")[9];
+
+    var redistrictingStringToDisplay = "";
+
+    if(redistricting_control.charAt(0) === "D")
+      redistrictingStringToDisplay += "<em>Democrat</em>";
+    else if(redistricting_control.charAt(0) === "R")
+      redistrictingStringToDisplay += "<em class = 'red'>Republican</em>";
+    else redistrictingStringToDisplay += "<strong>Split</strong>";
+
+    redistrictingStringToDisplay += " redistricting control through ";
+
+    if(redistricting_control.charAt(1) === "A")
+      redistrictingStringToDisplay += "the state legislature and an advisory commmision (non-legislators who provide non-binding input before redistricting plans are submitted).";
+    else if(redistricting_control.charAt(1) === "B")
+      redistrictingStringToDisplay += "the state legislature and a backup commission (non-legislators who provide non-binding input on redistricting plans if the plans are not initially passed by the state legislature).";
+    else if(redistricting_control.charAt(1) === "P")
+      redistrictingStringToDisplay += "a committee of elected state officials.";
+    else if(redistricting_control.charAt(1) === "I")
+      redistrictingStringToDisplay += "an independent commission that limits direct participation by elected state officials.";
+    else
+      redistrictingStringToDisplay += "the state legislature. ";
 
     //Set the state's political affiliation and representatitive
     affiliation = csv[district_code_i + 1].split(",")[2];
@@ -138,7 +152,8 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
       state_name: state_name,
       gerrymander_score: gerrymander_score,
       district_name: district_name,
-      redistricting_control: redistricting_control,
+      redistricting_control: redistrictingStringToDisplay,
+      redistricting_control_code: redistricting_control,
       rep: rep,
       efficiency_gap: efficiency_gap,
       compactness: {

@@ -95,6 +95,31 @@ curl.request({
     var district = district_codes[n].split("-")[1];
     var efficiency_gap = parseFloat(efficiency_csv[n + 1].split(",")[1].substring(1));
 
+    //Get redistricting Control
+    var state = district_codes[n].split("-")[0];
+    var redistricting_control = "";
+
+    if(district === "0") redistricting_control = "null";
+    else{
+      var republican_controlled_states = ["UT", "KS", "OK", "TX", "LA", "TN", "AL", "GA", "FL", "SC", "NC", "TN", "VA", "NH", "PA", "OH", "IN", "MI", "WI"];
+      var democrat_controlled_states = ["AR", "IL", "WV", "MD", "MA", "RI"];
+
+      if(republican_controlled_states.includes(state)) redistricting_control += "R";
+      else if(democrat_controlled_states.includes(state)) redistricting_control += "D";
+      else redistricting_control += "I";
+
+      var advisory_commission = ["IA", "OH", "VA", "NY", "RI", "ME"];
+      var backup_commission = ["IN", "CT"];
+      var politician_commission = ["HI", "NJ"];
+      var independent_commission = ["WA", "ID", "CA", "AZ"];
+
+      if(advisory_commission.includes(state)) redistricting_control += "A";
+      else if(backup_commission.includes(state)) redistricting_control += "B";
+      else if(politician_commission.includes(state)) redistricting_control += "P";
+      else if(independent_commission.includes(state)) redistricting_control += "I";
+      else redistricting_control += "L"; 
+    }
+
     if(district === "0") gerrymander_score = 0;
     else gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); //Score is 50% due to geographical compactness, 50% to efficiency gap
 
@@ -109,7 +134,7 @@ curl.request({
       state_affiliation: states_affiliation[postal_codes.indexOf(district_codes[n].split("-")[0])],
       gerrymander_score: gerrymander_score,
       compactness_rank: district_compactness_ranks[n],
-      redistricting_control: ""
+      redistricting_control: redistricting_control
     });
 
     content += line + "\n";

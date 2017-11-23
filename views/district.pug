@@ -47,11 +47,11 @@ html(lang = "en")
               i.fa.fa-fw.fa-square-o 
             | Minimal Voter Wastage
             
-            if district_data.redistricting_control === "Independent"
+            if district_data.redistricting_control_code === "II"
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
-            | Split Redistricting Control
+            | Bipartisan, Independent Redistricting Control
         br
         ul 
           if district_data.district == 0
@@ -68,13 +68,8 @@ html(lang = "en")
             li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
             
             //Redistricting Control
-            if district_data.redistricting_control === "Democrat" 
-              li <em>Democrat</em> redistricting control
-            else if district_data.redistricting_control === "Republican" 
-              li <em class = "red">Republican</em> redistricting control  
-            else
-              li <strong>Split</strong> redistricting control
-              
+            li!= district_data.redistricting_control
+            
           //Affiliation
           if district_data.affiliation === "Republican"
             li <em class = "red">Representative:</em> #{district_data.rep} (R)
