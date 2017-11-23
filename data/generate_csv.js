@@ -1,26 +1,19 @@
 var fs = require('fs');
 var curl = require('curlrequest');
 eval(fs.readFileSync('../bin/util.js') + ""); //Include util.js in a traditional "c" style manner
-
 postal_codes.sort();
 
-var content = "";
-
-function addLine(line){
-  content += line + "\n";
-}
-
-function generateLine(json){
+function generateLine(json){ //Generates csv formatted string
   return json.district_code + "," + json.rep + "," + json.affiliation + "," + json.state_affiliation + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.compactness_rank + "," + json.redistricting_control + "," + json.gerrymander_score;
 }
 
-addLine("district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score");
-
-var representatives_parsed = [];
+var content = "", representatives_parsed = [];
+content += "district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score";
 
 curl.request({
   url: "https://theunitedstates.io/congress-legislators/legislators-current.json"
 }, function (err, parts) {
+  //Generate list of representatives
   var representatives = JSON.parse(parts);
   for(var i = 0; i < representatives.length; i++){
     var current_term = representatives[i].terms[representatives[i].terms.length - 1];
@@ -64,10 +57,11 @@ curl.request({
 
   //Get efficiency gap
   var efficiency_csv = fs.readFileSync("efficiency.csv").toString().split("\n");
+  var efficiency_gap = parseFloat(efficiency_csv[j + 1].split(",")[1].substring(1));
 
   //Get Representatives and Affiliation
   current_state_i = -1;
-  var states_affiliation = [], state_rep;
+  var states_affiliation = [], district_rep;
 
   for(var j = 0; j < district_codes.length; j++){
     if(district_codes[j].split("-")[0] !== postal_codes[current_state_i]){
@@ -75,51 +69,48 @@ curl.request({
       states_affiliation.push(0);
     }
 
-    for(var k = 0; k < representatives_parsed.length; k++){
-      if(representatives_parsed[k].district_code === district_codes[j]) {
-        state_rep = representatives_parsed[k];
+    for(var m = 0; m < representatives_parsed.length; m++){
+      if(representatives_parsed[m].district_code === district_codes[j]) {
+        district_rep = representatives_parsed[m];
         break;
       }
     }
 
-    if(state_rep.party === "Republican") states_affiliation[current_state_i]++;
+    if(district_rep.party === "Republican") states_affiliation[current_state_i]++;
     else states_affiliation[current_state_i]--;
 
   }
 
-  for(var j = 0; j < district_codes.length; j++){
+  for(var n = 0; n < district_codes.length; n++){
     var rep;
-    for(var k = 0; k < representatives_parsed.length; k++){
-      if(representatives_parsed[k].district_code === district_codes[j]) {
-        rep = representatives_parsed[k];
+    for(var p = 0; p < representatives_parsed.length; p++){
+      if(representatives_parsed[p].district_code === district_codes[n]) {
+        rep = representatives_parsed[p];
         break;
       }
     }
 
-    var absolute_compactness = parseFloat(compactness_csv[j + 1].split(",")[1]);
-    var district = district_codes[j].split("-")[1];
-    var efficiency_gap = parseFloat(efficiency_csv[j + 1].split(",")[1].substring(1));
+    var absolute_compactness = parseFloat(compactness_csv[n + 1].split(",")[1]);
+    var district = district_codes[n].split("-")[1];
 
     if(district === "0") gerrymander_score = 0;
-    else {
-      gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); //Score is 50% due to geographical compactness, 50% to efficiency gap
-    }
+    else gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); //Score is 50% due to geographical compactness, 50% to efficiency gap
 
     var line = generateLine({
-      district_code: district_codes[j],
+      district_code: district_codes[n],
       rep: rep.name,
-      efficiency_gap: efficiency_csv[j + 1].split(",")[1],
+      efficiency_gap: efficiency_csv[n + 1].split(",")[1],
       absolute_compactness: absolute_compactness,
-      state_compactness: state_avgs[postal_codes.indexOf(district_codes[j].split("-")[0])],
+      state_compactness: state_avgs[postal_codes.indexOf(district_codes[n].split("-")[0])],
       country_compactness: country_avg,
       affiliation: rep.party,
-      state_affiliation: states_affiliation[postal_codes.indexOf(district_codes[j].split("-")[0])],
+      state_affiliation: states_affiliation[postal_codes.indexOf(district_codes[n].split("-")[0])],
       gerrymander_score: gerrymander_score,
-      compactness_rank: district_compactness_ranks[j],
+      compactness_rank: district_compactness_ranks[n],
       redistricting_control: ""
     });
 
-    addLine(line);
+    content += line + "\n";
   }
 
   fs.writeFileSync("master.csv", content, "utf-8");

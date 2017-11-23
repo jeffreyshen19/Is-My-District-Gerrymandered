@@ -130,8 +130,8 @@ extract("./raw/2016election.pdf", {
 
   console.log(stateEfficiencyGaps);
 
-  for(var i = 0; i < district_codes.length; i++){
-    content += district_codes[i] + "," + stateEfficiencyGaps[postal_codes.indexOf(district_codes[i].split("-")[0])] + "\n";
+  for(var dist = 0; dist < district_codes.length; dist++){
+    content += district_codes[dist] + "," + stateEfficiencyGaps[postal_codes.indexOf(district_codes[dist].split("-")[0])] + "\n";
   }
 
   fs.writeFileSync("efficiency.csv", content);
