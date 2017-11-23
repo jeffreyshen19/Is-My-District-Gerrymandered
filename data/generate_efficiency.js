@@ -1,6 +1,8 @@
 var fs = require('fs');
 var extract = require('pdf-text-extract');
+/* jshint ignore:start */
 eval(fs.readFileSync('../bin/util.js') + ""); //Include util.js in a traditional "c" style manner
+/* jshint ignore:end */
 
 var content = "";
 

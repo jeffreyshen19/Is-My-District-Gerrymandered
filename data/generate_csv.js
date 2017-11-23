@@ -1,6 +1,8 @@
 var fs = require('fs');
 var curl = require('curlrequest');
+/* jshint ignore:start */
 eval(fs.readFileSync('../bin/util.js') + ""); //Include util.js in a traditional "c" style manner
+/* jshint ignore:end */
 postal_codes.sort();
 
 function generateLine(json){ //Generates csv formatted string

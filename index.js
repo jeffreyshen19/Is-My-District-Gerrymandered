@@ -7,7 +7,10 @@ var curl = require('curlrequest');
 var geocoder = NodeGeocoder({
   provider: 'google'
 });
+
+/* jshint ignore:start */
 eval(fs.readFileSync('bin/util.js') + ""); //Include util.js in a traditional "c" style manner
+/* jshint ignore:end */
 
 // ** SETUP **
 var app = express();
