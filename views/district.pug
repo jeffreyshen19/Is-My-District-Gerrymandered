@@ -34,19 +34,19 @@ html(lang = "en")
         br 
         br 
         p 
-          if district_data.compactness.absolute >= district_data.compactness.country
-            i.fa.fa-fw.fa-check-square-o 
-          else 
-            i.fa.fa-fw.fa-square-o 
-          | Compact
-          
-          if (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1) < 7
-            i.fa.fa-fw.fa-check-square-o 
-          else 
-            i.fa.fa-fw.fa-square-o 
-          | Minimal Voter Wastage
-          
-          if district_data.district !== 0 || district_data.district !== 00
+          if district_data.district !== 0
+            if district_data.compactness.absolute >= district_data.compactness.country
+              i.fa.fa-fw.fa-check-square-o 
+            else 
+              i.fa.fa-fw.fa-square-o 
+            | Compact
+            
+            if (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1) < 7
+              i.fa.fa-fw.fa-check-square-o 
+            else 
+              i.fa.fa-fw.fa-square-o 
+            | Minimal Voter Wastage
+            
             if district_data.redistricting_control === "Independent"
               i.fa.fa-fw.fa-check-square-o 
             else 
@@ -54,36 +54,38 @@ html(lang = "en")
             | Split Redistricting Control
         br
         ul 
-          //Compactness  
-          -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
-          -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
-          li!= "<strong>" + district_data.compactness.rank + " least compact district</strong> (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
-          
-          //Efficiency
-          - var efficiency_percent = (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1)
-          - var efficiency_favors = district_data.efficiency_gap.substring(0, 1);
-          li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
-          
-          //Redistricting Control
-          if district_data.redistricting_control === "Democrat" 
-            li <em>Democrat</em> redistricting control
-          else if district_data.redistricting_control === "Republican" 
-            li <em class = "red">Republican</em> redistricting control  
-          else if district_data.redistricting_control === "Independent" 
-            li <strong>Split</strong> redistricting control
+          if district_data.district == 0
+            li This district is absolutely not gerrymandered, because its state only has one district. 
           else 
-            li= district_data.redistricting_control
+            //Compactness  
+            -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
+            -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
+            li!= "<strong>" + district_data.compactness.rank + " least compact district</strong> (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
             
+            //Efficiency
+            - var efficiency_percent = (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1)
+            - var efficiency_favors = district_data.efficiency_gap.substring(0, 1);
+            li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
+            
+            //Redistricting Control
+            if district_data.redistricting_control === "Democrat" 
+              li <em>Democrat</em> redistricting control
+            else if district_data.redistricting_control === "Republican" 
+              li <em class = "red">Republican</em> redistricting control  
+            else
+              li <strong>Split</strong> redistricting control
+              
           //Affiliation
           if district_data.affiliation === "Republican"
             li <em class = "red">Representative:</em> #{district_data.rep} (R)
           else if district_data.affiliation === "Democrat"
             li <em>Representative:</em> #{district_data.rep} (D)
-            
+              
           if district_data.state_affiliation === "Republican"
             li <em class = "red">Republican</em> State
           else if district_data.state_affiliation === "Democrat"
             li <em>Democrat</em> State
+          br
     footer
       .left
         if district_data.previous_district != null
