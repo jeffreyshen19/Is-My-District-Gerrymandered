@@ -50,8 +50,6 @@ app.post("/lookup", function(req, res){ //Handler for finding district based on 
     if(result.length != 0){
       var url = "https://api.mapbox.com/v4/govtrack.cd-115-2016/tilequery/" + result[0].longitude + "," + result[0].latitude + ".json?radius=0&access_token=pk.eyJ1IjoiZ292dHJhY2siLCJhIjoiY2lua2J1cmwzMHhyNnVrbHl3bmx4ZnZneiJ9.Wld_AdbKwOgmF2ZXn2SPmw";
 
-
-
       curl.request({
         url: url
       }, function (err, parts) {
