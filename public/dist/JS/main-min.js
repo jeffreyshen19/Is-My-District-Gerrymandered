@@ -1,1 +1,1 @@
-function selectHandler(){window.location.pathname="/district/"+$("#districts").find(":selected").text()}
+function selectHandler(){window.location.pathname="/district/"+$("#districts").find(":selected").text()}$("#submitAddress").submit(function(t){0!=$("#address").val().length&&0!=$("#zip").val().length||($("#error").show(),t.preventDefault())});

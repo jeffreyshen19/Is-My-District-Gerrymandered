@@ -40,27 +40,35 @@ app.get("/no/taxation/without/representation", function(req, res){
   res.render("territories");
 });
 
+app.get("/not/in/the/us", function(req, res){
+  res.render("notintheus");
+});
+
 
 app.post("/lookup", function(req, res){ //Handler for finding district based on address
   var address = req.body.address;
   var zip = req.body.zip;
 
-  geocoder.geocode(address + " " + zip + " USA", function(err, result) {
-    console.log(result);
+  geocoder.geocode(address + " " + zip, function(err, result) {
     if(result.length != 0){
       var url = "https://api.mapbox.com/v4/govtrack.cd-115-2016/tilequery/" + result[0].longitude + "," + result[0].latitude + ".json?radius=0&access_token=pk.eyJ1IjoiZ292dHJhY2siLCJhIjoiY2lua2J1cmwzMHhyNnVrbHl3bmx4ZnZneiJ9.Wld_AdbKwOgmF2ZXn2SPmw";
 
       curl.request({
         url: url
       }, function (err, parts) {
-        var districtData = JSON.parse(parts).features[0].properties;
+        try{
+          var districtData = JSON.parse(parts).features[0].properties;
 
-        if(postal_codes.indexOf(districtData.state) == -1) res.redirect("/no/taxation/without/representation");
-        else res.redirect("/district/" + districtData.state + "-" + districtData.number);
+          if(postal_codes.indexOf(districtData.state) == -1) res.redirect("/no/taxation/without/representation");
+          else res.redirect("/district/" + districtData.state + "-" + districtData.number);
+        }
+        catch(e){
+          res.redirect("/not/in/the/us");
+        }
       });
     }
     else{ //Throw error
-
+      res.redirect("/not/in/the/us");
     }
   });
 });

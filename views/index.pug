@@ -10,7 +10,6 @@ html(lang = "en")
     title Is my district gerrymandered?
     
     script(src = "/bower_components/jquery/dist/jquery.min.js")
-    script(src = "/dist/JS/main-min.js")
     link(href = "/dist/CSS/main.css" rel = "stylesheet" type = "text/css")
   
   body(lang = "en")
@@ -18,11 +17,14 @@ html(lang = "en")
       center
         h1 Is my district gerrymandered?
         br
-        form(action = "/lookup" method = "post")
+        form#submitAddress(action = "/lookup" method = "post")
           input#address(type = "text" name = "address" placeholder = "Enter your address")
           input#zip(type = "text" name = "zip" placeholder = "Enter your zip code")
           input.btn(type = "submit" value = "CHECK!")
         br
+        p#error(hidden) Please enter all fields
+          br
+          br
         p Or, browse districts:
         br
         .select
@@ -33,3 +35,4 @@ html(lang = "en")
         br
         br
         p Or, <a href = "/random">go to a random district</a>.
+    script(src = "/dist/JS/main-min.js")
