@@ -67,7 +67,7 @@ html(lang = "en")
           //Efficiency
           - var efficiency_percent = (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1)
           - var efficiency_favors = district_data.efficiency_gap.substring(0, 1);
-          li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
+          li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency gap favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
           
           //Redistricting Control
           li!= district_data.redistricting_control
