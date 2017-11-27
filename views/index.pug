@@ -25,7 +25,7 @@ html(lang = "en")
         p#error(hidden) Please enter all fields
           br
           br
-        p Or, browse districts:
+        p Or, <a href = "/random">go to a random district</a> or browse districts:
         br
         .select
           select#districts(name = "districts" onchange = "selectHandler()")
@@ -34,5 +34,22 @@ html(lang = "en")
               option(value = district) #{district}
         br
         br
-        p Or, <a href = "/random">go to a random district</a>.
+        hr(align = "left")
+        br
+        .inline  
+          p View the most gerrymandered districts: 
+          .select
+            select#gerrymandered-districts(name = "gerrymandered-districts" onchange = "gerrymanderedDistrictsHandler()")
+              option(value = "null") Pick a district:
+              each district, i in gerrymander_ranks
+                option(value = district)= (i + 1) + ". " + district
+        br
+        br
+        .inline
+          p View the least compact districts: 
+          .select
+            select#compact-districts(name = "compact-districts" onchange = "compactDistrictsHandler()")
+              option(value = "null") Pick a district:
+              each district, i in compactness_ranks
+                option(value = district)= (i + 1) + ". " + district
     script(src = "/dist/JS/main-min.js")

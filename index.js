@@ -22,10 +22,12 @@ app.use(flash());
 app.set('views', './views');
 app.set('view engine', 'pug');
 var csv = fs.readFileSync("./data/master.csv").toString().split("\n"); //Array containing all district data
+var compactness_ranks = fs.readFileSync("./data/compactness_ranks.csv").toString().split("\n").slice(1, 11);
+var gerrymander_ranks = fs.readFileSync("./data/gerrymandering_ranks.csv").toString().split("\n").slice(1, 11); 
 
 // ** ROUTES **
 app.get("/", function(req, res){ //Homepage
-  res.render("index", {postal_codes: postal_codes, state_names: state_names, district_codes: district_codes});
+  res.render("index", {postal_codes: postal_codes, state_names: state_names, district_codes: district_codes, compactness_ranks: compactness_ranks, gerrymander_ranks: gerrymander_ranks});
 });
 
 app.get("/random", function(req, res){ //Random district
