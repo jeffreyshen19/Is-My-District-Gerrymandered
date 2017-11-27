@@ -54,6 +54,7 @@ html(lang = "en")
             | Bipartisan, Independent Redistricting Control
         br
         ul 
+          li= district_data.gerrymander_rank + " most gerrymandered district"
           if district_data.district == 0
             li This district is absolutely not gerrymandered, because its state only has one district. 
           else 

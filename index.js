@@ -136,6 +136,7 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
 
     //Set overall gerrymandered rating
     gerrymander_score = parseInt(csv[district_code_i + 1].split(",")[10]);
+    gerrymander_rank = suffixNumber(csv[district_code_i + 1].split(",")[11]);
 
     //Set previous and next district
     if(district_code_i == 0){
@@ -157,6 +158,7 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
       district: parseInt(district),
       state_name: state_name,
       gerrymander_score: gerrymander_score,
+      gerrymander_rank: gerrymander_rank,
       district_name: district_name,
       redistricting_control: redistrictingStringToDisplay,
       redistricting_control_code: redistricting_control,

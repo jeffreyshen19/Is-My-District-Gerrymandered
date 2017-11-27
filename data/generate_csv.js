@@ -6,11 +6,11 @@ eval(fs.readFileSync('../bin/util.js') + ""); //Include util.js in a traditional
 postal_codes.sort();
 
 function generateLine(json){ //Generates csv formatted string
-  return json.district_code + "," + json.rep + "," + json.affiliation + "," + json.state_affiliation + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.compactness_rank + "," + json.redistricting_control + "," + json.gerrymander_score;
+  return json.district_code + "," + json.rep + "," + json.affiliation + "," + json.state_affiliation + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.compactness_rank + "," + json.redistricting_control + "," + json.gerrymander_score + "," + json.gerrymander_rank;
 }
 
 var content = "", representatives_parsed = [];
-content += "district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score\n";
+content += "district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score,gerrymander_rank\n";
 
 curl.request({
   url: "https://theunitedstates.io/congress-legislators/legislators-current.json"
@@ -82,6 +82,8 @@ curl.request({
 
   }
 
+  var gerrymander_rank = [];
+
   for(var n = 0; n < district_codes.length; n++){
     var rep;
     for(var p = 0; p < representatives_parsed.length; p++){
@@ -117,11 +119,13 @@ curl.request({
       else if(backup_commission.includes(state)) redistricting_control += "B";
       else if(politician_commission.includes(state)) redistricting_control += "P";
       else if(independent_commission.includes(state)) redistricting_control += "I";
-      else redistricting_control += "L"; 
+      else redistricting_control += "L";
     }
 
     if(district === "0") gerrymander_score = 0;
     else gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); //Score is 50% due to geographical compactness, 50% to efficiency gap
+
+    gerrymander_rank.push(gerrymander_score);
 
     var line = generateLine({
       district_code: district_codes[n],
@@ -134,10 +138,18 @@ curl.request({
       state_affiliation: states_affiliation[postal_codes.indexOf(district_codes[n].split("-")[0])],
       gerrymander_score: gerrymander_score,
       compactness_rank: district_compactness_ranks[n],
-      redistricting_control: redistricting_control
+      redistricting_control: redistricting_control,
+      gerrymander_rank: "PLACEHOLDER" + n
     });
 
     content += line + "\n";
+  }
+
+  sorted = gerrymander_rank.slice().sort(function(a,b){return b - a;});
+  gerrymander_rank = gerrymander_rank.slice().map(function(v){ return sorted.indexOf(v)+1;});
+
+  for(var z = 0; z < district_codes.length; z++){
+    content = content.replace("PLACEHOLDER" + z, gerrymander_rank[z]);
   }
 
   fs.writeFileSync("master.csv", content, "utf-8");
