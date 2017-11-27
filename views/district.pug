@@ -54,10 +54,11 @@ html(lang = "en")
             | Bipartisan, Independent Redistricting Control
       br
       ul 
-        li= district_data.gerrymander_rank + " most gerrymandered district"
         if district_data.district == 0
           li This district is absolutely not gerrymandered, because its state only has one district. 
         else 
+          li= district_data.gerrymander_rank + " most gerrymandered district"
+          
           //Compactness  
           -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
           -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
