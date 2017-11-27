@@ -27,3 +27,24 @@ hr{
     vertical-align: text-top;
   }
 }
+
+@media screen and (max-width: 600px){
+  center{
+    text-align: center;
+    #address, #zip, .btn{
+      width: 300px;
+    }
+  }
+  hr{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 600px){
+  center{
+    height: 100vh;
+    padding: 20px 0;
+    top: 0;
+    transform: none;
+  }
+}
