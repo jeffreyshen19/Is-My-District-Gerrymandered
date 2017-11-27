@@ -1,11 +1,6 @@
 @import "reset";
 @import "theme";
 
-center{
-  width: 80%;
-  text-align: center;
-}
-
 p{
   margin-bottom: 5px;
 }
@@ -41,6 +36,7 @@ footer{
   padding: 0;
   box-sizing: border-box;
   height: 50px;
+  z-index: 100;
 
   .left, .right, .center{
     display: inline-block;
@@ -70,9 +66,9 @@ footer{
 }
 
 #wrapper{
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 50px 20px 75px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 #svg{
@@ -83,4 +79,18 @@ footer{
   height: 500px;
   width: 70%;
   margin: 0 auto;
+  z-index: 60;
+}
+
+.checkbox{
+  display: inline;
+}
+
+@media screen and (max-width: 800px){
+  ul, #map{
+    width: 80%;
+  }
+  .checkbox{
+    display: inline-block;
+  }
 }

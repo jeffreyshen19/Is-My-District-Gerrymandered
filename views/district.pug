@@ -18,70 +18,70 @@ html(lang = "en")
   
   body(lang = "en")
     #wrapper
-      center
-        #map(data-affiliation = district_data.affiliation)
-        br
-        br
-        h1 #{district_data.district_name}
-        br
-        if district_data.gerrymander_score == 0
-          p.subtitle Absolutely <strong>NOT</strong> gerrymandered (Gerrymandering level: <strong>0/100</strong>). 
-        else if district_data.gerrymander_score < 50
-          p.subtitle Most likely <strong>NOT</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
-        else 
-          p.subtitle Most likely <strong>IS</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
-        a(href = "/about") See how we get this score
-        br 
-        br 
-        p 
-          if district_data.district !== 0
+      #map(data-affiliation = district_data.affiliation)
+      br
+      br
+      h1 #{district_data.district_name}
+      br
+      if district_data.gerrymander_score == 0
+        p.subtitle Absolutely <strong>NOT</strong> gerrymandered (Gerrymandering level: <strong>0/100</strong>). 
+      else if district_data.gerrymander_score < 50
+        p.subtitle Most likely <strong>NOT</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
+      else 
+        p.subtitle Most likely <strong>IS</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
+      a(href = "/about") See how we get this score
+      br 
+      br 
+      .checkboxes
+        if district_data.district !== 0
+          p.checkbox
             if district_data.compactness.absolute >= district_data.compactness.country
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
             | Compact
-            
+          p.checkbox
             if (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1) < 7
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
             | Minimal Voter Wastage
-            
+          p.checkbox
             if district_data.redistricting_control_code === "II"
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
             | Bipartisan, Independent Redistricting Control
+      br
+      ul 
+        li= district_data.gerrymander_rank + " most gerrymandered district"
+        if district_data.district == 0
+          li This district is absolutely not gerrymandered, because its state only has one district. 
+        else 
+          //Compactness  
+          -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
+          -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
+          li!= "<strong>" + district_data.compactness.rank + " least compact district</strong> (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
+          
+          //Efficiency
+          - var efficiency_percent = (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1)
+          - var efficiency_favors = district_data.efficiency_gap.substring(0, 1);
+          li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
+          
+          //Redistricting Control
+          li!= district_data.redistricting_control
+          
+        //Affiliation
+        if district_data.affiliation === "Republican"
+          li <em class = "red">Representative:</em> #{district_data.rep} (R)
+        else if district_data.affiliation === "Democrat"
+          li <em>Representative:</em> #{district_data.rep} (D)
+            
+        if district_data.state_affiliation === "Republican"
+          li <em class = "red">Republican</em> State
+        else if district_data.state_affiliation === "Democrat"
+          li <em>Democrat</em> State
         br
-        ul 
-          li= district_data.gerrymander_rank + " most gerrymandered district"
-          if district_data.district == 0
-            li This district is absolutely not gerrymandered, because its state only has one district. 
-          else 
-            //Compactness  
-            -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
-            -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
-            li!= "<strong>" + district_data.compactness.rank + " least compact district</strong> (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
-            
-            //Efficiency
-            - var efficiency_percent = (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1)
-            - var efficiency_favors = district_data.efficiency_gap.substring(0, 1);
-            li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
-            
-            //Redistricting Control
-            li!= district_data.redistricting_control
-            
-          //Affiliation
-          if district_data.affiliation === "Republican"
-            li <em class = "red">Representative:</em> #{district_data.rep} (R)
-          else if district_data.affiliation === "Democrat"
-            li <em>Representative:</em> #{district_data.rep} (D)
-              
-          if district_data.state_affiliation === "Republican"
-            li <em class = "red">Republican</em> State
-          else if district_data.state_affiliation === "Democrat"
-            li <em>Democrat</em> State
-          br
     footer
       .left
         if district_data.previous_district != null
