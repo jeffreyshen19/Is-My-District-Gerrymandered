@@ -123,7 +123,9 @@ curl.request({
     }
 
     if(district === "0") gerrymander_score = 0;
-    else gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); //Score is 50% due to geographical compactness, 50% to efficiency gap
+    else {
+      gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); 
+    }
 
     gerrymander_rank.push(gerrymander_score);
 

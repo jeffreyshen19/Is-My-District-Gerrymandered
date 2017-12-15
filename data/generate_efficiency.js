@@ -7,18 +7,61 @@ eval(fs.readFileSync('../bin/util.js') + ""); //Include util.js in a traditional
 var content = "";
 
 function convertToVotes(str){
-  str = str.replace("at large", "").replace(/[0-9]+\./g, ""); //Trim excess words
+  str = str.replace("at large", "").replace(/[0-9]+\./g, "").replace(/,/g, ""); //Trim excess words
   str = str.trim();
-  str = str.split(" ");
 
-  var republican = null, democrat = null;
+  var found = str.match(/[0-9]+/g);
 
-  if(str.indexOf("republican") != -1) republican = parseInt(str[str.indexOf("republican") + 1].replace(/,/g, ""));
-  if(str.indexOf("democrat") != -1) democrat = parseInt(str[str.indexOf("democrat") + 1].replace(/,/g, ""));
+  var total_votes = 0;
+  for(var i = 0; i < found.length; i++){
+  	total_votes += parseInt(found[i]);
+  }
+
+  var majority_needed = total_votes % 2 == 0 ? total_votes / 2 + 1 : Math.ceil(total_votes / 2);
+
+  found = str.match(/(republican|democrat|\(republican\)|\(democrat\)) [0-9]+/g);
+
+  var winner = 0;
+  var winner_i = -1;
+  var votes;
+
+  var democrat_wasted = 0;
+  var republican_wasted = 0;
+  var affiliation;
+
+  try{
+    for(var j = 0; j < found.length; j++){
+    	votes = parseInt(found[j].split(" ")[1]);
+    	if(votes > winner){
+      	winner = votes;
+        winner_i = j;
+      }
+    }
+
+    for(var k = 0; k < found.length; k++){
+    	votes = parseInt(found[k].split(" ")[1]);
+      if(found[k].indexOf("democrat") != -1) affiliation = "D";
+      else affiliation = "R";
+
+      if(i == winner_i){
+      	if(affiliation === "D") democrat_wasted += votes - majority_needed;
+        else republican_wasted += votes - majority_needed;
+      }
+      else{
+    		if(affiliation === "D") democrat_wasted += votes;
+        else republican_wasted += votes;
+      }
+
+    }
+  }
+  catch(e){
+    total_votes = 0;
+  }
 
   return {
-    "republican": republican,
-    "democrat": democrat
+    republican_wasted: republican_wasted,
+    democrat_wasted: democrat_wasted,
+    total_votes: total_votes
   };
 }
 
@@ -100,22 +143,13 @@ extract("./raw/2016election.pdf", {
     wastedDemocratVotes = 0;
 
     for(var d = 0; d < stateData.districts.length; d++){
-      dem = stateData.districts[d].democrat;
-      rep = stateData.districts[d].republican;
+      dem = stateData.districts[d].democrat_wasted;
+      rep = stateData.districts[d].republican_wasted;
 
-      if(dem != null && !isNaN(dem)) totalVotes += dem;
-      if(rep != null && !isNaN(rep)) totalVotes += rep;
-
-      if(dem != null && rep != null && !isNaN(dem) && !isNaN(rep)){
-        winningThreshold = Math.ceil((dem + rep) / 2);
-        if(rep > dem){
-          wastedRepublicanVotes += rep - winningThreshold;
-          wastedDemocratVotes += dem;
-        }
-        else{
-          wastedRepublicanVotes += rep;
-          wastedDemocratVotes += dem - winningThreshold;
-        }
+      if(dem != 0 && rep != 0){
+        totalVotes += stateData.districts[d].total_votes;
+        wastedDemocratVotes += dem;
+        wastedRepublicanVotes += rep;
       }
     }
 
@@ -125,12 +159,8 @@ extract("./raw/2016election.pdf", {
     else if(efficiency_gap > 0) efficiency_gap = "R" + efficiency_gap;
     else efficiency_gap = "N" + efficiency_gap;
 
-
-
     stateEfficiencyGaps.push(efficiency_gap);
   }
-
-  console.log(stateEfficiencyGaps);
 
   for(var dist = 0; dist < district_codes.length; dist++){
     content += district_codes[dist] + "," + stateEfficiencyGaps[postal_codes.indexOf(district_codes[dist].split("-")[0])] + "\n";
