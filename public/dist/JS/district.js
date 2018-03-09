@@ -12,7 +12,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 $.ajax({
   dataType: "json",
-  url: "/data/raw/districts/" + window.location.pathname.split("/district/")[1] + "/shape.geojson",
+  url: "/assets/districts/" + window.location.pathname.split("/district/")[1] + "/shape.geojson",
   success: function(data) {
     var affiliation = $("#map").data("affiliation");
     district_boundary = new L.geoJson(data, {style: {
