@@ -29,13 +29,13 @@ html(lang = "en")
         p.subtitle Most likely <strong>NOT</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
       else 
         p.subtitle Most likely <strong>IS</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
-      a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered" target = "_blank") See how we get this score
+      a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered/blob/master/README.md" target = "_blank") See how we get this score
       br 
       br 
       .checkboxes
         if district_data.district !== 0
           p.checkbox
-            if district_data.compactness.absolute >= district_data.compactness.country
+            if district_data.compactness.absolute >= 0.287
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
@@ -83,6 +83,8 @@ html(lang = "en")
         else if district_data.state_affiliation === "Democrat"
           li <em>Democrat</em> State
         br
+        p
+          i Disclaimer: Determing whether a district is gerrymandered is a complicated issue that has not yet been solved. I am not an expert on this subject, just an enthusiastic citizen; Therefore, use this website with a grain of salt and understand that this site, while mostly accurate, misses some key nuances.
     footer
       .left
         if district_data.previous_district != null

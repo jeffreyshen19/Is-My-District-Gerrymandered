@@ -10,6 +10,9 @@ This project generates a "Gerrymander score" (from 0 to 100) for each of the 435
 
 1. **Geographical Compactness**: Basically, how compact is the district? It is more likely that a district is gerrymandered if it has an odd shape and a lot of small tendrils than if it is more regular. While this isn't necessarily a perfect gauge of gerrymandering, it can be a decent proxy. Geographical compactness is calculated using the *Polsby-Popper method*: dividing the area of the district by the area of a circle with the same perimeter. I used QGIS to calculate compactness.
 
+    * What is an "acceptable" level of compactness? I say a district is compact if its Polsby-Popper score is higher than 0.287. This is the 50th percentile of compactness for a sample of present and past congressional districts.
+
+
 2. **Voter Wastage**: Gerrymandering can essentially be done in two ways: "Packing", which crams all the voters of one party into a few districts to eliminate a majority, or "Cracking", which spreads the voters of one party into a lot of districts so they don't have a majority in any district. By calculating the number of wasted votes (the number of votes above the threshold to win, and all the votes of the losing party) for each party, we can determine if there is are more votes wasted for a specific party, a good indicator of partisan gerrymandering.
 
 3. **Redistricting Control**: How are district lines drawn by state? In most states, the state legislatures, or other elected officials primarily draw district lines. This can potentially be biased, as members of one party will be drawing the district lines which can influence the election of members of their own party. Some state legislatures split redistricting control between both parties, mitigating some amount of partisan bias. Even better, a few states use independent, bipartisan commissions to draw district lines. Thus, how likely a redistricting process is to be biased is factored into the "gerrymander score".  
@@ -57,6 +60,7 @@ These were all the articles, books, etc. that I read to better help me understan
 *   [“We have a standard for judging partisan gerrymandering. The Supreme Court should use it.”](https://www.washingtonpost.com/news/monkey-cage/wp/2017/02/02/       we-have-a-standard-for-judging-partisan-gerrymandering-the-supreme-court-should-use-it/?utm_term=.6d7324399dee)
 *   [“How the Efficiency Gap Works.”](https://www.brennancenter.org/sites/default/files/legal-work/How_the_Efficiency_Gap_Standard_Works.pdf)
 *   [Partisan Gerrymandering and the Efficiency Gap.”](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2457468)
+*   [A Two Hundred-Year Statistical History of the Gerrymander](https://pdfs.semanticscholar.org/e6b9/c6767f87de38e549242e84b60db685118f8c.pdf)
 
 ### License
 

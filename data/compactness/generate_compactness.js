@@ -26,7 +26,7 @@ for(var i = 1; i < 438; i++){
   if(postal_code != null && postal_code != "DC") districts.push({
     "postal_code": postal_code,
     "district_num": line[1],
-    "polsby_popper": line[1] == "0" ? 1 : (line[2] / 100.0)
+    "polsby_popper": line[2] / 100.0
   });
 }
 
