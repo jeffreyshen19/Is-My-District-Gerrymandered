@@ -13,7 +13,9 @@ This project generates a "Gerrymander score" (from 0 to 100) for each of the 435
     * What is an "acceptable" level of compactness? I say a district is compact if its Polsby-Popper score is higher than 0.287. This is the 50th percentile of compactness for a sample of present and past congressional districts.
 
 
-2. **Voter Wastage**: Gerrymandering can essentially be done in two ways: "Packing", which crams all the voters of one party into a few districts to eliminate a majority, or "Cracking", which spreads the voters of one party into a lot of districts so they don't have a majority in any district. By calculating the number of wasted votes (the number of votes above the threshold to win, and all the votes of the losing party) for each party, we can determine if there is are more votes wasted for a specific party, a good indicator of partisan gerrymandering.
+2. **Voter Wastage**: Gerrymandering can essentially be done in two ways: "Packing", which crams all the voters of one party into a few districts to eliminate a majority, or "Cracking", which spreads the voters of one party into a lot of districts so they don't have a majority in any district. By calculating the number of wasted votes (the number of votes above the threshold to win, and all the votes of the losing party) for each party, we can determine if there is are more votes wasted for a specific party, a good indicator of partisan gerrymandering. Specifically, we measure voter wastage using the "efficiency gap", which you can read more about [here](https://www.brennancenter.org/sites/default/files/legal-work/How_the_Efficiency_Gap_Standard_Works.pdf).
+
+    * What is an "acceptable" amount of voter wastage? We say a state having less than 7% voter wastage is acceptable.
 
 3. **Redistricting Control**: How are district lines drawn by state? In most states, the state legislatures, or other elected officials primarily draw district lines. This can potentially be biased, as members of one party will be drawing the district lines which can influence the election of members of their own party. Some state legislatures split redistricting control between both parties, mitigating some amount of partisan bias. Even better, a few states use independent, bipartisan commissions to draw district lines. Thus, how likely a redistricting process is to be biased is factored into the "gerrymander score".  
 
@@ -43,6 +45,7 @@ This project was written by Jeffrey Shen, a current student at Phillips Academy.
 ### Datasets used
 
 *   **[github.com/unitedstates/districts](https://github.com/unitedstates/districts)**: Used to get the geojson files of each district.
+* **[census.gov/geo/maps-data/data/cbf/cbf_cds.html](https://www.census.gov/geo/maps-data/data/cbf/cbf_cds.html)**: Used to get shapefiles of congressional districts, which were used to calculate geographical compactness.
 *   **[history.house.gov](http://history.house.gov/Institution/Election-Statistics/Election-Statistics/)**: Used for house election data.
 *   **[redistricting.lls.edu/who.php](http://redistricting.lls.edu/who.php)**: Used for information on redistricting by state.
 
