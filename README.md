@@ -8,7 +8,7 @@ This is a project that estimates how likely a congressional district is gerryman
 
 This project generates a "Gerrymander score" (from 0 to 100) for each of the 435 US congressional districts (The higher the score, the more gerrymandered it is). It calculates this score based on 3 factors:
 
-1. **Geographical Compactness**: Basically, how compact is the district? It is more likely that a district is gerrymandered if it has an odd shape and a lot of small tendrils than if it is more regular. Geographical compactness is calculated using the *Polsby-Popper method*: dividing the area of the district by the area of a circle with the same perimeter.
+1. **Geographical Compactness**: Basically, how compact is the district? It is more likely that a district is gerrymandered if it has an odd shape and a lot of small tendrils than if it is more regular. While this isn't necessarily a perfect gauge of gerrymandering, it can be a decent proxy. Geographical compactness is calculated using the *Polsby-Popper method*: dividing the area of the district by the area of a circle with the same perimeter. I used QGIS to calculate compactness.
 
 2. **Voter Wastage**: Gerrymandering can essentially be done in two ways: "Packing", which crams all the voters of one party into a few districts to eliminate a majority, or "Cracking", which spreads the voters of one party into a lot of districts so they don't have a majority in any district. By calculating the number of wasted votes (the number of votes above the threshold to win, and all the votes of the losing party) for each party, we can determine if there is are more votes wasted for a specific party, a good indicator of partisan gerrymandering.
 
@@ -45,7 +45,7 @@ This project was written by Jeffrey Shen, a current student at Phillips Academy.
 
 ### Built With
 
-*   **turf-line-distance** and **geojson-area**: Used to calculate geographical compactness.
+*   **QGIS**: Used to calculate geographical compactness.
 *   **Leaflet** and **Mapbox**: Used to display a map of each congressional district.
 *   **Geocoder**: Used for converting an address into longitude and latitude, so it can later be converted into a congressional district.
 
