@@ -64,6 +64,7 @@ These were all the articles, books, etc. that I read to better help me understan
 *   [“How the Efficiency Gap Works.”](https://www.brennancenter.org/sites/default/files/legal-work/How_the_Efficiency_Gap_Standard_Works.pdf)
 *   [Partisan Gerrymandering and the Efficiency Gap.”](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2457468)
 *   [A Two Hundred-Year Statistical History of the Gerrymander](https://pdfs.semanticscholar.org/e6b9/c6767f87de38e549242e84b60db685118f8c.pdf)
+*   [Partisan Gerrymandering and the Efficiency Gap](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?referer=https://www.google.com/&httpsredir=1&article=1946&context=public_law_and_legal_theory)
 
 ### License
 
