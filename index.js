@@ -23,11 +23,10 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 var csv = fs.readFileSync("./data/master.csv").toString().split("\n"); //Array containing all district data
 var compactness_ranks = fs.readFileSync("./data/compactness_ranks.csv").toString().split("\n").slice(1, 11);
-var gerrymander_ranks = fs.readFileSync("./data/gerrymandering_ranks.csv").toString().split("\n").slice(1, 11); 
 
 // ** ROUTES **
 app.get("/", function(req, res){ //Homepage
-  res.render("index", {postal_codes: postal_codes, state_names: state_names, district_codes: district_codes, compactness_ranks: compactness_ranks, gerrymander_ranks: gerrymander_ranks});
+  res.render("index", {postal_codes: postal_codes, state_names: state_names, district_codes: district_codes, compactness_ranks: compactness_ranks});
 });
 
 app.get("/random", function(req, res){ //Random district
@@ -138,7 +137,6 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
 
     //Set overall gerrymandered rating
     gerrymander_score = parseInt(csv[district_code_i + 1].split(",")[10]);
-    gerrymander_rank = suffixNumber(csv[district_code_i + 1].split(",")[11]);
 
     //Set previous and next district
     if(district_code_i == 0){
@@ -160,7 +158,6 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
       district: parseInt(district),
       state_name: state_name,
       gerrymander_score: gerrymander_score,
-      gerrymander_rank: gerrymander_rank,
       district_name: district_name,
       redistricting_control: redistrictingStringToDisplay,
       redistricting_control_code: redistricting_control,
