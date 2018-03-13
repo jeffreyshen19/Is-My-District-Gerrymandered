@@ -129,12 +129,14 @@ extract("./2016electionORIGINAL.pdf", {
 
   // ** Calculate efficiency gap for each state **
   var stateEfficiencyGaps = [];
+  var stateEfficiencyGapsPercent = [];
 
   states.forEach(function(state){
-    var efficiency_gap;
+    var efficiency_gap, efficiency_gap_percent;
 
     if(state.votes.length == 1){ //For single district states
       efficiency_gap = null;
+      efficiency_gap_percent = null;
     }
     else{
       var total_dem_wasted = 0, total_rep_wasted = 0, total_votes = 0;
@@ -147,21 +149,26 @@ extract("./2016electionORIGINAL.pdf", {
         }
       });
 
-      efficiency_gap = (total_dem_wasted - total_rep_wasted) / total_votes; //Actual percent value
-      efficiency_gap = Math.round(efficiency_gap * state.votes.length); //Convert to seat count
+      efficiency_gap_percent = (total_dem_wasted - total_rep_wasted) / total_votes; //Actual percent value
+      efficiency_gap = Math.round(efficiency_gap_percent * state.votes.length); //Convert to seat count
 
       if(efficiency_gap < 0) efficiency_gap = "D" + -1 * efficiency_gap;
       else if(efficiency_gap > 0) efficiency_gap = "R" + efficiency_gap;
       else efficiency_gap = "N" + efficiency_gap;
+
+      if(efficiency_gap_percent < 0) efficiency_gap_percent = "D" + -1 * efficiency_gap_percent;
+      else if(efficiency_gap_percent > 0) efficiency_gap_percent = "R" + efficiency_gap_percent;
+      else efficiency_gap_percent = "N" + efficiency_gap_percent;
     }
 
     stateEfficiencyGaps.push(efficiency_gap);
+    stateEfficiencyGapsPercent.push(efficiency_gap_percent);
   });
 
   for(var dist = 0; dist < district_codes.length; dist++){
-    content += district_codes[dist] + "," + stateEfficiencyGaps[postal_codes.indexOf(district_codes[dist].split("-")[0])] + "\n";
+    content += district_codes[dist] + "," + stateEfficiencyGaps[postal_codes.indexOf(district_codes[dist].split("-")[0])] + "," + stateEfficiencyGapsPercent[postal_codes.indexOf(district_codes[dist].split("-")[0])] + "\n";
   }
 
-  fs.writeFileSync("test.json", JSON.stringify(states));
+  //fs.writeFileSync("test.json", JSON.stringify(states));
   fs.writeFileSync("../efficiency.csv", content);
 });

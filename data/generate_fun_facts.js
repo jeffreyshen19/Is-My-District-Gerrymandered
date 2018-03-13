@@ -25,7 +25,7 @@ for(var i = 0; i < 10; i++){
   content += sorted[i].name + "\n";
 }
 
-fs.writeFileSync("gerrymandering_ranks.csv", content, "utf-8");
+//fs.writeFileSync("gerrymandering_ranks.csv", content, "utf-8");
 
 sorted = districts.slice().sort(function(a,b){
   return a.compactness_score - b.compactness_score;

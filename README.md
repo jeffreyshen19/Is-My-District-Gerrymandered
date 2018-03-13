@@ -6,7 +6,7 @@ This is a project that estimates how likely a congressional district is gerryman
 
 ### How does it work?
 
-This project generates a "Gerrymander score" (from 0 to 100) for each of the 435 US congressional districts (The higher the score, the more gerrymandered it is). It calculates this score based on 3 factors:
+This project determines whether a district is gerrymandered based on 3 factors:
 
 1. **Geographical Compactness**: Basically, how compact is the district? It is more likely that a district is gerrymandered if it has an odd shape and a lot of small tendrils than if it is more regular. While this isn't necessarily a perfect gauge of gerrymandering, it can be a decent proxy. Geographical compactness is calculated using the *Polsby-Popper method*: dividing the area of the district by the area of a circle with the same perimeter. I used QGIS to calculate compactness.
 
@@ -17,7 +17,7 @@ This project generates a "Gerrymander score" (from 0 to 100) for each of the 435
 
     * What is an "acceptable" amount of voter wastage? We say a state having less than 7% voter wastage is acceptable.
 
-3. **Redistricting Control**: How are district lines drawn by state? In most states, the state legislatures, or other elected officials primarily draw district lines. This can potentially be biased, as members of one party will be drawing the district lines which can influence the election of members of their own party. Some state legislatures split redistricting control between both parties, mitigating some amount of partisan bias. Even better, a few states use independent, bipartisan commissions to draw district lines. Thus, how likely a redistricting process is to be biased is factored into the "gerrymander score".  
+3. **Redistricting Control**: How are district lines drawn by state? In most states, the state legislatures, or other elected officials primarily draw district lines. This can potentially be biased, as members of one party will be drawing the district lines which can influence the election of members of their own party. Some state legislatures split redistricting control between both parties, mitigating some amount of partisan bias. Even better, a few states use independent, bipartisan commissions to draw district lines. Thus, how likely a redistricting process is to be biased is factored into our assesment.  
 
 ### Table of Contents
 

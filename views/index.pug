@@ -35,16 +35,6 @@ html(lang = "en")
         br
         br
         hr(align = "left")
-        br
-        .inline  
-          p View the most gerrymandered districts: 
-          .select
-            select#gerrymandered-districts(name = "gerrymandered-districts" onchange = "gerrymanderedDistrictsHandler()")
-              option(value = "null") Pick a district:
-              each district, i in gerrymander_ranks
-                option(value = district)= (i + 1) + ". " + district
-        br
-        br
         .inline
           p View the least compact districts: 
           .select

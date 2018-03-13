@@ -95,7 +95,7 @@ curl.request({
 
     var absolute_compactness = parseFloat(compactness_csv[n + 1].split(",")[1]);
     var district = district_codes[n].split("-")[1];
-    var efficiency_gap = parseFloat(efficiency_csv[n + 1].split(",")[1].substring(1));
+    var efficiency_gap = parseInt(efficiency_csv[n + 1].split(",")[1].substring(1));
 
     //Get redistricting Control
     var state = district_codes[n].split("-")[0];
@@ -124,7 +124,11 @@ curl.request({
 
     if(district === "0") gerrymander_score = 0;
     else {
-      gerrymander_score = Math.round(50 * (1 - absolute_compactness)) + Math.round(50 * efficiency_gap); 
+      gerrymander_score = Math.round(33.33 * (
+        (absolute_compactness < 0.287 ? 1 - absolute_compactness : 0) + //Compactness
+        (efficiency_gap >= 2 ? 1 : 0) + //Efficiency gap
+        (redistricting_control.charAt(0) != "I" ? 0.5 : 0) + (redistricting_control.charAt(0) != "I" ? 0.5 : 0) //Redistricting control
+      ));
     }
 
     gerrymander_rank.push(gerrymander_score);

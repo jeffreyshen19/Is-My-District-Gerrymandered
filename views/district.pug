@@ -23,31 +23,35 @@ html(lang = "en")
       br
       h1 #{district_data.district_name}
       br
+      -var isCompact = district_data.compactness.absolute >= 0.287;
+      -var minimalVoterWastage = parseInt(district_data.efficiency_gap.substring(1)) < 2;
+      -var nonBiasedRedistricting = district_data.redistricting_control_code === "II";
+        
       if district_data.gerrymander_score == 0
-        p.subtitle Absolutely <strong>NOT</strong> gerrymandered (Gerrymandering level: <strong>0/100</strong>). 
+        p.subtitle Absolutely <strong>NOT</strong> gerrymandered/
       else if district_data.gerrymander_score < 50
-        p.subtitle Most likely <strong>NOT</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
+        p.subtitle Most likely <strong>NOT</strong> gerrymandered.
       else 
-        p.subtitle Most likely <strong>IS</strong> gerrymandered (Gerrymandering level: <strong>#{district_data.gerrymander_score}/100</strong>). 
-      a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered/blob/master/README.md" target = "_blank") See how we get this score
+        p.subtitle Most likely <strong>IS</strong> gerrymandered.
+      a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered/blob/master/README.md" target = "_blank") See how we get this
       br 
       br 
       .checkboxes
         if district_data.district !== 0
           p.checkbox
-            if district_data.compactness.absolute >= 0.287
+            if isCompact
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
             | Compact
           p.checkbox
-            if parseInt(district_data.efficiency_gap.substring(1)) < 2 
+            if minimalVoterWastage
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
             | Minimal Voter Wastage
           p.checkbox
-            if district_data.redistricting_control_code === "II"
+            if nonBiasedRedistricting
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
@@ -57,8 +61,6 @@ html(lang = "en")
         if district_data.district == 0
           li This district is absolutely not gerrymandered, because its state only has one district. 
         else 
-          li= district_data.gerrymander_rank + " most gerrymandered district"
-          
           //Compactness  
           -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
           -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
