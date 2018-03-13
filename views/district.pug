@@ -41,7 +41,7 @@ html(lang = "en")
               i.fa.fa-fw.fa-square-o 
             | Compact
           p.checkbox
-            if (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1) < 7
+            if parseInt(district_data.efficiency_gap.substring(1)) < 2 
               i.fa.fa-fw.fa-check-square-o 
             else 
               i.fa.fa-fw.fa-square-o 
@@ -65,9 +65,13 @@ html(lang = "en")
           li!= "<strong>" + district_data.compactness.rank + " least compact district</strong> (out of 435 districts) (" + (statePercent > 0 ? statePercent + "% more" : -1 * statePercent + "% less") + " compact than state average, " + (countryPercent > 0 ? countryPercent + "% more" : countryPercent * -1 + "% less") + " compact than country average)."
           
           //Efficiency
-          - var efficiency_percent = (parseFloat(district_data.efficiency_gap.substring(1)) * 100.0).toFixed(1)
+          - var efficiency_gap = parseInt(district_data.efficiency_gap.substring(1))
           - var efficiency_favors = district_data.efficiency_gap.substring(0, 1);
-          li!= "<strong>" + (efficiency_percent < 7 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_percent + "% efficiency gap favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 7% is considered acceptable." 
+          
+          if efficiency_gap == 0
+            li!= "No voter efficiency gap in " + district_data.state_name + " (a.k.a Republicans and Democrats are equally efficient in converting votes to seats)."
+          else 
+            li!= "<strong>" + (efficiency_gap < 2 ? "Allowable " : "Unacceptably large ") + "</strong>" + efficiency_gap + " seat efficiency gap favoring " + (efficiency_favors === "R" ? "<em class = 'red'>Republicans</em>" : "<em>Democrats</em>") + " (a.k.a " + (efficiency_favors !== "R" ? "Republicans" : "Democrats") + " waste more votes in " + district_data.state_name  + "). An efficiency gap below 2 seats is considered acceptable." 
           
           //Redistricting Control
           li!= district_data.redistricting_control
@@ -84,7 +88,8 @@ html(lang = "en")
           li <em>Democrat</em> State
         br
         p
-          i Disclaimer: Determing whether a district is gerrymandered is a complicated issue that has not yet been solved. I am not an expert on this subject, just an enthusiastic citizen; Therefore, use this website with a grain of salt and understand that this site, while mostly accurate, misses some key nuances.
+          i Disclaimer: Determing whether a district is gerrymandered is a complicated issue that has not yet been solved. I am not an expert on this subject, just an enthusiastic citizen; Therefore, use this website with a grain of salt and understand that this site, while mostly accurate, misses some key nuances. 
+          | Source code is available <a href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered">here</a>.
     footer
       .left
         if district_data.previous_district != null
