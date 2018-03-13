@@ -28,7 +28,7 @@ html(lang = "en")
       -var nonBiasedRedistricting = district_data.redistricting_control_code === "II";
         
       if district_data.gerrymander_score == 0
-        p.subtitle Absolutely <strong>NOT</strong> gerrymandered/
+        p.subtitle Absolutely <strong>NOT</strong> gerrymandered.
       else if district_data.gerrymander_score < 50
         p.subtitle Most likely <strong>NOT</strong> gerrymandered.
       else 
