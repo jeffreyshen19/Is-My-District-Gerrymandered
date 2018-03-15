@@ -17,6 +17,16 @@ html(lang = "en")
     script(src = "http://d3js.org/d3.v3.min.js")
   
   body(lang = "en")
+    #fb-root
+    script.
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1891964484181442&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    
     #wrapper
       #map(data-affiliation = district_data.affiliation)
       br
@@ -27,15 +37,20 @@ html(lang = "en")
       -var minimalVoterWastage = parseInt(district_data.efficiency_gap.substring(1)) < 2;
       -var nonBiasedRedistricting = district_data.redistricting_control_code === "II";
         
-      if district_data.gerrymander_score == 0
-        p.subtitle Absolutely <strong>NOT</strong> gerrymandered.
-      else if district_data.gerrymander_score < 50
-        p.subtitle Most likely <strong>NOT</strong> gerrymandered.
-      else 
-        p.subtitle Most likely <strong>IS</strong> gerrymandered.
+      .subtitle-row
+        p.subtitle(style = "display:inline")
+          if district_data.gerrymander_score == 0
+            | Absolutely <strong>NOT</strong> gerrymandered.
+          else if district_data.gerrymander_score < 50
+            | Most likely <strong>NOT</strong> gerrymandered.
+          else 
+            | Most likely <strong>IS</strong> gerrymandered.
+          | &nbsp;
+        .fb-share-button(data-href="http://ismydistrictgerrymandered.us" data-layout="button_count" data-size="small" data-mobile-iframe="true" style = "display:inline;position:relative;top:-4px;")
+          a.fb-xfbml-parse-ignore(target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fismydistrictgerrymandered.us%2F&amp;src=sdkpreparse") Share
       a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered/blob/master/README.md" target = "_blank") See how we get this
-      br 
-      br 
+      br    
+      br    
       .checkboxes
         if district_data.district !== 0
           p.checkbox
