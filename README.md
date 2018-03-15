@@ -1,5 +1,7 @@
 # Is My District Gerrymandered?
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYZQFQ46HNQE6)
+
 This is a project that estimates how likely a congressional district is gerrymandered based on its geographical compactness, voter wastage, and redistricting control. It was last updated for the 115th US Congressional districts (2016 election). **NOT YET DONE**.
 
 Check it out at [ismydistrictgerrymandered.us](http://ismydistrictgerrymandered.us).
@@ -43,17 +45,6 @@ Please submit an issue, or contact me at jshen@andover.edu if you believe you ha
 ## Credits
 
 This project was written by Jeffrey Shen, a current student at Phillips Academy. I received some assistance from Varun Roy and Bill Qin.
-
-### Support Me
-
-I spent a lot of time and money developing and hosting this project. Show your appreciation by donating:
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-  <input type="hidden" name="cmd" value="_s-xclick">
-  <input type="hidden" name="hosted_button_id" value="TYZQFQ46HNQE6">
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
 
 ### Datasets used
 
