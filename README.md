@@ -4,9 +4,7 @@ This is a project that estimates how likely a congressional district is gerryman
 
 Check it out at [ismydistrictgerrymandered.us](http://ismydistrictgerrymandered.us).
 
-
-
-**TO-DO**: ADD LINK + SCREENSHOT.
+![Screenshot of the app](misc/demo.png)
 
 ### How does it work?
 
