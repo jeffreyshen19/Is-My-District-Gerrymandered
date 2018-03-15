@@ -8,6 +8,7 @@ html(lang = "en")
       gtag('js', new Date());
 
       gtag('config', 'UA-115738654-1');
+    script(async defer src="https://buttons.github.io/buttons.js")
     meta(charset = "utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -50,8 +51,9 @@ html(lang = "en")
               option(value = district) #{district}
         br
         br
-        .fb-share-button(data-href="http://ismydistrictgerrymandered.us" data-layout="button_count" data-size="small" data-mobile-iframe="true")
-          a.fb-xfbml-parse-ignore(target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fismydistrictgerrymandered.us%2F&amp;src=sdkpreparse") Share
+        .fb-share-button(data-href="http://ismydistrictgerrymandered.us" data-layout="button_count" data-size="small" data-mobile-iframe="true" style = "display:inline;position:relative;top:-3px;margin-right: 2px;")
+          a.fb-xfbml-parse-ignore(target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fismydistrictgerrymandered.us%2F&amp;src=sdkpreparse" style = "") Share
+        a.github-button(href="https://github.com/jeffreyshen19/Is-My-District-Gerrymandered" data-show-count="true" aria-label="Star jeffreyshen19/Is-My-District-Gerrymandered on GitHub") Star
         br
         br
         hr(align = "left")
