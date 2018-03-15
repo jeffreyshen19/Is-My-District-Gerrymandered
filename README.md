@@ -64,7 +64,7 @@ These were all the articles, books, etc. that I read to better help me understan
 
 *   [“How the New Math of Gerrymandering Works.”](https://www.nytimes.com/interactive/2017/10/03/upshot/how-the-new-math-of-gerrymandering-works-supreme-court.html)
 *   [“Compactness in Redistricting.”](http://www.theseventhstate.com/?tag=polsby-popper)
-*   [“We have a standard for judging partisan gerrymandering. The Supreme Court should use it.”](https://www.washingtonpost.com/news/monkey-cage/wp/2017/02/02/       we-have-a-standard-for-judging-partisan-gerrymandering-the-supreme-court-should-use-it/?utm_term=.6d7324399dee)
+*   [“We have a standard for judging partisan gerrymandering. The Supreme Court should use it.”](https://www.washingtonpost.com/news/monkey-cage/wp/2017/02/02/we-have-a-standard-for-judging-partisan-gerrymandering-the-supreme-court-should-use-it/?utm_term=.6d7324399dee)
 *   [“How the Efficiency Gap Works.”](https://www.brennancenter.org/sites/default/files/legal-work/How_the_Efficiency_Gap_Standard_Works.pdf)
 *   [Partisan Gerrymandering and the Efficiency Gap.”](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2457468)
 *   [A Two Hundred-Year Statistical History of the Gerrymander](https://pdfs.semanticscholar.org/e6b9/c6767f87de38e549242e84b60db685118f8c.pdf)
