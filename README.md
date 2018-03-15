@@ -1,6 +1,10 @@
 # Is My District Gerrymandered?
 
-This is a project that estimates how likely a congressional district is gerrymandered based on its geographical compactness, voter wastage, and redistricting control. It was last updated for the 115th US Congressional districts (2016 election).
+This is a project that estimates how likely a congressional district is gerrymandered based on its geographical compactness, voter wastage, and redistricting control. It was last updated for the 115th US Congressional districts (2016 election). **NOT YET DONE**.
+
+Check it out at [ismydistrictgerrymandered.us](http://ismydistrictgerrymandered.us).
+
+
 
 **TO-DO**: ADD LINK + SCREENSHOT.
 
