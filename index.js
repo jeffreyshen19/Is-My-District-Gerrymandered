@@ -172,7 +172,8 @@ app.get("/district/:state-:district", function(req, res){ //Handler for renderin
       previous_district: previous_district,
       next_district: next_district,
       affiliation: affiliation,
-      state_affiliation: state_affiliation
+      state_affiliation: state_affiliation,
+      num_districts: parseInt(csv[district_code_i + 1].split(",")[12])
     };
 
     res.render("district", {district_data: district_data});

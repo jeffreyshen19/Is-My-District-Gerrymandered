@@ -6,11 +6,11 @@ eval(fs.readFileSync('../bin/util.js') + ""); //Include util.js in a traditional
 postal_codes.sort();
 
 function generateLine(json){ //Generates csv formatted string
-  return json.district_code + "," + json.rep + "," + json.affiliation + "," + json.state_affiliation + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.compactness_rank + "," + json.redistricting_control + "," + json.gerrymander_score + "," + json.gerrymander_rank;
+  return json.district_code + "," + json.rep + "," + json.affiliation + "," + json.state_affiliation + "," + json.efficiency_gap + "," + json.absolute_compactness + "," + json.state_compactness + "," + json.country_compactness + "," + json.compactness_rank + "," + json.redistricting_control + "," + json.gerrymander_score + "," + json.gerrymander_rank + "," + json.num_districts;
 }
 
 var content = "", representatives_parsed = [];
-content += "district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score,gerrymander_rank\n";
+content += "district_code,representative,representative_affiliation,state_affiliation,efficiency_gap,absolute_compactness,state_compactness,country_compactness,compactness_rank,redistricting_control,gerrymander_score,gerrymander_rank,num_districts\n";
 
 curl.request({
   url: "https://theunitedstates.io/congress-legislators/legislators-current.json"
@@ -83,6 +83,11 @@ curl.request({
   }
 
   var gerrymander_rank = [];
+  var num_districts_per_state = Array(50).fill(0);
+
+  for(var n = 0; n < district_codes.length; n++){
+    num_districts_per_state[postal_codes.indexOf(district_codes[n].split("-")[0])]++;
+  }
 
   for(var n = 0; n < district_codes.length; n++){
     var rep;
@@ -146,7 +151,8 @@ curl.request({
       gerrymander_score: gerrymander_score,
       compactness_rank: district_compactness_ranks[n],
       redistricting_control: redistricting_control,
-      gerrymander_rank: "PLACEHOLDER" + n
+      gerrymander_rank: "PLACEHOLDER" + n,
+      num_districts: num_districts_per_state[postal_codes.indexOf(district_codes[n].split("-")[0])]
     });
 
     content += line + "\n";
