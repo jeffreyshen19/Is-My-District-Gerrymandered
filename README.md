@@ -32,7 +32,6 @@ Specifically, I internally calculate a "gerrymander score" in `data/generate_csv
 *   views/: all of the webpages stored here.
 *   public/: all of the frontend code is stored here.
 *   data/:
-  * raw/: all of the raw data is stored here
   * generate_csv.js: This file generates the master.csv, which contains all the data, for all the districts.
   * generate_efficiency.js: This file generates efficiency.csv, which contains information on voter wastage.
   * generate_geographical_compactness.js: This file generates compactness.csv, which contains the Polsby-Popper score for each district.

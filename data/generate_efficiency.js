@@ -132,7 +132,7 @@ extract("./raw/2016election.pdf", {
     }
   }
 
-  fs.writeFileSync("election.json", JSON.stringify(votingData));
+  //fs.writeFileSync("election.json", JSON.stringify(votingData));
 
   var efficiency_gap, stateData, districtData, wastedRepublicanVotes, wastedDemocratVotes, totalVotes, winningThreshold, dem, rep, stateEfficiencyGaps = [];
 
