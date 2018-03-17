@@ -21,7 +21,10 @@ This project determines whether a district is gerrymandered based on 3 factors:
 
     * What is an "acceptable" amount of voter wastage? We say a state having less than 7% voter wastage is acceptable.
 
+
 3. **Redistricting Control**: How are district lines drawn by state? In most states, the state legislatures, or other elected officials primarily draw district lines. This can potentially be biased, as members of one party will be drawing the district lines which can influence the election of members of their own party. Some state legislatures split redistricting control between both parties, mitigating some amount of partisan bias. Even better, a few states use independent, bipartisan commissions to draw district lines. Thus, how likely a redistricting process is to be biased is factored into our assesment.  
+
+Specifically, I internally calculate a "gerrymander score" in `data/generate_csv.js`. If this score is greater than 50, I say that the district is gerrymandered. If a state has less than 5 districts, it is unlikely to be gerrymandered, and I set those districts' gerrymander scores to 0. Otherwise, 60% of this score is from the geographical compactness of the district and 40% of the score is from the efficiency gap of the state the district is in. Redistricting control can only help the score, meaning that I reduce the gerrymander score if the state redistricts using a bipartisan independent commission. This is because having a biased redistricting process does not necessarily mean a gerrymandered district, but having a bipartisan, independent redistricting process significantly reduces the chance of a gerrymandered district.
 
 ### Table of Contents
 
