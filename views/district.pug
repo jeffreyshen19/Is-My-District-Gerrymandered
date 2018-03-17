@@ -48,8 +48,10 @@ html(lang = "en")
         p.subtitle(style = "display:inline")
           if district_data.gerrymander_score == 0
             | Absolutely <strong>NOT</strong> gerrymandered.
-          else if district_data.gerrymander_score < 50
+          else if district_data.gerrymander_score <= 40
             | Most likely <strong>NOT</strong> gerrymandered.
+          else if district_data.gerrymander_score <= 50
+            | <strong>ALMOST</strong> gerrymandered.
           else 
             | Most likely <strong>IS</strong> gerrymandered.
           | &nbsp;
