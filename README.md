@@ -75,4 +75,4 @@ These were all the articles, books, etc. that I read to better help me understan
 
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the CC0 License -- See the LICENSE file for more info.
