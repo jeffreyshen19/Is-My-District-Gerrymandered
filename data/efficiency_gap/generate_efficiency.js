@@ -6,6 +6,14 @@ eval(fs.readFileSync('../../bin/util.js') + ""); //Include util.js in a traditio
 
 var content = "district,efficiency_gap\n";
 
+/*
+and then averaged those percentages to find each state’s
+overall percentage gap. This calculated percentage gap was then multiplied by the number of districts in the
+state to find the seat gap.
+*/
+
+//Do i count unconteseted districts?
+
 function convertTextToVotes(text){
   var votes = text.split(/\n[0-9]+\. /g);
   if(votes.length > 1) votes[0] = votes[0].replace("1. ", "");
@@ -19,40 +27,60 @@ function convertTextToVotes(text){
         party: candidate.slice(0, candidate.length - 1).join(" ")
       };
     })
-    .filter(function(candidate){ //Only get Republican and Democrat candidates
+    .filter(function(candidate){ //IMPORTANT: Only get Republican and Democrat candidates
       return candidate.party == "Republican" || candidate.party == "Democrat";
     })
     .sort(function(a, b){
       return b.votes - a.votes;
     });
   })
+  .map(function(district){
+    var numRepublican = 0, numDemocrat = 0;
+    for(var i = 0; i < district.length; i++){
+      if(district[i].party == "Republican") numRepublican++;
+      else if(district[i].party == "Democrat") numDemocrat++;
+    }
+    return {
+      candidates: district,
+      numRepublican: numRepublican,
+      numDemocrat: numDemocrat
+    };
+  })
   .map(function(district){ //Calculate values
-    var total_votes = district.reduce(function(total, candidate){
+    var total_votes = district.candidates.reduce(function(total, candidate){
       return !isNaN(candidate.votes) ? total + candidate.votes : total;
     }, 0);
+    var winner = district.candidates.reduce(function(a, b) {
+      return Math.max(a, b.votes);
+    }, 0);
 
-    var votes_needed_to_win = total_votes % 2 == 0 ? total_votes / 2 + 1 : Math.ceil(total_votes / 2);
     var dem_wasted = 0;
     var rep_wasted = 0;
 
-    for(var i = 0; i < district.length; i++){
-      var wasted = 0;
-      if(district[i].votes >= votes_needed_to_win) wasted = district[i].votes - votes_needed_to_win;
-      else wasted = district[i].votes;
-
-      if(district[i].party == "Republican") rep_wasted += wasted;
-      else if(district[i].party == "Democrat") dem_wasted += wasted;
+    if(district.numRepublican == 0 || district.numDemocrat == 0){ //If uncontested
+      total_votes = Math.round(total_votes * 4/3); //Presume 25 % of the votes went to the loser
+      if(district.numRepublican == 0) rep_wasted = Math.round(total_votes / 4);
+      if(district.numDemocrat == 0) dem_wasted = Math.round(total_votes / 4);
     }
 
-    //IMPORTANT: total votes is only calculated with Republican and Democrat
+    var votes_needed_to_win = Math.round(total_votes / 2) + 1;
+
+    for(var i = 0; i < district.candidates.length; i++){
+      if(district.candidates[i].votes == winner) wasted = district.candidates[i].votes - votes_needed_to_win;
+      else wasted = district.candidates[i].votes;
+
+      if(district.candidates[i].party == "Republican") rep_wasted += wasted;
+      else if(district.candidates[i].party == "Democrat") dem_wasted += wasted;
+    }
 
     return {
-      candidates: district,
+      candidates: district.candidates,
       total_votes: total_votes,
       votes_needed_to_win: votes_needed_to_win,
       dem_wasted: dem_wasted,
       rep_wasted: rep_wasted,
-      uncontested: (dem_wasted == 0 || rep_wasted == 0)
+      efficiency_gap: (dem_wasted - rep_wasted) / total_votes,
+      uncontested: (district.numRepublican == 0 || district.numDemocrat == 0)
     };
   });
 
@@ -124,9 +152,6 @@ extract("./2016electionORIGINAL.pdf", {
     votes: convertTextToVotes(lines.slice(startIndex + 1).join("\n"))
   });
 
-
-  //For congressional plans, an efficiency gap of two or more seats indicates a constitutional problem.
-
   // ** Calculate efficiency gap for each state **
   var stateEfficiencyGaps = [];
   var stateEfficiencyGapsPercent = [];
@@ -134,22 +159,21 @@ extract("./2016electionORIGINAL.pdf", {
   states.forEach(function(state){
     var efficiency_gap, efficiency_gap_percent;
 
-    if(state.votes.length == 1){ //For single district states
+    if(state.votes.length <= 6){ //For states with less than 6 districts
       efficiency_gap = null;
       efficiency_gap_percent = null;
     }
     else{
-      var total_dem_wasted = 0, total_rep_wasted = 0, total_votes = 0;
+      var numDistricts = 0, aggregatePercent = 0;
 
       state.votes.forEach(function(vote){
-        if(!vote.uncontested){
-          total_dem_wasted += vote.dem_wasted;
-          total_rep_wasted += vote.rep_wasted;
-          total_votes += vote.total_votes;
+        if(!isNaN(vote.efficiency_gap)){
+          aggregatePercent += vote.efficiency_gap;
+          numDistricts++;
         }
       });
 
-      efficiency_gap_percent = (total_dem_wasted - total_rep_wasted) / total_votes; //Actual percent value
+      efficiency_gap_percent = aggregatePercent / numDistricts;
       efficiency_gap = Math.round(efficiency_gap_percent * state.votes.length); //Convert to seat count
 
       if(efficiency_gap < 0) efficiency_gap = "D" + -1 * efficiency_gap;

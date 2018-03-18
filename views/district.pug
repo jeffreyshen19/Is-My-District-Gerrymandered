@@ -46,8 +46,10 @@ html(lang = "en")
         
       .subtitle-row
         p.subtitle(style = "display:inline")
-          if district_data.num_districts < 5
+          if district_data.num_districts == 1
             | Absolutely <strong>NOT</strong> gerrymandered.
+          else if district_data.num_districts <= 6
+            | Highly <strong>UNLIKELY</strong> to be gerrymandered.
           else if district_data.gerrymander_score <= 40
             | Most likely <strong>NOT</strong> gerrymandered.
           else if district_data.gerrymander_score <= 50
@@ -61,7 +63,7 @@ html(lang = "en")
       br    
       br    
       .checkboxes
-        if district_data.district !== 0
+        if district_data.num_districts > 6
           p.checkbox
             if isCompact
               i.fa.fa-fw.fa-check-square-o 
@@ -84,10 +86,9 @@ html(lang = "en")
       ul 
         if district_data.district == 0
           li This district is absolutely not gerrymandered, because its state only has one district. 
-        else 
-          if district_data.num_districts < 5
-            li This district is likely not gerrymandered, as it has less than 5 districts, which makes the state extremely hard to rig. 
-            
+        else if district_data.num_districts <= 6
+          li This district is likely not gerrymandered, as it has less than or equal to 6 districts, which makes the state extremely hard to rig. 
+        else   
           //Compactness  
           -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)
           -var countryPercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.country) / district_data.compactness.country).toFixed(1)
