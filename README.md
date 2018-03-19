@@ -2,7 +2,7 @@
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYZQFQ46HNQE6)
 
-This is a project that estimates how likely a congressional district is gerrymandered based on its geographical compactness, voter wastage, and redistricting control. It was last updated for the 115th US Congressional districts (2016 election). **NOT YET DONE**.
+This is a project that estimates how likely a congressional district is gerrymandered based on its geographical compactness, voter wastage, and redistricting control. It was last updated for the 115th US Congressional districts (2016 election).
 
 Check it out at [ismydistrictgerrymandered.us](http://ismydistrictgerrymandered.us).
 
