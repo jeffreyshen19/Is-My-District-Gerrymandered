@@ -49,10 +49,8 @@ html(lang = "en")
             | Absolutely <strong>NOT</strong> gerrymandered.
           else if district_data.num_districts <= 6
             | Highly <strong>UNLIKELY</strong> to be gerrymandered.
-          else if district_data.gerrymander_score <= 40
-            | Most likely <strong>NOT</strong> gerrymandered.
           else if district_data.gerrymander_score <= 50
-            | <strong>ALMOST</strong> gerrymandered.
+            | Most likely <strong>NOT</strong> gerrymandered.
           else 
             | Most likely <strong>IS</strong> gerrymandered.
           | &nbsp;
