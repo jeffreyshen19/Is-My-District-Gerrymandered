@@ -53,10 +53,12 @@ html(lang = "en")
             | Most likely <strong>NOT</strong> gerrymandered.
           else 
             | Most likely <strong>IS</strong> gerrymandered.
-          | &nbsp;
-        .fb-share-button(data-href="http://ismydistrictgerrymandered.us" data-layout="button_count" data-size="small" data-mobile-iframe="true" style = "display:inline;position:relative;top:-4px;")
-          a.fb-xfbml-parse-ignore(target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fismydistrictgerrymandered.us%2F&amp;src=sdkpreparse") Share
+          | &nbsp;(Scroll for a breakdown of this result) 
       a(href = "https://github.com/jeffreyshen19/Is-My-District-Gerrymandered/blob/master/README.md" target = "_blank") See how we get this
+      br
+      br
+      .fb-share-button(data-href="http://ismydistrictgerrymandered.us" data-layout="button_count" data-size="small" data-mobile-iframe="true" style = "display:inline;position:relative;top:-4px;")
+        a.fb-xfbml-parse-ignore(target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fismydistrictgerrymandered.us%2F&amp;src=sdkpreparse") Share
       br    
       br    
       .checkboxes
@@ -84,7 +86,7 @@ html(lang = "en")
         if district_data.district == 0
           li This district is absolutely not gerrymandered, because its state only has one district. 
         else if district_data.num_districts <= 6
-          li This district is likely not gerrymandered, as it has less than or equal to 6 districts, which makes the state extremely hard to rig. 
+          li This district is likely not gerrymandered, as it has less than or equal to 6 districts, which makes the state harder to rig. 
         else   
           //Compactness  
           -var statePercent = (100.0 * (district_data.compactness.absolute - district_data.compactness.state) / district_data.compactness.state).toFixed(1)

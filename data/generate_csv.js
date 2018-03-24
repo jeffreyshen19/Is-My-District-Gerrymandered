@@ -130,10 +130,9 @@ curl.request({
     if(district === "0") gerrymander_score = 0;
     else {
       gerrymander_score = 0;
-      gerrymander_score += (1 - absolute_compactness) * 65;
-      if(parseInt(efficiency_csv[n + 1].split(",")[1].charAt(1)) >= 2) gerrymander_score += 35; //If above tolerable efficiency gap
-      if(redistricting_control.charAt(0) == 'I') gerrymander_score -= 25;
-      if(redistricting_control.charAt(1) == 'I') gerrymander_score -= 25;
+      gerrymander_score += -83.623 * absolute_compactness + 75;
+      if(parseInt(efficiency_csv[n + 1].split(",")[1].charAt(1)) >= 2) gerrymander_score += 25; //If above tolerable efficiency gap
+      if(redistricting_control == 'II') gerrymander_score -= 25;
       gerrymander_score = Math.round(Math.max(gerrymander_score, 0)); //Make sure it's not negative
     }
 
